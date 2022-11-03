@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		124EFC1ABED732864A396E58 /* Pods_ErzengelMichaelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161E388F79C2605CF56DDB84 /* Pods_ErzengelMichaelTests.framework */; };
 		5A13021ABB406160E61049A3 /* Pods_ErzengelMichael.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */; };
+		841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */; };
 		8420BA1328FB309D000575A5 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420BA1228FB309D000575A5 /* Slide.swift */; };
 		842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FA28B2DC4C0093DE24 /* AppDelegate.swift */; };
 		842932FD28B2DC4C0093DE24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FC28B2DC4C0093DE24 /* SceneDelegate.swift */; };
@@ -52,6 +53,7 @@
 		5879DC3C74C12E67D0FF0BA4 /* Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		716A4DE30730AB1D452133D0 /* Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichael_ErzengelMichaelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyCenteredTextView.swift; sourceTree = "<group>"; };
 		8420BA1228FB309D000575A5 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		842932F728B2DC4C0093DE24 /* ErzengelMichael.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErzengelMichael.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842932FA28B2DC4C0093DE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841A7AED29142AAC00CC946F /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
 		8420BA0B28FB2845000575A5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 		842932F928B2DC4C0093DE24 /* ErzengelMichael */ = {
 			isa = PBXGroup;
 			children = (
+				841A7AED29142AAC00CC946F /* Custom Controls */,
 				8420BA0E28FB2A60000575A5 /* Models */,
 				8420BA0F28FB2AC2000575A5 /* Views */,
 				8420BA0B28FB2845000575A5 /* ViewControllers */,
@@ -456,6 +467,7 @@
 				846C0AD92909C61C001456F3 /* PromisesViewController.swift in Sources */,
 				842932FF28B2DC4C0093DE24 /* ViewController.swift in Sources */,
 				842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */,
+				841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */,
 				846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */,
 				8444CCAF28C39408002C819B /* AppDetails.swift in Sources */,
 				8420BA1328FB309D000575A5 /* Slide.swift in Sources */,

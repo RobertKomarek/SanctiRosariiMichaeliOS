@@ -41,10 +41,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             default:
                 return
         }
-        
     }
+    
     @IBAction func buttonBackBackTapped(_ sender: UIButton) {
-        
         let myPageIndex = round(scrollView.contentOffset.x/view.frame.width)
         
         if myPageIndex == 0 {
@@ -56,8 +55,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             y:0
         ), animated: true)
     }
+    
     @IBAction func buttonForwardTapped(_ sender: UIButton) {
-        
         let myPageIndex = round(scrollView.contentOffset.x/view.frame.width)
         
         if Int(myPageIndex) == slides.count-1 {
@@ -76,25 +75,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 y:0
             ), animated: true)
         }
-        
-//        if Int(pageIndex) == slides.count-1 {
-//            return
-//        }
-//
-//        if pageIndex != 0 {
-//            let width = (CGFloat(pageControl.currentPage)+1) * screenWidth
-//            scrollView.setContentOffset(CGPoint(
-//                x:width,
-//                y:0
-//            ), animated: true)
-//
-//        } else {
-//            scrollView.setContentOffset(CGPoint(
-//                x:screenWidth,
-//                y:0
-//            ), animated: true)
-//        }
     }
+    
     @IBAction func buttonBackTapped(_ sender: UIButton) {
         
         let myPageIndex = round(scrollView.contentOffset.x/view.frame.width)
@@ -122,9 +104,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: <#T##Selector?#>)
-        
+
     let screen = UIScreen.main.bounds
     screenWidth = screen.size.width
     
@@ -141,11 +121,20 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         pageControl.layer.cornerRadius = 15
         pageControl.clipsToBounds = true
         view.bringSubviewToFront(pageControl)
+        
+        //Check if iPad and adjust font size and content mode
+        for slide in slides {
+            //Check if iphone or ipad
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                slide.textView.contentMode = UITextView.ContentMode.scaleToFill
+                slide.textView.font = UIFont.systemFont(ofSize: 32)
+            } else {
+                //slide1.textView.contentMode = UITextView.ContentMode.scaleToFill
+            }
+        }
     }
 }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//    }
+    
     
     func getJson(jsonName:String) -> [AppDetails] {
         
@@ -160,43 +149,46 @@ class ViewController: UIViewController, UIScrollViewDelegate {
               }
         }
         return jsonResult
+        
     }
+    
     func createSlides() -> [Slide] {
 
-            let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide1.imageView.image = UIImage(named: "michael5")
-            slide1.textView.text = appDetails[0].Chaplet
-            
-            let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide2.imageView.image = UIImage(named: "michael6")
-            slide2.textView.text = appDetails[1].Chaplet
-            
-            let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide3.imageView.image = UIImage(named: "michael11")
-            slide3.textView.text = appDetails[2].Chaplet
-            
-            let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide4.imageView.image = UIImage(named: "michael2")
-            slide4.textView.text = appDetails[3].Chaplet
+        let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide1.imageView.image = UIImage(named: "michael5")
+        slide1.textView.text = appDetails[0].Chaplet
         
-            let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide5.imageView.image = UIImage(named: "michael3")
-            slide5.textView.text = appDetails[4].Chaplet
+        let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide2.imageView.image = UIImage(named: "michael6")
+        slide2.textView.text = appDetails[1].Chaplet
         
-            let slide6:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide6.imageView.image = UIImage(named: "michael7")
-            slide6.textView.text = appDetails[5].Chaplet
+        let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide3.imageView.image = UIImage(named: "michael11")
+        slide3.textView.text = appDetails[2].Chaplet
         
-            let slide7:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide7.imageView.image = UIImage(named: "gabriel")
-            slide7.textView.text = appDetails[6].Chaplet
-        
-            let slide8:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide8.imageView.image = UIImage(named: "raphael")
-            slide8.textView.text = appDetails[7].Chaplet
-        
-            return [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8]
-        }
+        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide4.imageView.image = UIImage(named: "michael2")
+        slide4.textView.text = appDetails[3].Chaplet
+    
+        let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide5.imageView.image = UIImage(named: "michael3")
+        slide5.textView.text = appDetails[4].Chaplet
+    
+        let slide6:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide6.imageView.image = UIImage(named: "michael7")
+        slide6.textView.text = appDetails[5].Chaplet
+    
+        let slide7:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide7.imageView.image = UIImage(named: "gabriel")
+        slide7.textView.text = appDetails[6].Chaplet
+    
+        let slide8:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide8.imageView.image = UIImage(named: "raphael")
+        slide8.textView.text = appDetails[7].Chaplet
+    
+        return [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8]
+    }
+    
     func setupSlideScrollView(slides : [Slide]) {
         scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
