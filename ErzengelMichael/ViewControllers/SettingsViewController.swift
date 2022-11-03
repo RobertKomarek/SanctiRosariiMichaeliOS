@@ -10,13 +10,11 @@ import UIKit
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     //@IBOutlet weak var stackViewHeader: UIStackView!
+    @IBOutlet weak var buttonLanguageConfirmed: UIButton!
     @IBOutlet weak var labelPickedLanguage: UILabel!
     @IBOutlet weak var pickerViewLanguages: UIPickerView!
     
     var flagsTag:Int = 0
-    
-    @IBAction func languageConfirmed(_ sender: Any) {
-    }
     
     var arrayFlags:[UIImage]=[UIImage(named: "langEnglish")!, UIImage(named: "langFrench")!, UIImage(named: "langGerman")!, UIImage(named: "langSpanish")!, UIImage(named: "langPortugese")!, UIImage(named: "langItalian")!]
     
@@ -30,6 +28,16 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         stackViewHeader.layoutMargins = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         stackViewHeader.isLayoutMarginsRelativeArrangement = true*/
         
+    }
+    
+    @IBAction func languageConfirmed(_ sender: UIButton, forEvent event: UIEvent) {
+        
+        let alert = UIAlertController(title: "Button klicked", message: "Language confirmed", preferredStyle: .alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
    
     
