@@ -18,6 +18,20 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     var arrayFlags:[UIImage]=[UIImage(named: "langEnglish")!, UIImage(named: "langFrench")!, UIImage(named: "langGerman")!, UIImage(named: "langSpanish")!, UIImage(named: "langPortugese")!, UIImage(named: "langItalian")!]
     
+    @IBAction func languageConfirmed(_ sender: UIButton, forEvent event: UIEvent) {
+        //Ausgewählte Sprache speichern und anschl. in viewDidLoad von Main/ViewController abfragen und die entsprechende Sprache laden
+        let defaults = UserDefaults.standard
+        defaults.set(labelPickedLanguage.text, forKey: "Language")
+        var language = defaults.string(forKey: "Language")
+        
+        let alert = UIAlertController(title: "Button klicked", message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,17 +43,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         stackViewHeader.isLayoutMarginsRelativeArrangement = true*/
         
     }
-    
-    @IBAction func languageConfirmed(_ sender: UIButton, forEvent event: UIEvent) {
-        
-        let alert = UIAlertController(title: "Button klicked", message: "Language confirmed", preferredStyle: .alert
-        )
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        self.present(alert, animated: true, completion: nil)
-    }
-   
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

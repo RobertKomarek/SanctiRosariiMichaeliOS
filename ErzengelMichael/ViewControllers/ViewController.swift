@@ -133,8 +133,20 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
+        
 }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let defaults = UserDefaults.standard
+        let language = defaults.string(forKey: "Language")
+        
+        let alert = UIAlertController(title: "Chosen language", message: "Language \(language ?? "No language chosen") chosen", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
     
     func getJson(jsonName:String) -> [AppDetails] {
         
