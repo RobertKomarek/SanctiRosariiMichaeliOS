@@ -22,7 +22,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         //Ausgewählte Sprache speichern und anschl. in viewDidLoad von Main/ViewController abfragen und die entsprechende Sprache laden
         let defaults = UserDefaults.standard
         defaults.set(labelPickedLanguage.text, forKey: "Language")
-        var language = defaults.string(forKey: "Language")
+        let language = defaults.string(forKey: "Language")
         
         let alert = UIAlertController(title: "Button klicked", message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert
         )

@@ -19,8 +19,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     //Variables
     var slides:[Slide] = [];
     var pageIndex:CGFloat = 0
-    var screenWidth:CGFloat = 0
+    //var screenWidth:CGFloat = 0
     var appDetails:[AppDetails] = []
+    var rosaryChosenLanguage:[AppDetails] = []
     
     @IBAction func tapGestureRecognizer(_ sender: UITapGestureRecognizer) {
         let image = sender.view as! UIImageView
@@ -105,11 +106,19 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    let screen = UIScreen.main.bounds
-    screenWidth = screen.size.width
+    //let screen = UIScreen.main.bounds
+    //screenWidth = screen.size.width
     
-    //Load Json file with app details
+    /*//Load Json file with app details
     appDetails = getJson(jsonName: "SanctiRosariiMichael")
+    //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
+    let defaults = UserDefaults.standard
+    let language = defaults.string(forKey: "Language")
+    for rosary in appDetails {
+        if rosary.Language == language {
+            rosaryChosenLanguage.append(rosary)
+        }
+    }
     
     //Implement ScrollView
     if scrollView != nil {
@@ -132,20 +141,64 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 //slide1.textView.contentMode = UITextView.ContentMode.scaleToFill
             }
         }
-    }
+    }*/
         
 }
     
     override func viewDidAppear(_ animated: Bool) {
         
+        //Load Json file with app details
+        appDetails = getJson(jsonName: "SanctiRosariiMichael")
+        //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
+        let language = defaults.string(forKey: "Language")
+        if rosaryChosenLanguage.isEmpty {
+            for rosary in appDetails {
+                if rosary.Language == language {
+                    rosaryChosenLanguage.append(rosary)
+                }
+            }
+        } else {
+            rosaryChosenLanguage.removeAll()
+            for rosary in appDetails {
+                if rosary.Language == language {
+                    rosaryChosenLanguage.append(rosary)
+                }
+            }
+        }
+        
+        //Implement ScrollView
+        if scrollView != nil {
+            scrollView.delegate = self
+            slides = createSlides()
+            setupSlideScrollView(slides: slides)
+            pageControl.numberOfPages = slides.count
+            pageControl.currentPage = 0
+            pageControl.layer.cornerRadius = 15
+            pageControl.clipsToBounds = true
+            view.bringSubviewToFront(pageControl)
+            
+            //Check if iPad and adjust font size and content mode
+            for slide in slides {
+                //Check if iphone or ipad
+                if UIDevice.current.userInterfaceIdiom == .pad {
+                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
+                    slide.textView.font = UIFont.systemFont(ofSize: 32)
+                } else {
+                    //slide1.textView.contentMode = UITextView.ContentMode.scaleToFill
+                }
+            }
+        }
+        
+        
+        /*	let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
         
         let alert = UIAlertController(title: "Chosen language", message: "Language \(language ?? "No language chosen") chosen", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)*/
     }
     
     func getJson(jsonName:String) -> [AppDetails] {
@@ -168,35 +221,35 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "michael5")
-        slide1.textView.text = appDetails[0].Chaplet
+        slide1.textView.text = rosaryChosenLanguage[0].Chaplet
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "michael6")
-        slide2.textView.text = appDetails[1].Chaplet
+        slide2.textView.text = rosaryChosenLanguage[1].Chaplet
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "michael11")
-        slide3.textView.text = appDetails[2].Chaplet
+        slide3.textView.text = rosaryChosenLanguage[2].Chaplet
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide4.imageView.image = UIImage(named: "michael2")
-        slide4.textView.text = appDetails[3].Chaplet
+        slide4.textView.text = rosaryChosenLanguage[3].Chaplet
     
         let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide5.imageView.image = UIImage(named: "michael3")
-        slide5.textView.text = appDetails[4].Chaplet
+        slide5.textView.text = rosaryChosenLanguage[4].Chaplet
     
         let slide6:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide6.imageView.image = UIImage(named: "michael7")
-        slide6.textView.text = appDetails[5].Chaplet
+        slide6.textView.text = rosaryChosenLanguage[5].Chaplet
     
         let slide7:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide7.imageView.image = UIImage(named: "gabriel")
-        slide7.textView.text = appDetails[6].Chaplet
+        slide7.textView.text = rosaryChosenLanguage[6].Chaplet
     
         let slide8:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide8.imageView.image = UIImage(named: "raphael")
-        slide8.textView.text = appDetails[7].Chaplet
+        slide8.textView.text = rosaryChosenLanguage[7].Chaplet
     
         return [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8]
     }
@@ -205,7 +258,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
         scrollView.isPagingEnabled = true
-    
         
         for i in 0 ..< slides.count {
             slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)

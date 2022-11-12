@@ -11,6 +11,7 @@
 		5A13021ABB406160E61049A3 /* Pods_ErzengelMichael.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */; };
 		841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */; };
 		8420BA1328FB309D000575A5 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420BA1228FB309D000575A5 /* Slide.swift */; };
+		84227353292010E900FD475D /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 84227352292010E900FD475D /* SanctiRosariiMichael.json */; };
 		842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FA28B2DC4C0093DE24 /* AppDelegate.swift */; };
 		842932FD28B2DC4C0093DE24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FC28B2DC4C0093DE24 /* SceneDelegate.swift */; };
 		842932FF28B2DC4C0093DE24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FE28B2DC4C0093DE24 /* ViewController.swift */; };
@@ -22,7 +23,6 @@
 		8429331F28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */; };
 		8429332128B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */; };
 		8444CCAF28C39408002C819B /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444CCAE28C39408002C819B /* AppDetails.swift */; };
-		8444CCB128C39912002C819B /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 8444CCB028C39912002C819B /* SanctiRosariiMichael.json */; };
 		844F532028BA58A200034D24 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F531F28BA58A200034D24 /* Slide.xib */; };
 		846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846851CA28FC821200942E2A /* SettingsViewController.swift */; };
 		846C0AD92909C61C001456F3 /* PromisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesViewController.swift */; };
@@ -55,6 +55,7 @@
 		7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichael_ErzengelMichaelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyCenteredTextView.swift; sourceTree = "<group>"; };
 		8420BA1228FB309D000575A5 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		84227352292010E900FD475D /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		842932F728B2DC4C0093DE24 /* ErzengelMichael.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErzengelMichael.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842932FA28B2DC4C0093DE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842932FC28B2DC4C0093DE24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITests.swift; sourceTree = "<group>"; };
 		8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8444CCAE28C39408002C819B /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
-		8444CCB028C39912002C819B /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		844F531F28BA58A200034D24 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		846851CA28FC821200942E2A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		846C0AD82909C61C001456F3 /* PromisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +143,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8422734B292004FE00FD475D /* Jsonfiles */ = {
+			isa = PBXGroup;
+			children = (
+				84227352292010E900FD475D /* SanctiRosariiMichael.json */,
+			);
+			path = Jsonfiles;
+			sourceTree = "<group>";
+		};
 		842932EE28B2DC4C0093DE24 = {
 			isa = PBXGroup;
 			children = (
@@ -168,11 +176,11 @@
 		842932F928B2DC4C0093DE24 /* ErzengelMichael */ = {
 			isa = PBXGroup;
 			children = (
+				8422734B292004FE00FD475D /* Jsonfiles */,
 				841A7AED29142AAC00CC946F /* Custom Controls */,
 				8420BA0E28FB2A60000575A5 /* Models */,
 				8420BA0F28FB2AC2000575A5 /* Views */,
 				8420BA0B28FB2845000575A5 /* ViewControllers */,
-				8444CCB028C39912002C819B /* SanctiRosariiMichael.json */,
 				842932FA28B2DC4C0093DE24 /* AppDelegate.swift */,
 				842932FC28B2DC4C0093DE24 /* SceneDelegate.swift */,
 				8429330628B2DC4E0093DE24 /* Assets.xcassets */,
@@ -334,8 +342,8 @@
 			files = (
 				8429330A28B2DC4E0093DE24 /* LaunchScreen.storyboard in Resources */,
 				8429330728B2DC4E0093DE24 /* Assets.xcassets in Resources */,
+				84227353292010E900FD475D /* SanctiRosariiMichael.json in Resources */,
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
-				8444CCB128C39912002C819B /* SanctiRosariiMichael.json in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

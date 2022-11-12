@@ -17,7 +17,8 @@ struct AppDetails : Decodable {
     var TitlePrayersLitany: String?
     var PrayersLitany: String?
     var TitlePrayersLeo: String?
-    var PrayerLeo: String?
+    var PrayersLeo: String?
+    var PrayersLeoLatin: String?
     var Language: String?
     var AppWelcomeText: String?
     var Chaplet: String?
