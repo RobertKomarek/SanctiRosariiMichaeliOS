@@ -218,8 +218,25 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func createSlides() -> [Slide] {
+        
+        //var slideNumber:[String] = []
+        var slides:[Slide] = []
+        
+        /*for i in 0..<rosaryChosenLanguage.count {
+            slideNumber.append("slide" + String(i))
+        }*/
+        
+        for i in 0..<rosaryChosenLanguage.count {
+            slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
+            //slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+            //slides[i].imageView.image = UIImage(named: "michael5")
+            slides[i].imageView.image = UIImage(named: rosaryChosenLanguage[i].Image ?? "michael0")
+            slides[i].textView.text = rosaryChosenLanguage[i].Chaplet
+        }
+        
+        return slides
 
-        let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        /*let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "michael5")
         slide1.textView.text = rosaryChosenLanguage[0].Chaplet
         
@@ -249,9 +266,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
         let slide8:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide8.imageView.image = UIImage(named: "raphael")
-        slide8.textView.text = rosaryChosenLanguage[7].Chaplet
+        slide8.textView.text = rosaryChosenLanguage[7].Chaplet*/
     
-        return [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8]
+        //return [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8]
     }
     
     func setupSlideScrollView(slides : [Slide]) {
