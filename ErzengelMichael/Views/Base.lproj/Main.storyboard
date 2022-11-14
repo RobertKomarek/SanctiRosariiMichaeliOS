@@ -131,6 +131,7 @@
                         <outlet property="gradientView" destination="CTt-y5-Mz5" id="gBH-Tt-Mfb"/>
                         <outlet property="pageControl" destination="IDd-fZ-X4R" id="DiD-cZ-aZ1"/>
                         <outlet property="scrollView" destination="5UW-NU-CnC" id="fif-iG-0Vw"/>
+                        <outlet property="tabBarRosary" destination="6JJ-cs-FY8" id="RIx-hS-Ys4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,7 +148,7 @@
                         <viewLayoutGuide key="safeArea" id="GZ3-2h-pEB"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Promises" id="Yl8-of-GCy">
+                    <tabBarItem key="tabBarItem" tag="1" title="Promises" id="Yl8-of-GCy">
                         <imageReference key="image" image="sparkles" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <size key="freeformSize" width="375" height="667"/>
@@ -184,7 +185,7 @@
                             <constraint firstAttribute="bottom" secondItem="iM4-Yd-UWp" secondAttribute="bottom" id="kX0-tP-Np6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Prayers" id="KYG-AM-mSu" userLabel="Prayers">
+                    <tabBarItem key="tabBarItem" tag="2" title="Prayers" id="KYG-AM-mSu" userLabel="Prayers">
                         <imageReference key="image" image="hands.sparkles" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                 </viewController>
@@ -371,7 +372,7 @@
                             <constraint firstItem="dgI-uc-9zt" firstAttribute="trailing" secondItem="ZHY-Sb-2M4" secondAttribute="trailing" id="tVs-Ms-8CE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="0Dc-iX-RPD" userLabel="Settings">
+                    <tabBarItem key="tabBarItem" tag="3" title="Settings" id="0Dc-iX-RPD" userLabel="Settings">
                         <imageReference key="image" image="gearshape" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <size key="freeformSize" width="375" height="667"/>

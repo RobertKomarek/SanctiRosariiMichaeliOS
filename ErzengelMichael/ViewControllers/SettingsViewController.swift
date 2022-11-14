@@ -24,6 +24,49 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         defaults.set(labelPickedLanguage.text, forKey: "Language")
         let language = defaults.string(forKey: "Language")
         
+        //Load Json file with app details
+        let appDetails = getJson(jsonName: "SanctiRosariiMichael")
+        //Check if language was changed != nil otherwise use English as default value
+        var rosaryChosenLanguage:[AppDetails] = []
+        if language != nil {
+            if rosaryChosenLanguage.isEmpty {
+                for rosary in appDetails {
+                    if rosary.Language == language {
+                        rosaryChosenLanguage.append(rosary)
+                    }
+                }
+            } else {
+                rosaryChosenLanguage.removeAll()
+                for rosary in appDetails {
+                    if rosary.Language == language {
+                        rosaryChosenLanguage.append(rosary)
+                    }
+                }
+            }
+        } else {
+            //Use English as defaul value
+            for rosary in appDetails {
+                if rosary.Language == "English" {
+                    rosaryChosenLanguage.append(rosary)
+                }
+            }
+        }
+        
+        //Update TabItems Title according to language
+        if let tabBarItem0 = self.tabBarController?.tabBar.items?[0] {
+            tabBarItem0.title = rosaryChosenLanguage[0].TabBarRosary
+        }
+        if let tabBarItem1 = self.tabBarController?.tabBar.items?[1] {
+            tabBarItem1.title = rosaryChosenLanguage[0].TabBarPromises
+        }
+        if let tabBarItem2 = self.tabBarController?.tabBar.items?[2] {
+            tabBarItem2.title = rosaryChosenLanguage[0].TabBarPrayers
+        }
+        if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
+            tabBarItem3.title = rosaryChosenLanguage[0].TabBarSettings
+        }
+        
+        //Update to respective language
         let alert = UIAlertController(title: "Button klicked", message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert
         )
         
@@ -88,4 +131,19 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         return myFlagView
     }
     
+    func getJson(jsonName:String) -> [AppDetails] {
+        
+        var jsonResult:[AppDetails] = []
+        
+        if let path = Bundle.main.path(forResource: jsonName, ofType: "json") {
+            do {
+                  let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                  jsonResult = try! JSONDecoder().decode([AppDetails].self, from: data)
+              } catch {
+                   // handle error
+              }
+        }
+        return jsonResult
+    }
+        
 }

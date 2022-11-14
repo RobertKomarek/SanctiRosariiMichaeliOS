@@ -7,6 +7,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var gradientView: UIView!
     //Controls Rosary Scene
+    @IBOutlet weak var tabBarRosary: UITabBarItem!
     @IBOutlet weak var buttonDarkmode: UIButton!
     @IBOutlet weak var buttonBackBack: UIButton!
     @IBOutlet weak var buttonBack: UIButton!
@@ -152,20 +153,38 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
-        if rosaryChosenLanguage.isEmpty {
-            for rosary in appDetails {
-                if rosary.Language == language {
-                    rosaryChosenLanguage.append(rosary)
+        //Check if language was changed != nil otherwise use English as default value
+        if language != nil {
+            if rosaryChosenLanguage.isEmpty {
+                for rosary in appDetails {
+                    if rosary.Language == language {
+                        rosaryChosenLanguage.append(rosary)
+                    }
+                }
+            } else {
+                rosaryChosenLanguage.removeAll()
+                for rosary in appDetails {
+                    if rosary.Language == language {
+                        rosaryChosenLanguage.append(rosary)
+                    }
                 }
             }
         } else {
-            rosaryChosenLanguage.removeAll()
+            //Use English as defaul value
             for rosary in appDetails {
-                if rosary.Language == language {
+                if rosary.Language == "English" {
                     rosaryChosenLanguage.append(rosary)
                 }
             }
         }
+        
+        /*//Update TabItems Title according to language
+        let tabBarController = self.tabBarController
+        if let items = tabBarController?.tabBar.items {
+            for item in items {
+                item.title = rosaryChosenLanguage[0].Language
+            }
+        }*/
         
         //Implement ScrollView
         if scrollView != nil {
@@ -214,22 +233,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
               }
         }
         return jsonResult
-        
     }
     
     func createSlides() -> [Slide] {
         
-        //var slideNumber:[String] = []
         var slides:[Slide] = []
-        
-        /*for i in 0..<rosaryChosenLanguage.count {
-            slideNumber.append("slide" + String(i))
-        }*/
         
         for i in 0..<rosaryChosenLanguage.count {
             slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
-            //slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            //slides[i].imageView.image = UIImage(named: "michael5")
+            slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
             slides[i].imageView.image = UIImage(named: rosaryChosenLanguage[i].Image ?? "michael0")
             slides[i].textView.text = rosaryChosenLanguage[i].Chaplet
         }
@@ -242,33 +254,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "michael6")
-        slide2.textView.text = rosaryChosenLanguage[1].Chaplet
-        
-        let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide3.imageView.image = UIImage(named: "michael11")
-        slide3.textView.text = rosaryChosenLanguage[2].Chaplet
-        
-        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide4.imageView.image = UIImage(named: "michael2")
-        slide4.textView.text = rosaryChosenLanguage[3].Chaplet
+        slide2.textView.text = rosaryChosenLanguage[1].Chaplet*/
     
-        let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide5.imageView.image = UIImage(named: "michael3")
-        slide5.textView.text = rosaryChosenLanguage[4].Chaplet
-    
-        let slide6:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide6.imageView.image = UIImage(named: "michael7")
-        slide6.textView.text = rosaryChosenLanguage[5].Chaplet
-    
-        let slide7:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide7.imageView.image = UIImage(named: "gabriel")
-        slide7.textView.text = rosaryChosenLanguage[6].Chaplet
-    
-        let slide8:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide8.imageView.image = UIImage(named: "raphael")
-        slide8.textView.text = rosaryChosenLanguage[7].Chaplet*/
-    
-        //return [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8]
+        //return [slide1, slide2]
     }
     
     func setupSlideScrollView(slides : [Slide]) {

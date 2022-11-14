@@ -19,7 +19,7 @@
    "PrayersLeoLatin": "Sancte Míchael Archángele! Defénde nos in próelio; contra nequítiam et insídias diáboli esto praesídium. Imperet illi Deus, súpplices deprecámur, tuque, Prínceps milítiae caeléstis, Sátanam aliósque spíritus malígnos, qui ad perditiónem animárum pervagántur in mundo, divína virtúte, in inférnum detrúde.\nAmen.\n",
    "Language": "Deutsch",
    "AppWelcomeText": "Herzlichen willkommen zum Rosenkranz von Erzengel Michael!\n\nSo wird der Rosenkranz gebetet:\n\n1. Anrufung der Engel (Serpahim, Cherubim, etc.)\n2. Vater unser 1x\n3. Ave Maria 3x\n4. Je 1 Vater unser zu Ehren der Erzengel Michael, Raphael, Gabriel und des Schutzengels",
-   "Chaplet": "Heiliger Erzengel Michael! Ich empfehle Dir die Stunde meines Todes; halte in derselben den bösen Feind gefangen, dass er mich nicht anfechten und meiner Seele nicht schaden kann.\n\n1 Vater unser…, 3 Ave Maria\n",
+   "Chaplet": "Heiliger Erzengel Michael! Ich empfehle Dir die Stunde meines Todes; halte in derselben den bösen Feind gefangen, dass er mich nicht anfechten und meiner Seele nicht schaden kann.\n\n1 Vater unser",
    "Image": "michael0"
  },
  {
@@ -42,7 +42,7 @@
    "PrayersLeoLatin": "n/a",
    "Language": "Deutsch",
    "AppWelcomeText": "n/a",
-   "Chaplet": "Heiliger Erzengel Gabriel! Erlange mir von Gott einen lebendigen Glauben, eine starke Hoffnung, inbrünstige Liebe und große Andacht zum Heiligsten Altarsakrament.\n\n1 Vater unser…, 3 Ave Maria",
+   "Chaplet": "Heiliger Erzengel Gabriel! Erlange mir von Gott einen lebendigen Glauben, eine starke Hoffnung, inbrünstige Liebe und große Andacht zum Heiligsten Altarsakrament.\n\n1 Vater unser",
    "Image": "gabriel"
  },
  {
@@ -65,7 +65,7 @@
    "PrayersLeoLatin": "n/a",
    "Language": "Deutsch",
    "AppWelcomeText": "n/a",
-   "Chaplet": "Heiliger Erzengel Raphael! Führe mich allezeit den Weg der Tugend und Vollkommenheit.\n\n1 Vater unser…, 3 Ave Maria",
+   "Chaplet": "Heiliger Erzengel Raphael! Führe mich allezeit den Weg der Tugend und Vollkommenheit.\n\n1 Vater unser",
    "Image": "raphael"
  },
  {
@@ -88,7 +88,7 @@
    "PrayersLeoLatin": "n/a",
    "Language": "Deutsch",
    "AppWelcomeText": "n/a",
-   "Chaplet": "Heiliger Schutzengel! Erlange mir göttliche Einsprechungen und die besondere Gnade dieselbe treu zu befolgen.\n\n1 Vater unser…, 3 Ave Maria",
+   "Chaplet": "Heiliger Schutzengel! Erlange mir göttliche Einsprechungen und die besondere Gnade dieselbe treu zu befolgen.\n\n1 Vater unser",
    "Image": "guarding"
  },
  {
@@ -342,7 +342,7 @@
    "Language": "English",
    "AppWelcomeText": "Welcome to the Rosary of Saint Archangel Michael!\n\nThis is how the rosary is prayed:\nInvocation of the Angels (Serpahim, Cherubim, etc.)\nOur Father 1x\nHail Mary 3x\nOne Our Father each in honor of the Archangels Michael, Raphael, Gabriel and the Guardian Angel\n\n",
    "Chaplet": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.\nO God, come to my assistance. O Lord, make haste to help me. Glory be to the Father, to the Son, and to the Holy Spirit, as it was in the beginning, is now and will be forever, time without end. Amen.\n",
-   "Image": "Michael0"
+   "Image": "michael0"
  },
  {
    "Number": 15,
@@ -1147,7 +1147,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "Benvenuti al Rosario di San Michele Arcangelo!\n\nCosì si recita il rosario:\n\n1. Invocazione degli angeli (Serpahim, Cherubim, ecc.)\n2. Padre Nostro 1x\n3. Ave Maria 3x\n4. Un Padre Nostro ciascuno in onore degli Arcangeli Michele, Raffaele, Gabriele e l'Angelo Custode",
    "Chaplet": "O Dio, vieni a salvarmi.\nSignore, vieni presto in mio aiuto.\nGloria al Padre\ne al Figlio\ne allo Spirito Santo.\nCome era nel principio\ne ora e sempre,\nnei secoli dei secoli.Amen.\nSan Michele Arcangelo, difendici nella lotta, per essere salvati nell'estremo giudizio.",
-   "Image": ""
+   "Image": "michael0"
  },
  {
    "Number": 50,
@@ -1170,7 +1170,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele e del celeste coro dei Serafini, ci renda il Signore degni della fiamma di perfetta carità.\n\nPadre nostro e tre Ave Maria al 1° Coro Angelico.\n",
-   "Image": "michael0"
+   "Image": "gabriel"
  },
  {
    "Number": 51,
@@ -1193,7 +1193,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele Arcangelo e del Coro celeste dei Cherubini, voglia il Signore darci la grazia di abbandonare la vita del peccato e correre in quella della cristiana perfezione.\n\nPadre nostro e tre Ave Maria al 2° Coro Angelico.",
-   "Image": "gabriel"
+   "Image": "raphael"
  },
  {
    "Number": 52,
@@ -1216,7 +1216,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele Arcangelo e del sacro Coro dei Troni, infonda il Signore nei nostri cuori lo spirito di vera e sincera umiltà. \n\nPadre nostro e tre Ave Maria al 3° Coro Angelico.",
-   "Image": "raphael"
+   "Image": "michael1"
  },
  {
    "Number": 53,
@@ -1239,7 +1239,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele Arcangelo e del coro celeste delle Dominazioni, ci dia grazia il Signore di dominare i nostri sensi e correggere le corrotte passioni.\n\nPadre nostro e tre Ave Maria al 4° Coro Angelico.",
-   "Image": "michael1"
+   "Image": "michael2"
  },
  {
    "Number": 54,
@@ -1262,7 +1262,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele e del celeste Coro delle Potestà, il Signore si degni di proteggere le anime nostre dalle insidie e tentazioni del demonio.\n\nPadre nostro e tre Ave Maria al 5° Coro Angelico.",
-   "Image": "michael2"
+   "Image": "michael3"
  },
  {
    "Number": 55,
@@ -1285,7 +1285,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele e del Coro delle ammirabili Virtù celesti, non permetta il Signore che cadiamo nelle tentazioni, ma ci liberi dal male.\n\nPadre nostro e tre Ave Maria al 6° Coro Angelico.",
-   "Image": "michael3"
+   "Image": "michael4"
  },
  {
    "Number": 56,
@@ -1308,7 +1308,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele e del Coro celeste dei Principati, riempia Dio le anime nostre dello spirito di vera e sincera obbedienza.\n\nPadre nostro e tre Ave Maria al 7° Coro Angelico.",
-   "Image": "michael4"
+   "Image": "michael5"
  },
  {
    "Number": 57,
@@ -1331,7 +1331,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele e del Coro celeste degli Arcangeli, ci conceda il Signore il dono della perseveranza nella fede e nelle opere buone.\n\nPadre nostro e tre Ave Maria all'8° Coro Angelico.",
-   "Image": "michael5"
+   "Image": "michael6"
  },
  {
    "Number": 58,
@@ -1354,7 +1354,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Per intercessione di san Michele e del Coro celeste di tutti gli Angeli, si degni il Signore di concederci di essere da essi custoditi nella vita presente e poi introdotti nella gloria dei cieli.\n\nPadre nostro e tre Ave Maria al 9° Coro Angelico.",
-   "Image": "michael6"
+   "Image": "michael7"
  },
  {
    "Number": 59,
@@ -1377,7 +1377,7 @@
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
    "Chaplet": "Un Padre nostro in onore di San Michele.\nUn Padre nostro in onore di San Gabriele.\nUn Padre nostro in onore di San Raffaele.\nUn Padre nostro in onore dell'Angelo custode.",
-   "Image": "michael7"
+   "Image": "michael8"
  },
  {
    "Number": 60,
@@ -1399,8 +1399,8 @@
    "PrayersLeoLatin": "n/a",
    "Language": "Italiano",
    "AppWelcomeText": "n/a",
-   "Chaplet": "Prega per noi, arcangelo san Michele, Gesù Cristo Signore nostro.\" + Environment.NewLine +\n                \"E saremo resi degni delle Sue promesse. Dio onnipotente ed eterno, che con prodigio di bontà e misericordia,\" +\n                \"per la salvezza degli uomini hai eletto a Principe della tua Chiesa il glorioso san Michele, concedici, mediante la sua \" +\n                \"benefica protezione, di essere liberati da tutti i nostri spirituali nemici.Nell'ora della nostra morte non ci molesti\" +\n                \" l'antico avversario, ma sia il tuo arcangelo Michele a condurci alla presenza della tua divina Maestà. Amen.\"",
-   "Image": "michael8"
+   "Chaplet": "Prega per noi, arcangelo san Michele, Gesù Cristo Signore nostro.\nE saremo resi degni delle Sue promesse. Dio onnipotente ed eterno, che con prodigio di bontà e misericordia,per la salvezza degli uomini hai eletto a Principe della tua Chiesa il glorioso san Michele, concedici, mediante la sua benefica protezione, di essere liberati da tutti i nostri spirituali nemici.Nell'ora della nostra morte non ci molesti l'antico avversario, ma sia il tuo arcangelo Michele a condurci alla presenza della tua divina Maestà. Amen.",
+   "Image": "michael9"
  },
  {
    "Number": 61,
