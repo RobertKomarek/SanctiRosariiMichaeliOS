@@ -65,7 +65,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
             tabBarItem3.title = rosaryChosenLanguage[0].TabBarSettings
         }
-        
+        	
         //Update to respective language
         let alert = UIAlertController(title: "Button klicked", message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert
         )

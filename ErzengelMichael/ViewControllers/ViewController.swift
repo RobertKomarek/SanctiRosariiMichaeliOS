@@ -103,7 +103,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -178,13 +177,19 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         
-        /*//Update TabItems Title according to language
-        let tabBarController = self.tabBarController
-        if let items = tabBarController?.tabBar.items {
-            for item in items {
-                item.title = rosaryChosenLanguage[0].Language
-            }
-        }*/
+        //Update TabItems Title according to language
+        if let tabBarItem0 = self.tabBarController?.tabBar.items?[0] {
+            tabBarItem0.title = rosaryChosenLanguage[0].TabBarRosary
+        }
+        if let tabBarItem1 = self.tabBarController?.tabBar.items?[1] {
+            tabBarItem1.title = rosaryChosenLanguage[0].TabBarPromises
+        }
+        if let tabBarItem2 = self.tabBarController?.tabBar.items?[2] {
+            tabBarItem2.title = rosaryChosenLanguage[0].TabBarPrayers
+        }
+        if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
+            tabBarItem3.title = rosaryChosenLanguage[0].TabBarSettings
+        }
         
         //Implement ScrollView
         if scrollView != nil {
