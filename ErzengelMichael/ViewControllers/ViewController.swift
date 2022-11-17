@@ -3,9 +3,11 @@ import SwiftUI
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     
-    @IBOutlet weak var labelTest: UILabel!
-    
-    @IBOutlet weak var gradientView: UIView!
+    //Welcome Screen
+    @IBOutlet weak var textViewInstruction: UITextView!
+    @IBOutlet weak var labelWelcome: UILabel!
+    @IBOutlet weak var welcomeView: UIView!
+    @IBOutlet weak var buttonHideWelcome: UIButton!
     //Controls Rosary Scene
     @IBOutlet weak var tabBarRosary: UITabBarItem!
     @IBOutlet weak var buttonDarkmode: UIButton!
@@ -24,25 +26,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     var appDetails:[AppDetails] = []
     var rosaryChosenLanguage:[AppDetails] = []
     
-    @IBAction func tapGestureRecognizer(_ sender: UITapGestureRecognizer) {
-        let image = sender.view as! UIImageView
-        
-        switch image.tag {
-            case 0:
-                print("French")
-            case 1:
-                print("German")
-            case 2:
-                print("English")
-            case 3:
-                print("Spanish")
-            case 4:
-                print("Italian")
-            case 5:
-                print("Portugese")
-            default:
-                return
-        }
+    @IBAction func hideWelcomeView(_ sender: Any) {
+        welcomeView.isHidden = true
+        pageControl.isHidden = false
     }
     
     @IBAction func buttonBackBackTapped(_ sender: UIButton) {
@@ -105,44 +91,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    //let screen = UIScreen.main.bounds
-    //screenWidth = screen.size.width
-    
-    /*//Load Json file with app details
-    appDetails = getJson(jsonName: "SanctiRosariiMichael")
-    //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
-    let defaults = UserDefaults.standard
-    let language = defaults.string(forKey: "Language")
-    for rosary in appDetails {
-        if rosary.Language == language {
-            rosaryChosenLanguage.append(rosary)
-        }
-    }
-    
-    //Implement ScrollView
-    if scrollView != nil {
-        scrollView.delegate = self
-        slides = createSlides()
-        setupSlideScrollView(slides: slides)
-        pageControl.numberOfPages = slides.count
-        pageControl.currentPage = 0
-        pageControl.layer.cornerRadius = 15
-        pageControl.clipsToBounds = true
-        view.bringSubviewToFront(pageControl)
         
-        //Check if iPad and adjust font size and content mode
-        for slide in slides {
-            //Check if iphone or ipad
-            if UIDevice.current.userInterfaceIdiom == .pad {
-                slide.textView.contentMode = UITextView.ContentMode.scaleToFill
-                slide.textView.font = UIFont.systemFont(ofSize: 32)
-            } else {
-                //slide1.textView.contentMode = UITextView.ContentMode.scaleToFill
-            }
-        }
-    }*/
-        
+        buttonHideWelcome.layer.cornerRadius = 15
 }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -191,6 +141,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             tabBarItem3.title = rosaryChosenLanguage[0].TabBarSettings
         }
         
+        //Welcome View
+        labelWelcome.text = rosaryChosenLanguage[0].AppWelcomeTitle
+        textViewInstruction.text = rosaryChosenLanguage[0].AppWelcomeText
+        buttonHideWelcome.setTitle(rosaryChosenLanguage[0].ChapletStart, for: .normal)
+        
         //Implement ScrollView
         if scrollView != nil {
             scrollView.delegate = self
@@ -214,6 +169,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         
+       
         
         /*	let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")

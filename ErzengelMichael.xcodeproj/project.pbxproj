@@ -21,11 +21,13 @@
 		8429331528B2DC4E0093DE24 /* ErzengelMichaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331428B2DC4E0093DE24 /* ErzengelMichaelTests.swift */; };
 		8429331F28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */; };
 		8429332128B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */; };
-		8443F41529202BC20067C646 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 8443F41429202BC20067C646 /* SanctiRosariiMichael.json */; };
 		8444CCAF28C39408002C819B /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444CCAE28C39408002C819B /* AppDetails.swift */; };
 		844F532028BA58A200034D24 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F531F28BA58A200034D24 /* Slide.xib */; };
+		845D0E342926EDEB008B9489 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 845D0E332926EDEB008B9489 /* SanctiRosariiMichael.json */; };
 		846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846851CA28FC821200942E2A /* SettingsViewController.swift */; };
 		846C0AD92909C61C001456F3 /* PromisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesViewController.swift */; };
+		8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487C61529243ADF00458D86 /* WelcomeViewController.swift */; };
+		8487C6222924459B00458D86 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6212924459B00458D86 /* Welcome.storyboard */; };
 		95087AFB9B80348CE7E660B0 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,11 +71,13 @@
 		8429331A28B2DC4E0093DE24 /* ErzengelMichaelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErzengelMichaelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITests.swift; sourceTree = "<group>"; };
 		8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8443F41429202BC20067C646 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		8444CCAE28C39408002C819B /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
 		844F531F28BA58A200034D24 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		845D0E332926EDEB008B9489 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		846851CA28FC821200942E2A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		846C0AD82909C61C001456F3 /* PromisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesViewController.swift; sourceTree = "<group>"; };
+		8487C61529243ADF00458D86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8487C6212924459B00458D86 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichael.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E5E848E6BF5C1F20B4E471 /* Pods-ErzengelMichael.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael.debug.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael/Pods-ErzengelMichael.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB79301B550D1BABEFF78CE /* Pods-ErzengelMichaelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichaelTests.release.xcconfig"; path = "Target Support Files/Pods-ErzengelMichaelTests/Pods-ErzengelMichaelTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				846851CA28FC821200942E2A /* SettingsViewController.swift */,
 				8420BA1228FB309D000575A5 /* Slide.swift */,
 				846C0AD82909C61C001456F3 /* PromisesViewController.swift */,
+				8487C61529243ADF00458D86 /* WelcomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			children = (
 				8429330028B2DC4C0093DE24 /* Main.storyboard */,
 				844F531F28BA58A200034D24 /* Slide.xib */,
+				8487C6212924459B00458D86 /* Welcome.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,7 +152,7 @@
 		8422734B292004FE00FD475D /* Jsonfiles */ = {
 			isa = PBXGroup;
 			children = (
-				8443F41429202BC20067C646 /* SanctiRosariiMichael.json */,
+				845D0E332926EDEB008B9489 /* SanctiRosariiMichael.json */,
 			);
 			path = Jsonfiles;
 			sourceTree = "<group>";
@@ -345,9 +351,10 @@
 			files = (
 				8429330A28B2DC4E0093DE24 /* LaunchScreen.storyboard in Resources */,
 				8429330728B2DC4E0093DE24 /* Assets.xcassets in Resources */,
-				8443F41529202BC20067C646 /* SanctiRosariiMichael.json in Resources */,
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
+				8487C6222924459B00458D86 /* Welcome.storyboard in Resources */,
+				845D0E342926EDEB008B9489 /* SanctiRosariiMichael.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846C0AD92909C61C001456F3 /* PromisesViewController.swift in Sources */,
+				8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */,
 				842932FF28B2DC4C0093DE24 /* ViewController.swift in Sources */,
 				842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */,
 				841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */,

@@ -20,8 +20,10 @@ struct AppDetails : Decodable {
     var PrayersLeo: String?
     var PrayersLeoLatin: String?
     var Language: String?
+    var AppWelcomeTitle: String?
     var AppWelcomeText: String?
     var Chaplet: String?
+    var ChapletStart: String?
     var Image: String?
     
 }
