@@ -1,6 +1,6 @@
 import UIKit
 
-struct AppDetails : Decodable {
+class AppDetails : Decodable {
 
     var Number : Int?
     var AppName: String?
@@ -25,5 +25,20 @@ struct AppDetails : Decodable {
     var Chaplet: String?
     var ChapletStart: String?
     var Image: String?
+    
+    func getAppDetails(jsonName:String) -> [AppDetails] {
+        
+        var jsonResult:[AppDetails] = []
+        
+        if let path = Bundle.main.path(forResource: jsonName, ofType: "json") {
+            do {
+                  let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                  jsonResult = try! JSONDecoder().decode([AppDetails].self, from: data)
+              } catch {
+                   // handle error
+              }
+        }
+        return jsonResult
+    }
     
 }

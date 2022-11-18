@@ -9,6 +9,7 @@ import UIKit
 
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    var appDetails = AppDetails()
     //@IBOutlet weak var stackViewHeader: UIStackView!
     @IBOutlet weak var buttonLanguageConfirmed: UIButton!
     @IBOutlet weak var labelPickedLanguage: UILabel!
@@ -25,7 +26,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let language = defaults.string(forKey: "Language")
         
         //Load Json file with app details
-        let appDetails = getJson(jsonName: "SanctiRosariiMichael")
+        let appDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
         //Check if language was changed != nil otherwise use English as default value
         var rosaryChosenLanguage:[AppDetails] = []
         if language != nil {
@@ -44,7 +45,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 }
             }
         } else {
-            //Use English as defaul value
+            //Use English as default value
             for rosary in appDetails {
                 if rosary.Language == "English" {
                     rosaryChosenLanguage.append(rosary)
@@ -130,20 +131,5 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
         return myFlagView
     }
-    
-    func getJson(jsonName:String) -> [AppDetails] {
-        
-        var jsonResult:[AppDetails] = []
-        
-        if let path = Bundle.main.path(forResource: jsonName, ofType: "json") {
-            do {
-                  let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                  jsonResult = try! JSONDecoder().decode([AppDetails].self, from: data)
-              } catch {
-                   // handle error
-              }
-        }
-        return jsonResult
-    }
-        
+   
 }

@@ -3,6 +3,7 @@ import SwiftUI
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     
+    var appDetails = AppDetails()
     //Welcome Screen
     @IBOutlet weak var textViewInstruction: UITextView!
     @IBOutlet weak var labelWelcome: UILabel!
@@ -23,7 +24,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     var slides:[Slide] = [];
     var pageIndex:CGFloat = 0
     //var screenWidth:CGFloat = 0
-    var appDetails:[AppDetails] = []
+    var arrayAppDetails:[AppDetails] = []
     var rosaryChosenLanguage:[AppDetails] = []
     
     @IBAction func hideWelcomeView(_ sender: Any) {
@@ -98,21 +99,21 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
         
         //Load Json file with app details
-        appDetails = getJson(jsonName: "SanctiRosariiMichael")
+        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
         //Check if language was changed != nil otherwise use English as default value
         if language != nil {
             if rosaryChosenLanguage.isEmpty {
-                for rosary in appDetails {
+                for rosary in arrayAppDetails {
                     if rosary.Language == language {
                         rosaryChosenLanguage.append(rosary)
                     }
                 }
             } else {
                 rosaryChosenLanguage.removeAll()
-                for rosary in appDetails {
+                for rosary in arrayAppDetails {
                     if rosary.Language == language {
                         rosaryChosenLanguage.append(rosary)
                     }
@@ -120,7 +121,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             }
         } else {
             //Use English as defaul value
-            for rosary in appDetails {
+            for rosary in arrayAppDetails {
                 if rosary.Language == "English" {
                     rosaryChosenLanguage.append(rosary)
                 }
@@ -179,21 +180,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
         self.present(alert, animated: true, completion: nil)*/
-    }
-    
-    func getJson(jsonName:String) -> [AppDetails] {
-        
-        var jsonResult:[AppDetails] = []
-        
-        if let path = Bundle.main.path(forResource: jsonName, ofType: "json") {
-            do {
-                  let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                  jsonResult = try! JSONDecoder().decode([AppDetails].self, from: data)
-              } catch {
-                   // handle error
-              }
-        }
-        return jsonResult
     }
     
     func createSlides() -> [Slide] {
@@ -283,7 +269,3 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
     
 }
-
-    
-
-
