@@ -63,14 +63,14 @@
                                         <buttonConfiguration key="configuration" style="gray" imagePadding="5">
                                             <imageReference key="image" image="moon.fill" catalog="system" symbolScale="large"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9G-T4-zY7" userLabel="Button Back Back">
                                         <rect key="frame" x="82" y="0.0" width="57" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.left.2.fill" catalog="system">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonBackBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ax-Na-9MF"/>
@@ -80,7 +80,7 @@
                                         <rect key="frame" x="164" y="0.0" width="57" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.backward.fill" catalog="system">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayy-YE-ne2"/>
@@ -90,7 +90,7 @@
                                         <rect key="frame" x="246" y="0.0" width="57" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.right.fill" catalog="system">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="buttonForwardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3d0-28-MwC"/>
@@ -124,13 +124,10 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIv-MK-mCJ">
-                                        <rect key="frame" x="175.5" y="493" width="24" height="35"/>
+                                        <rect key="frame" x="150" y="493" width="75" height="34.5"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="H6l-AW-MhJ"/>
-                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Button"/>
                                         <connections>
                                             <action selector="hideWelcomeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUJ-pb-QEa"/>
                                         </connections>
@@ -245,14 +242,16 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael the Archangel Chaplet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-zZ-0IJ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
-                                                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="33"/>
-                                                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <size key="shadowOffset" width="0.0" height="-15"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sancti Rosarii Michael" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meu-ZA-fQL">
                                                                 <rect key="frame" x="0.0" y="72.5" width="375" height="102.5"/>
-                                                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="27"/>
-                                                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="27"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -277,11 +276,13 @@
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjR-eB-yed" userLabel="Button Lang Confirmed">
                                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="55" id="tO1-69-QJN"/>
+                                                                </constraints>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="gray">
                                                                     <imageReference key="image" image="checkmark.circle.fill" catalog="system" symbolScale="large"/>
-                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10225389493222269" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="languageConfirmed:forEvent:" destination="XVA-qk-tMC" eventType="touchUpInside" id="yC6-Jp-aSD"/>
@@ -415,8 +416,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Vqd-4z-Br9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="Promises" image="sparkles" catalog="system" id="Yl8-of-GCy" userLabel="Promises"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pFR-gm-CjZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pFR-gm-CjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.2001581255173841" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="labelColor"/>
@@ -452,45 +453,48 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-hM-s2J">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9kK-34-wMZ">
-                                <rect key="frame" x="21" y="269.5" width="333" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="333" id="8UO-zg-uUg"/>
-                                    <constraint firstAttribute="height" constant="128" id="dpz-6R-ds6"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="Md4-1T-6Bk" userLabel="divider">
+                                <rect key="frame" x="5" y="331" width="365" height="5"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5al-lg-L0Z">
-                                <rect key="frame" x="150" y="499.5" width="75" height="34.5"/>
+                                <rect key="frame" x="150" y="527.5" width="75" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button">
+                                    <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="DHL-Ie-kW5" kind="show" identifier="showIndulgences" id="ryg-A9-pDl"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9kK-34-wMZ">
+                                <rect key="frame" x="5" y="341" width="365" height="161.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GZ3-2h-pEB"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="9kK-34-wMZ" firstAttribute="centerX" secondItem="bPC-qO-7Wb" secondAttribute="centerX" id="5qe-4Y-zGg"/>
+                            <constraint firstItem="Md4-1T-6Bk" firstAttribute="leading" secondItem="bPC-qO-7Wb" secondAttribute="leading" constant="5" id="3HO-gi-cim"/>
                             <constraint firstAttribute="trailing" secondItem="nMj-hM-s2J" secondAttribute="trailing" id="6j0-U2-XP9"/>
                             <constraint firstAttribute="trailing" secondItem="oUu-kP-gVa" secondAttribute="trailing" id="BoI-F9-HNK"/>
                             <constraint firstItem="nMj-hM-s2J" firstAttribute="top" secondItem="bPC-qO-7Wb" secondAttribute="top" id="CuZ-hp-k6G"/>
                             <constraint firstItem="nMj-hM-s2J" firstAttribute="leading" secondItem="bPC-qO-7Wb" secondAttribute="leading" id="N9Z-c6-V80"/>
-                            <constraint firstItem="GZ3-2h-pEB" firstAttribute="bottom" secondItem="5al-lg-L0Z" secondAttribute="bottom" constant="35" id="SjP-YD-4r8"/>
                             <constraint firstAttribute="bottom" secondItem="oUu-kP-gVa" secondAttribute="bottom" id="SwR-Bs-kUt"/>
+                            <constraint firstItem="GZ3-2h-pEB" firstAttribute="trailing" secondItem="9kK-34-wMZ" secondAttribute="trailing" constant="5" id="VYU-YH-vy1"/>
+                            <constraint firstItem="GZ3-2h-pEB" firstAttribute="bottom" secondItem="5al-lg-L0Z" secondAttribute="bottom" constant="7" id="XgM-E6-2Iv"/>
+                            <constraint firstItem="9kK-34-wMZ" firstAttribute="leading" secondItem="GZ3-2h-pEB" secondAttribute="leading" constant="5" id="YHO-Xd-ch4"/>
                             <constraint firstItem="oUu-kP-gVa" firstAttribute="leading" secondItem="bPC-qO-7Wb" secondAttribute="leading" id="YNf-e9-bUR"/>
-                            <constraint firstItem="9kK-34-wMZ" firstAttribute="centerY" secondItem="bPC-qO-7Wb" secondAttribute="centerY" id="dsV-3q-q5k"/>
                             <constraint firstItem="oUu-kP-gVa" firstAttribute="top" secondItem="bPC-qO-7Wb" secondAttribute="top" id="edn-nM-Z8p"/>
                             <constraint firstAttribute="bottom" secondItem="nMj-hM-s2J" secondAttribute="bottom" id="hvM-f9-ceF"/>
+                            <constraint firstItem="Md4-1T-6Bk" firstAttribute="centerY" secondItem="bPC-qO-7Wb" secondAttribute="centerY" id="nMv-pf-sXW"/>
                             <constraint firstItem="5al-lg-L0Z" firstAttribute="centerX" secondItem="bPC-qO-7Wb" secondAttribute="centerX" id="o0U-Kb-tKj"/>
+                            <constraint firstItem="9kK-34-wMZ" firstAttribute="top" secondItem="Md4-1T-6Bk" secondAttribute="bottom" constant="5" id="qwM-JU-ZTk"/>
+                            <constraint firstItem="5al-lg-L0Z" firstAttribute="top" secondItem="9kK-34-wMZ" secondAttribute="bottom" constant="25" id="rgS-OU-DSX"/>
+                            <constraint firstAttribute="trailing" secondItem="Md4-1T-6Bk" secondAttribute="trailing" constant="5" id="zHG-gH-piC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" customizationIdentifier="PromisesMichael" id="I8O-1E-Ums"/>
@@ -528,6 +532,7 @@
         <image name="backgroundSettings" width="1920" height="2880"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="creativeCommons" width="35" height="35"/>
+        <image name="divider" width="1170" height="5"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="gradient" width="1170" height="2532"/>
         <image name="hands.sparkles" catalog="system" width="122" height="128"/>

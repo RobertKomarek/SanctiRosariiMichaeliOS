@@ -93,7 +93,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buttonHideWelcome.layer.cornerRadius = 15
+        buttonHideWelcome.layer.cornerRadius = 7
 }
     
     override func viewDidAppear(_ animated: Bool) {

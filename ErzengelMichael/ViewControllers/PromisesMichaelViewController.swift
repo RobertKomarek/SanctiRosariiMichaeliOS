@@ -19,9 +19,10 @@ class PromisesMichaelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         //Load Json file with app details
-        
         arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
                 
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
@@ -51,8 +52,8 @@ class PromisesMichaelViewController: UIViewController {
                 }
             }
         }
-        
-        //rosaryChosenLanguage = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
+                
+        //Set Navigation Bar Title 
         self.title = rosaryChosenLanguage[0].TitlePromisesMichael
         /*if let navBarItem0 = self.navigationController?.navigationBar.items?[0] {
             navBarItem0.title = rosaryChosenLanguage[0].TitlePromisesMichael
@@ -60,22 +61,15 @@ class PromisesMichaelViewController: UIViewController {
         
         textViewPromisesMichael.text = rosaryChosenLanguage[0].PromisesMichael
         buttonGoToIndulgences.setTitle(rosaryChosenLanguage[0].TitlePromisesIndulgences, for: .normal)
-        
-    
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
     }
     
     //Passing data to Indulgences Pius XI Navigation Item
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
         if segue.identifier == "showIndulgences" {
             indulgencesPiusViewController = segue.destination as! IndulgencesPiusViewController
-            //Array passeArray created in destination ViewController
+            //passeArray created in destination ViewController IndulgencesPiusViewController
             indulgencesPiusViewController.passedArray = rosaryChosenLanguage
         }
-               
     }
 }
 
