@@ -415,10 +415,19 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Vqd-4z-Br9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="Promises" image="sparkles" catalog="system" id="Yl8-of-GCy" userLabel="Promises"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pFR-gm-CjZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pFR-gm-CjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.2001581255173841" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="barTintColor" systemColor="labelColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="-15"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -432,7 +441,7 @@
         <!--...from Archangel Michael-->
         <scene sceneID="fDe-V0-gfv">
             <objects>
-                <viewController id="TSh-Zc-ffQ" userLabel="...from Archangel Michael" customClass="PromisesViewController" customModule="ErzengelMichael" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TSh-Zc-ffQ" userLabel="...from Archangel Michael" customClass="PromisesMichaelViewController" customModule="ErzengelMichael" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bPC-qO-7Wb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -463,7 +472,7 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="DHL-Ie-kW5" kind="show" id="ryg-A9-pDl"/>
+                                    <segue destination="DHL-Ie-kW5" kind="show" identifier="showIndulgences" id="ryg-A9-pDl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -484,7 +493,7 @@
                             <constraint firstItem="5al-lg-L0Z" firstAttribute="centerX" secondItem="bPC-qO-7Wb" secondAttribute="centerX" id="o0U-Kb-tKj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="I8O-1E-Ums"/>
+                    <navigationItem key="navigationItem" customizationIdentifier="PromisesMichael" id="I8O-1E-Ums"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="buttonGoToIndulgences" destination="5al-lg-L0Z" id="AnB-rD-X34"/>
@@ -498,18 +507,18 @@
         <!--Indulgences Pius XI-->
         <scene sceneID="z3K-oM-h5Y">
             <objects>
-                <viewController id="DHL-Ie-kW5" userLabel="Indulgences Pius XI" sceneMemberID="viewController">
+                <viewController id="DHL-Ie-kW5" userLabel="Indulgences Pius XI" customClass="IndulgencesPiusViewController" customModule="ErzengelMichael" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ffd-6p-AND">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="o9A-I6-aMy"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zAH-Zd-TQp"/>
+                    <navigationItem key="navigationItem" customizationIdentifier="IndulgencesPius" id="zAH-Zd-TQp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cd4-Ti-I0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328" y="1590"/>
+            <point key="canvasLocation" x="1462" y="1592"/>
         </scene>
     </scenes>
     <resources>

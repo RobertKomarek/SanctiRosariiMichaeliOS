@@ -7,23 +7,23 @@
 
 import UIKit
 
-class PromisesViewController: UIViewController {
+class PromisesMichaelViewController: UIViewController {
     
     let appDetails = AppDetails()
     var rosaryChosenLanguage:[AppDetails] = []
     var arrayAppDetails:[AppDetails] = []
+    var indulgencesPiusViewController = IndulgencesPiusViewController()
     
     @IBOutlet weak var textViewPromisesMichael: UITextView!
     @IBOutlet weak var buttonGoToIndulgences: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         
         //Load Json file with app details
+        
         arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
+                
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
@@ -52,24 +52,31 @@ class PromisesViewController: UIViewController {
             }
         }
         
-        rosaryChosenLanguage = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
-        
-        if let navBarItem0 = self.navigationController?.navigationBar.items?[0] {
+        //rosaryChosenLanguage = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
+        self.title = rosaryChosenLanguage[0].TitlePromisesMichael
+        /*if let navBarItem0 = self.navigationController?.navigationBar.items?[0] {
             navBarItem0.title = rosaryChosenLanguage[0].TitlePromisesMichael
-        }
+        }*/
         
         textViewPromisesMichael.text = rosaryChosenLanguage[0].PromisesMichael
         buttonGoToIndulgences.setTitle(rosaryChosenLanguage[0].TitlePromisesIndulgences, for: .normal)
+        
+    
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
     }
-    */
-
+    
+    //Passing data to Indulgences Pius XI Navigation Item
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        if segue.identifier == "showIndulgences" {
+            indulgencesPiusViewController = segue.destination as! IndulgencesPiusViewController
+            //Array passeArray created in destination ViewController
+            indulgencesPiusViewController.passedArray = rosaryChosenLanguage
+        }
+               
+    }
 }
+
+
