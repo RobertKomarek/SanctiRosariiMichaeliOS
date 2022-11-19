@@ -26,7 +26,7 @@ class AppDetails : Decodable {
     var ChapletStart: String?
     var Image: String?
     
-    func getAppDetails(jsonName:String) -> [AppDetails] {
+    func getAppDetails(jsonName:String, language:String) -> [AppDetails] {
         
         var jsonResult:[AppDetails] = []
         
@@ -38,7 +38,15 @@ class AppDetails : Decodable {
                    // handle error
               }
         }
-        return jsonResult
+        
+        var rosaryChosenLanguage:[AppDetails] = []
+      
+        for rosary in jsonResult {
+            if rosary.Language == language {
+                rosaryChosenLanguage.append(rosary)
+            }
+        }
+        return rosaryChosenLanguage
     }
     
 }

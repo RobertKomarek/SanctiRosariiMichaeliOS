@@ -98,54 +98,35 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        //Load Json file with app details
-        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
-        //Check if language was changed != nil otherwise use English as default value
-        if language != nil {
-            if rosaryChosenLanguage.isEmpty {
-                for rosary in arrayAppDetails {
-                    if rosary.Language == language {
-                        rosaryChosenLanguage.append(rosary)
-                    }
-                }
-            } else {
-                rosaryChosenLanguage.removeAll()
-                for rosary in arrayAppDetails {
-                    if rosary.Language == language {
-                        rosaryChosenLanguage.append(rosary)
-                    }
-                }
-            }
-        } else {
-            //Use English as defaul value
-            for rosary in arrayAppDetails {
-                if rosary.Language == "English" {
-                    rosaryChosenLanguage.append(rosary)
-                }
-            }
-        }
+        
+        //Load Json file with app details
+        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
         
         //Update TabItems Title according to language
         if let tabBarItem0 = self.tabBarController?.tabBar.items?[0] {
-            tabBarItem0.title = rosaryChosenLanguage[0].TabBarRosary
+            tabBarItem0.title = arrayAppDetails[0].TabBarRosary
         }
         if let tabBarItem1 = self.tabBarController?.tabBar.items?[1] {
-            tabBarItem1.title = rosaryChosenLanguage[0].TabBarPromises
+            tabBarItem1.title = arrayAppDetails[0].TabBarPromises
         }
         if let tabBarItem2 = self.tabBarController?.tabBar.items?[2] {
-            tabBarItem2.title = rosaryChosenLanguage[0].TabBarPrayers
+            tabBarItem2.title = arrayAppDetails[0].TabBarPrayers
         }
         if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
-            tabBarItem3.title = rosaryChosenLanguage[0].TabBarSettings
+            tabBarItem3.title = arrayAppDetails[0].TabBarSettings
         }
         
+        /*//Pass data to other ViewControllers
+         let settingsViewController = self.tabBarController?.viewControllers![3] as! SettingsViewController
+         settingsViewController.passedArray = rosaryChosenLanguage*/
+        
         //Welcome View
-        labelWelcome.text = rosaryChosenLanguage[0].AppWelcomeTitle
-        textViewInstruction.text = rosaryChosenLanguage[0].AppWelcomeText
-        buttonHideWelcome.setTitle(rosaryChosenLanguage[0].ChapletStart, for: .normal)
+        labelWelcome.text = arrayAppDetails[0].AppWelcomeTitle
+        textViewInstruction.text = arrayAppDetails[0].AppWelcomeText
+        buttonHideWelcome.setTitle(arrayAppDetails[0].ChapletStart, for: .normal)
         
         //Implement ScrollView
         if scrollView != nil {
@@ -170,8 +151,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         
-       
-        
         /*	let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
         
@@ -186,11 +165,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         var slides:[Slide] = []
         
-        for i in 0..<rosaryChosenLanguage.count {
+        for i in 0..<arrayAppDetails.count {
             slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
             slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slides[i].imageView.image = UIImage(named: rosaryChosenLanguage[i].Image ?? "michael0")
-            slides[i].textView.text = rosaryChosenLanguage[i].Chaplet
+            slides[i].imageView.image = UIImage(named: arrayAppDetails[i].Image ?? "michael0")
+            slides[i].textView.text = arrayAppDetails[i].Chaplet
         }
         
         return slides

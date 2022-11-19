@@ -10,6 +10,7 @@ import UIKit
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var appDetails = AppDetails()
+    var arrayAppDetails:[AppDetails] = []
     //@IBOutlet weak var stackViewHeader: UIStackView!
     @IBOutlet weak var buttonLanguageConfirmed: UIButton!
     @IBOutlet weak var labelPickedLanguage: UILabel!
@@ -26,45 +27,20 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let language = defaults.string(forKey: "Language")
         
         //Load Json file with app details
-        let appDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael")
-        //Check if language was changed != nil otherwise use English as default value
-        var rosaryChosenLanguage:[AppDetails] = []
-        if language != nil {
-            if rosaryChosenLanguage.isEmpty {
-                for rosary in appDetails {
-                    if rosary.Language == language {
-                        rosaryChosenLanguage.append(rosary)
-                    }
-                }
-            } else {
-                rosaryChosenLanguage.removeAll()
-                for rosary in appDetails {
-                    if rosary.Language == language {
-                        rosaryChosenLanguage.append(rosary)
-                    }
-                }
-            }
-        } else {
-            //Use English as default value
-            for rosary in appDetails {
-                if rosary.Language == "English" {
-                    rosaryChosenLanguage.append(rosary)
-                }
-            }
-        }
+        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
         
         //Update TabItems Title according to language
         if let tabBarItem0 = self.tabBarController?.tabBar.items?[0] {
-            tabBarItem0.title = rosaryChosenLanguage[0].TabBarRosary
+            tabBarItem0.title = arrayAppDetails[0].TabBarRosary
         }
         if let tabBarItem1 = self.tabBarController?.tabBar.items?[1] {
-            tabBarItem1.title = rosaryChosenLanguage[0].TabBarPromises
+            tabBarItem1.title = arrayAppDetails[0].TabBarPromises
         }
         if let tabBarItem2 = self.tabBarController?.tabBar.items?[2] {
-            tabBarItem2.title = rosaryChosenLanguage[0].TabBarPrayers
+            tabBarItem2.title = arrayAppDetails[0].TabBarPrayers
         }
         if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
-            tabBarItem3.title = rosaryChosenLanguage[0].TabBarSettings
+            tabBarItem3.title = arrayAppDetails[0].TabBarSettings
         }
         	
         //Update to respective language
