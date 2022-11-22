@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		124EFC1ABED732864A396E58 /* Pods_ErzengelMichaelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161E388F79C2605CF56DDB84 /* Pods_ErzengelMichaelTests.framework */; };
 		5A13021ABB406160E61049A3 /* Pods_ErzengelMichael.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */; };
+		8411C6C1292D53DE0079B20F /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 8411C6C0292D53DE0079B20F /* SanctiRosariiMichael.json */; };
 		841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */; };
 		8420BA1328FB309D000575A5 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420BA1228FB309D000575A5 /* Slide.swift */; };
 		842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FA28B2DC4C0093DE24 /* AppDelegate.swift */; };
@@ -21,7 +22,6 @@
 		8429331528B2DC4E0093DE24 /* ErzengelMichaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331428B2DC4E0093DE24 /* ErzengelMichaelTests.swift */; };
 		8429331F28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */; };
 		8429332128B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */; };
-		843428C6292936D200D7D0EC /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 843428C5292936D200D7D0EC /* SanctiRosariiMichael.json */; };
 		8444CCAF28C39408002C819B /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444CCAE28C39408002C819B /* AppDetails.swift */; };
 		844F532028BA58A200034D24 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F531F28BA58A200034D24 /* Slide.xib */; };
 		846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846851CA28FC821200942E2A /* SettingsViewController.swift */; };
@@ -56,6 +56,7 @@
 		5879DC3C74C12E67D0FF0BA4 /* Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		716A4DE30730AB1D452133D0 /* Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichael_ErzengelMichaelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411C6C0292D53DE0079B20F /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyCenteredTextView.swift; sourceTree = "<group>"; };
 		8420BA1228FB309D000575A5 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		842932F728B2DC4C0093DE24 /* ErzengelMichael.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErzengelMichael.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +73,6 @@
 		8429331A28B2DC4E0093DE24 /* ErzengelMichaelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErzengelMichaelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITests.swift; sourceTree = "<group>"; };
 		8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		843428C5292936D200D7D0EC /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		8444CCAE28C39408002C819B /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
 		844F531F28BA58A200034D24 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		846851CA28FC821200942E2A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		8422734B292004FE00FD475D /* Jsonfiles */ = {
 			isa = PBXGroup;
 			children = (
-				843428C5292936D200D7D0EC /* SanctiRosariiMichael.json */,
+				8411C6C0292D53DE0079B20F /* SanctiRosariiMichael.json */,
 			);
 			path = Jsonfiles;
 			sourceTree = "<group>";
@@ -353,9 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8429330A28B2DC4E0093DE24 /* LaunchScreen.storyboard in Resources */,
-				843428C6292936D200D7D0EC /* SanctiRosariiMichael.json in Resources */,
 				8429330728B2DC4E0093DE24 /* Assets.xcassets in Resources */,
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
+				8411C6C1292D53DE0079B20F /* SanctiRosariiMichael.json in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
 				8487C6222924459B00458D86 /* Welcome.storyboard in Resources */,
 			);

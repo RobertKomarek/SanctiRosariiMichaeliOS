@@ -29,11 +29,10 @@ class PromisesMichaelViewController: UIViewController {
         //Load Json file with app details
         arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
                 
-        //Set Navigation Bar Title 
-        self.title = arrayAppDetails[0].TitlePromisesMichael
-        /*if let navBarItem0 = self.navigationController?.navigationBar.items?[0] {
-            navBarItem0.title = rosaryChosenLanguage[0].TitlePromisesMichael
-        }*/
+        //Set Navigation Bar Title
+        self.navigationItem.backBarButtonItem?.title = "Go BAck"
+        self.navigationItem.title = arrayAppDetails[0].TabBarPromises
+        //self.navigationItem.backButtonTitle = "Go BAck"
         
         textViewPromisesMichael.text = arrayAppDetails[0].PromisesMichael
         buttonGoToIndulgences.setTitle(arrayAppDetails[0].TitlePromisesIndulgences, for: .normal)
