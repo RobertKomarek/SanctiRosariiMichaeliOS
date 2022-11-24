@@ -11,6 +11,8 @@ class IndulgencesPiusViewController: UIViewController {
     
     var passedArray:[AppDetails]!
 
+    @IBOutlet weak var textViewIndulgences: UITextView!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -22,30 +24,37 @@ class IndulgencesPiusViewController: UIViewController {
         case "Deutsch":
             let backButton = UIBarButtonItem()
             backButton.title = "Versprechungen"
+            backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "English":
             let backButton = UIBarButtonItem()
             backButton.title = "Promises"
+            backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Español":
             let backButton = UIBarButtonItem()
             backButton.title = "Promesas"
+            backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Italiano":
             let backButton = UIBarButtonItem()
             backButton.title = "Promesse"
+            backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Português":
             let backButton = UIBarButtonItem()
             backButton.title = "Promessas"
+            backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Français":
             let backButton = UIBarButtonItem()
             backButton.title = "Promesses"
+            backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         default:
             let backButton = UIBarButtonItem()
             backButton.title = "Promises"
+            backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         }
         
@@ -54,7 +63,9 @@ class IndulgencesPiusViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        
         self.navigationItem.title = passedArray[0].TitlePromisesIndulgences
+        textViewIndulgences.text = passedArray[0].PromisesIndulgences
         //self.navigationItem.backButtonTitle = "Go BAck"
         /*self.navigationItem.backButtonTitle = "Go Back"
         self.navigationItem.backBarButtonItem?.title = "Go Back"*/

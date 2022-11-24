@@ -515,14 +515,54 @@
                     <view key="view" contentMode="scaleToFill" id="ffd-6p-AND">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piusix" translatesAutoresizingMaskIntoConstraints="NO" id="OYR-jk-Roc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="nts-l1-DHx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="VJ4-vr-G2h">
+                                <rect key="frame" x="5" y="331" width="365" height="5"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QiI-Pl-iWN">
+                                <rect key="frame" x="5" y="341" width="365" height="243"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="o9A-I6-aMy"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OYR-jk-Roc" secondAttribute="trailing" id="0Jg-PT-T6M"/>
+                            <constraint firstItem="QiI-Pl-iWN" firstAttribute="top" secondItem="VJ4-vr-G2h" secondAttribute="bottom" constant="5" id="0qg-up-kMS"/>
+                            <constraint firstAttribute="trailing" secondItem="QiI-Pl-iWN" secondAttribute="trailing" constant="5" id="9QX-rj-meF"/>
+                            <constraint firstItem="VJ4-vr-G2h" firstAttribute="leading" secondItem="ffd-6p-AND" secondAttribute="leading" constant="5" id="Ce1-ZU-Jtx"/>
+                            <constraint firstItem="OYR-jk-Roc" firstAttribute="top" secondItem="ffd-6p-AND" secondAttribute="top" id="Qru-Q3-LYe"/>
+                            <constraint firstItem="VJ4-vr-G2h" firstAttribute="centerY" secondItem="ffd-6p-AND" secondAttribute="centerY" id="Ucw-nn-CKt"/>
+                            <constraint firstAttribute="bottom" secondItem="OYR-jk-Roc" secondAttribute="bottom" id="YRX-5P-zTV"/>
+                            <constraint firstItem="o9A-I6-aMy" firstAttribute="bottom" secondItem="QiI-Pl-iWN" secondAttribute="bottom" constant="-15" id="Yo0-zb-959"/>
+                            <constraint firstItem="nts-l1-DHx" firstAttribute="leading" secondItem="ffd-6p-AND" secondAttribute="leading" id="b23-4a-4JM"/>
+                            <constraint firstItem="OYR-jk-Roc" firstAttribute="leading" secondItem="ffd-6p-AND" secondAttribute="leading" id="fAv-bl-UbA"/>
+                            <constraint firstItem="nts-l1-DHx" firstAttribute="top" secondItem="ffd-6p-AND" secondAttribute="top" id="gHj-v9-lgk"/>
+                            <constraint firstAttribute="trailing" secondItem="nts-l1-DHx" secondAttribute="trailing" id="iOH-7h-mKG"/>
+                            <constraint firstItem="QiI-Pl-iWN" firstAttribute="leading" secondItem="ffd-6p-AND" secondAttribute="leading" constant="5" id="iYZ-OA-GEE"/>
+                            <constraint firstAttribute="bottom" secondItem="nts-l1-DHx" secondAttribute="bottom" id="jv7-UK-bus"/>
+                            <constraint firstItem="VJ4-vr-G2h" firstAttribute="centerX" secondItem="ffd-6p-AND" secondAttribute="centerX" id="u36-SM-ZD7"/>
+                            <constraint firstAttribute="trailing" secondItem="VJ4-vr-G2h" secondAttribute="trailing" constant="5" id="zcX-vp-thx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" customizationIdentifier="IndulgencesPius" id="zAH-Zd-TQp"/>
+                    <connections>
+                        <outlet property="textViewIndulgences" destination="QiI-Pl-iWN" id="k48-Gy-bvQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cd4-Ti-I0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1462" y="1592"/>
+            <point key="canvasLocation" x="1461.5999999999999" y="1591.7541229385308"/>
         </scene>
     </scenes>
     <resources>
@@ -538,6 +578,7 @@
         <image name="hands.sparkles" catalog="system" width="122" height="128"/>
         <image name="heerEngel" width="1181" height="1286"/>
         <image name="moon.fill" catalog="system" width="128" height="123"/>
+        <image name="piusix" width="358" height="480"/>
         <image name="publicDomain" width="35" height="35"/>
         <image name="sparkles" catalog="system" width="115" height="128"/>
         <image name="splashscreen" width="1500" height="800"/>
