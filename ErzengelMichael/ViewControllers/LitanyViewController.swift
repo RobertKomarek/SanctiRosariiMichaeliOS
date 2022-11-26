@@ -1,20 +1,17 @@
 //
-//  IndulgencesPiusViewController.swift
+//  LitanyViewController.swift
 //  ErzengelMichael
 //
-//  Created by Marina Komarek on 19.11.22.
+//  Created by Marina Komarek on 26.11.22.
 //
 
 import UIKit
 
-class IndulgencesPiusViewController: UIViewController {
+class LitanyViewController: UIViewController {
     
-    var passedArray:[AppDetails]!
+    var passedArray:[AppDetails] = []
 
-    @IBOutlet weak var textViewIndulgences: UITextView!
-    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         let defaults = UserDefaults.standard
@@ -24,52 +21,57 @@ class IndulgencesPiusViewController: UIViewController {
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         case "Deutsch":
             let backButton = UIBarButtonItem()
-            backButton.title = "Versprechungen"
+            backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "English":
             let backButton = UIBarButtonItem()
-            backButton.title = "Promises"
+            backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Español":
             let backButton = UIBarButtonItem()
-            backButton.title = "Promesas"
+            backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Italiano":
             let backButton = UIBarButtonItem()
-            backButton.title = "Promesse"
+            backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Português":
             let backButton = UIBarButtonItem()
-            backButton.title = "Promessas"
+            backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         case "Français":
             let backButton = UIBarButtonItem()
-            backButton.title = "Promesses"
+            backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         default:
             let backButton = UIBarButtonItem()
-            backButton.title = "Promises"
+            backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         }
-        
-        
-        // Do any additional setup after loading the view.
+
     }
+    
 
     override func viewDidAppear(_ animated: Bool) {
         
-        self.navigationItem.title = passedArray[0].TitlePromisesIndulgences
-        textViewIndulgences.text = passedArray[0].PromisesIndulgences
-        //self.navigationItem.backButtonTitle = "Go BAck"
-        /*self.navigationItem.backButtonTitle = "Go Back"
-        self.navigationItem.backBarButtonItem?.title = "Go Back"*/
-        //self.navigationItem.backButtonTitle = " "
+        self.navigationItem.title = passedArray[0].TitlePrayersLitany
+        //textViewIndulgences.text = passedArray[0].PromisesIndulgences
     }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

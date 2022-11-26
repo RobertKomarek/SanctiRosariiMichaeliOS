@@ -30,7 +30,7 @@ class PromisesMichaelViewController: UIViewController {
         arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
                 
         //Set Navigation Bar Title
-        self.navigationItem.backBarButtonItem?.title = "Go BAck"
+        //self.navigationItem.backBarButtonItem?.title = "Go Back"
         self.navigationItem.title = arrayAppDetails[0].TabBarPromises
         //self.navigationItem.backButtonTitle = "Go BAck"
         

@@ -24,6 +24,8 @@
 		8429332128B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */; };
 		8444CCAF28C39408002C819B /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444CCAE28C39408002C819B /* AppDetails.swift */; };
 		844F532028BA58A200034D24 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F531F28BA58A200034D24 /* Slide.xib */; };
+		84582CA42932A4D300D7CE11 /* PopeLeoPrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */; };
+		84582CA62932A4E000D7CE11 /* LitanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA52932A4E000D7CE11 /* LitanyViewController.swift */; };
 		846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846851CA28FC821200942E2A /* SettingsViewController.swift */; };
 		846C0AD92909C61C001456F3 /* PromisesMichaelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */; };
 		8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487C61529243ADF00458D86 /* WelcomeViewController.swift */; };
@@ -75,6 +77,8 @@
 		8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8444CCAE28C39408002C819B /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
 		844F531F28BA58A200034D24 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopeLeoPrayerViewController.swift; sourceTree = "<group>"; };
+		84582CA52932A4E000D7CE11 /* LitanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitanyViewController.swift; sourceTree = "<group>"; };
 		846851CA28FC821200942E2A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesMichaelViewController.swift; sourceTree = "<group>"; };
 		8487C61529243ADF00458D86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				8487C61529243ADF00458D86 /* WelcomeViewController.swift */,
 				846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */,
 				84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */,
+				84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */,
+				84582CA52932A4E000D7CE11 /* LitanyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -491,11 +497,13 @@
 				842932FF28B2DC4C0093DE24 /* ViewController.swift in Sources */,
 				842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */,
 				841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */,
+				84582CA42932A4D300D7CE11 /* PopeLeoPrayerViewController.swift in Sources */,
 				846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */,
 				8444CCAF28C39408002C819B /* AppDetails.swift in Sources */,
 				8420BA1328FB309D000575A5 /* Slide.swift in Sources */,
 				842932FD28B2DC4C0093DE24 /* SceneDelegate.swift in Sources */,
 				8429330528B2DC4C0093DE24 /* ErzengelMichael.xcdatamodeld in Sources */,
+				84582CA62932A4E000D7CE11 /* LitanyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
