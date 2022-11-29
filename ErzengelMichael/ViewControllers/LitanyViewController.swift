@@ -9,10 +9,17 @@ import UIKit
 
 class LitanyViewController: UIViewController {
     
+    @IBOutlet weak var textViewLitany: UITextView!
+    @IBOutlet weak var imageViewLitany: UIImageView!
+    
     var passedArray:[AppDetails] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageViewLitany.layer.cornerRadius = 10
+        imageViewLitany.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+    
         
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
@@ -62,6 +69,7 @@ class LitanyViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         self.navigationItem.title = passedArray[0].TitlePrayersLitany
+        textViewLitany.text = passedArray[0].PrayersLitany
         //textViewIndulgences.text = passedArray[0].PromisesIndulgences
     }
     /*
