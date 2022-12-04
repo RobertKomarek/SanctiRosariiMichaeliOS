@@ -17,8 +17,8 @@ class LitanyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageViewLitany.layer.cornerRadius = 10
-        imageViewLitany.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        /*imageViewLitany.layer.cornerRadius = 10
+        imageViewLitany.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]*/
     
         
         let defaults = UserDefaults.standard
