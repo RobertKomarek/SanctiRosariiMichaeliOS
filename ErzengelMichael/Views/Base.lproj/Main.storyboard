@@ -26,7 +26,7 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="w4G-UD-2Y4"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="59g-3z-Hcc"/>
                         <segue destination="Vqd-4z-Br9" kind="relationship" relationship="viewControllers" id="lzq-a1-ZWv"/>
                         <segue destination="6aq-VE-QEe" kind="relationship" relationship="viewControllers" id="GqX-eI-KHN"/>
                         <segue destination="XVA-qk-tMC" kind="relationship" relationship="viewControllers" id="b2L-qS-SAK"/>
@@ -34,12 +34,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-W3-Mgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="51"/>
+            <point key="canvasLocation" x="97" y="38"/>
         </scene>
         <!--Rosary-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ErzengelMichael" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Rosary" customClass="ViewController" customModule="ErzengelMichael" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +66,9 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
                                             <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="showDarkMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0hT-Ob-4Yk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9G-T4-zY7" userLabel="Button Back Back">
                                         <rect key="frame" x="82" y="0.0" width="57" height="34"/>
@@ -158,25 +161,25 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4At-tB-e0i" secondAttribute="bottom" constant="35" id="uq3-LU-HTt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rosary" image="text.book.closed" catalog="system" id="6JJ-cs-FY8"/>
+                    <tabBarItem key="tabBarItem" title="Rosary" image="book" catalog="system" id="9de-U0-5vc" userLabel="Rosary"/>
+                    <navigationItem key="navigationItem" id="hUi-Pl-Fdn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="buttonBack" destination="E7t-xG-y0p" id="Yfa-5Z-Uuy"/>
                         <outlet property="buttonBackBack" destination="w9G-T4-zY7" id="WWP-PV-Bl6"/>
-                        <outlet property="buttonDarkmode" destination="w9G-T4-zY7" id="CoW-hO-pjg"/>
-                        <outlet property="buttonForward" destination="E7t-xG-y0p" id="yUI-DV-jez"/>
+                        <outlet property="buttonDarkmode" destination="hur-L6-lhN" id="BLA-WZ-qB2"/>
+                        <outlet property="buttonForward" destination="nD1-6f-YEa" id="pnK-gR-7bQ"/>
                         <outlet property="buttonHideWelcome" destination="MIv-MK-mCJ" id="ZPY-Gp-uog"/>
                         <outlet property="labelWelcome" destination="t0q-1h-SVP" id="RCR-zd-PC3"/>
                         <outlet property="pageControl" destination="IDd-fZ-X4R" id="DiD-cZ-aZ1"/>
                         <outlet property="scrollView" destination="5UW-NU-CnC" id="fif-iG-0Vw"/>
-                        <outlet property="tabBarRosary" destination="6JJ-cs-FY8" id="RIx-hS-Ys4"/>
                         <outlet property="textViewInstruction" destination="LG2-eS-xSX" id="tCa-CA-EVu"/>
                         <outlet property="welcomeView" destination="CTt-y5-Mz5" id="0ay-XD-vDg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="858"/>
+            <point key="canvasLocation" x="-225" y="826"/>
         </scene>
         <!--Promises-->
         <scene sceneID="oiR-MO-GYE">
@@ -205,7 +208,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hhh-HG-POZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688.79999999999995" y="857.72113943028489"/>
+            <point key="canvasLocation" x="825" y="858"/>
         </scene>
         <!--...from Archangel Michael-->
         <scene sceneID="fDe-V0-gfv">
@@ -274,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ER7-9i-jFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="1594"/>
+            <point key="canvasLocation" x="825" y="1580"/>
         </scene>
         <!--Indulgences Pius XI-->
         <scene sceneID="z3K-oM-h5Y">
@@ -330,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cd4-Ti-I0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="1594"/>
+            <point key="canvasLocation" x="825" y="2317"/>
         </scene>
         <!--Prayers-->
         <scene sceneID="gCI-Xm-Pb4">
@@ -357,7 +360,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSC-Hr-cec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450" y="858"/>
+            <point key="canvasLocation" x="1553" y="858"/>
         </scene>
         <!--Pope Leo XIII-->
         <scene sceneID="L5b-Yc-ptn">
@@ -443,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIn-gP-mh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448.8" y="1593.5532233883059"/>
+            <point key="canvasLocation" x="1532" y="1580"/>
         </scene>
         <!--Litany-->
         <scene sceneID="8RW-Zq-8hc">
@@ -501,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQ0-wk-m6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207" y="1786"/>
+            <point key="canvasLocation" x="1532" y="2317"/>
         </scene>
         <!--Settings-->
         <scene sceneID="HVH-jM-hhl">
@@ -691,7 +694,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kD5-FO-uIO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2176.8000000000002" y="857.27136431784118"/>
+            <point key="canvasLocation" x="2276" y="825"/>
         </scene>
     </scenes>
     <resources>
@@ -699,6 +702,7 @@
         <image name="arrowshape.turn.up.left.2.fill" catalog="system" width="128" height="86"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
         <image name="backgroundSettings" width="1920" height="2880"/>
+        <image name="book" catalog="system" width="128" height="99"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="creativeCommons" width="35" height="35"/>
         <image name="divider" width="1170" height="5"/>
@@ -713,7 +717,6 @@
         <image name="publicDomain" width="35" height="35"/>
         <image name="sparkles" catalog="system" width="115" height="128"/>
         <image name="splashscreen" width="1500" height="800"/>
-        <image name="text.book.closed" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

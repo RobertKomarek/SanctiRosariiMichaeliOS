@@ -4,6 +4,8 @@ import SwiftUI
 class ViewController: UIViewController, UIScrollViewDelegate {
     
     var appDetails = AppDetails()
+    var darkModeIsEnabled:Bool = false
+    
     //Welcome Screen
     @IBOutlet weak var textViewInstruction: UITextView!
     @IBOutlet weak var labelWelcome: UILabel!
@@ -30,6 +32,55 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func hideWelcomeView(_ sender: Any) {
         welcomeView.isHidden = true
         pageControl.isHidden = false
+    }
+    
+    @IBAction func showDarkMode(_ sender: Any) {
+        if darkModeIsEnabled {
+            darkModeIsEnabled = false
+            buttonDarkmode.setImage(UIImage(systemName:"moon.fill"), for: .normal)
+            //Implement ScrollView
+            if scrollView != nil {
+                scrollView.delegate = self
+                slides = createSlides(darkLightMode: darkModeIsEnabled)
+                setupSlideScrollView(slides: slides)
+                pageControl.numberOfPages = slides.count
+                pageControl.currentPage = 0
+                pageControl.layer.cornerRadius = 15
+                pageControl.clipsToBounds = true
+                view.bringSubviewToFront(pageControl)
+                
+                //Check if iPad or iPhone and adjust font size and content mode
+                for slide in slides {
+                    if UIDevice.current.userInterfaceIdiom == .pad {
+                        slide.textView.contentMode = UITextView.ContentMode.scaleToFill
+                        slide.textView.font = UIFont.systemFont(ofSize: 32)
+                    }
+                }
+            }
+        } else {
+            darkModeIsEnabled = true
+            buttonDarkmode.setImage(UIImage(systemName:"sun.max.fill"), for: UIControl.State.normal)
+            //Implement ScrollView
+            if scrollView != nil {
+                scrollView.delegate = self
+                slides = createSlides(darkLightMode: darkModeIsEnabled)
+                setupSlideScrollView(slides: slides)
+                pageControl.numberOfPages = slides.count
+                pageControl.currentPage = 0
+                pageControl.layer.cornerRadius = 15
+                pageControl.clipsToBounds = true
+                view.bringSubviewToFront(pageControl)
+                
+                //Check if iPad or iPhone and adjust font size and content mode
+                for slide in slides {
+                    if UIDevice.current.userInterfaceIdiom == .pad {
+                        slide.textView.contentMode = UITextView.ContentMode.scaleToFill
+                        slide.textView.font = UIFont.systemFont(ofSize: 32)
+                    }
+                }
+            }
+        }
+    
     }
     
     @IBAction func buttonBackBackTapped(_ sender: UIButton) {
@@ -119,9 +170,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             tabBarItem3.title = arrayAppDetails[0].TabBarSettings
         }
         
-        /*//Pass data to other ViewControllers
-         let settingsViewController = self.tabBarController?.viewControllers![3] as! SettingsViewController
-         settingsViewController.passedArray = rosaryChosenLanguage*/
         
         //Welcome View
         labelWelcome.text = arrayAppDetails[0].AppWelcomeTitle
@@ -131,7 +179,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         //Implement ScrollView
         if scrollView != nil {
             scrollView.delegate = self
-            slides = createSlides()
+            slides = createSlides(darkLightMode: darkModeIsEnabled)
             setupSlideScrollView(slides: slides)
             pageControl.numberOfPages = slides.count
             pageControl.currentPage = 0
@@ -139,14 +187,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             pageControl.clipsToBounds = true
             view.bringSubviewToFront(pageControl)
             
-            //Check if iPad and adjust font size and content mode
+            //Check if iPad or iPhone and adjust font size and content mode
             for slide in slides {
-                //Check if iphone or ipad
                 if UIDevice.current.userInterfaceIdiom == .pad {
                     slide.textView.contentMode = UITextView.ContentMode.scaleToFill
                     slide.textView.font = UIFont.systemFont(ofSize: 32)
-                } else {
-                    //slide1.textView.contentMode = UITextView.ContentMode.scaleToFill
                 }
             }
         }
@@ -161,15 +206,23 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.present(alert, animated: true, completion: nil)*/
     }
     
-    func createSlides() -> [Slide] {
+    func createSlides(darkLightMode:Bool) -> [Slide] {
         
         var slides:[Slide] = []
         
         for i in 0..<arrayAppDetails.count {
-            slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
-            slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slides[i].imageView.image = UIImage(named: arrayAppDetails[i].Image ?? "michael0")
-            slides[i].textView.text = arrayAppDetails[i].Chaplet
+            if darkModeIsEnabled {
+                slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
+                slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+                slides[i].imageView.image = UIImage(named: "splashscreen")
+                slides[i].textView.text = arrayAppDetails[i].Chaplet
+                
+            } else {
+                slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
+                slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+                slides[i].imageView.image = UIImage(named: arrayAppDetails[i].Image ?? "michael0")
+                slides[i].textView.text = arrayAppDetails[i].Chaplet
+            }
         }
         
         return slides
