@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var buttonBackBack: UIButton!
     @IBOutlet weak var buttonBack: UIButton!
     @IBOutlet weak var buttonForward: UIButton!
-    @IBOutlet weak var imageFrench: UIImageView!
+    //@IBOutlet weak var imageFrench: UIImageView!
     @IBOutlet weak var shareIcon: UIImageView!
     //Controls Settings Scene (Languages)
     //Carousel
@@ -154,21 +154,27 @@ class ViewController: UIViewController, UIScrollViewDelegate {
        
 }
     @objc func shareIconTapped (sender: UITapGestureRecognizer) {
+        
         let url:Any = "https://apps.apple.com/de/app/sancti-rosarii-michael/id1577365794"
         let urlToShare = [url]
         let activity = UIActivityViewController(activityItems: urlToShare, applicationActivities: nil)
-        //activity.popoverPresentationController?.sourceView = self.view
+        activity.popoverPresentationController?.sourceView = self.view
         self.present(activity, animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
+        //Check chosen language Deutsch, English, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
+        if language != nil {
+            //Load Json file with app details
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
+        } else {
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
+        }
         
-        //Load Json file with app details
-        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
+       
         
         //Update TabItems Title according to language
         if let tabBarItem0 = self.tabBarController?.tabBar.items?[0] {
