@@ -25,6 +25,7 @@ class AppDetails : Decodable {
     var Chaplet: String?
     var ChapletStart: String?
     var Image: String?
+    var ImageDark: String?
     
     func getAppDetails(jsonName:String, language:String) -> [AppDetails] {
         

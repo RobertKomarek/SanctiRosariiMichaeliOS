@@ -22,7 +22,8 @@
    "AppWelcomeText": "So wird der Rosenkranz gebetet:\n\n1. Anrufung der Engel (Seraphim, Cherubim, etc.)\n2. Vater unser 1x\n3. Ave Maria 3x\n4. Je 1 Vater unser zu Ehren der Erzengel Michael, Raphael, Gabriel und des Schutzengels",
    "ChapletStart": "Rosenkranz beginnen",
    "Chaplet": "Heiliger Erzengel Michael! Ich empfehle Dir die Stunde meines Todes; halte in derselben den bösen Feind gefangen, dass er mich nicht anfechten und meiner Seele nicht schaden kann.\n\n1 Vater unser",
-   "Image": "michael0"
+   "Image": "michael0",
+   "ImageDark": "michael0dark"
  },
  {
    "Number": 1,
@@ -47,7 +48,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Heiliger Erzengel Gabriel! Erlange mir von Gott einen lebendigen Glauben, eine starke Hoffnung, inbrünstige Liebe und große Andacht zum Heiligsten Altarsakrament.\n\n1 Vater unser",
-   "Image": "gabriel"
+   "Image": "gabriel",
+   "ImageDark": "gabrieldark"
  },
  {
    "Number": 2,
@@ -72,7 +74,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Heiliger Erzengel Raphael! Führe mich allezeit den Weg der Tugend und Vollkommenheit.\n\n1 Vater unser",
-   "Image": "raphael"
+   "Image": "raphael",
+   "ImageDark": "raphaeldark"
  },
  {
    "Number": 3,
@@ -97,7 +100,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Heiliger Schutzengel! Erlange mir göttliche Einsprechungen und die besondere Gnade dieselbe treu zu befolgen.\n\n1 Vater unser",
-   "Image": "guarding"
+   "Image": "guarding",
+   "ImageDark": "guardingdark"
  },
  {
    "Number": 4,
@@ -122,7 +126,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O Ihr flammenden Seraphim! Erlanget mir eine brennende Liebe zu Gott.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael1"
+   "Image": "michael1",
+   "ImageDark": "michael1dark"
  },
  {
    "Number": 5,
@@ -147,7 +152,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O Ihr hocherleuchteten Cherubim! Erlanget mir die wahre Erkenntnis Gottes und die Wissenschaft der Heiligen.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael2"
+   "Image": "michael2",
+   "ImageDark": "michael2dark"
  },
  {
    "Number": 6,
@@ -172,7 +178,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O vortreffliche Throne! Erlanget mir den Frieden und die Ruhe des Herzens.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael3"
+   "Image": "michael3",
+   "ImageDark": "michael3dark"
  },
  {
    "Number": 7,
@@ -197,7 +204,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O hohe Herrschaften! Erlanget mir den Sieg über alle bösen Neigungen und Begierden.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael4"
+   "Image": "michael4",
+   "ImageDark": "michael4dark"
  },
  {
    "Number": 8,
@@ -222,7 +230,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O unüberwindliche Gewalten! Erlanget mir Stärke wider alle bösen Geister.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael5"
+   "Image": "michael5",
+   "ImageDark": "michael5dark"
  },
  {
    "Number": 9,
@@ -247,7 +256,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O durchlauchte Fürsten! Erlanget mir vollkommenen Gehorsam und Gerechtigkeit.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael6"
+   "Image": "michael6",
+   "ImageDark": "michael6dark"
  },
  {
    "Number": 10,
@@ -272,7 +282,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O wundertägige Mächte! Erlanget mir die Fülle aller Tugenden und Vollkommenheit.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael7"
+   "Image": "michael7",
+   "ImageDark": "michael7dark"
  },
  {
    "Number": 11,
@@ -297,7 +308,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O heilige Erzengel! Erlanget mir Gleichförmigkeit mit dem Willen Gottes.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael8"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  },
  {
    "Number": 12,
@@ -322,7 +334,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O heilige Engel! Erlanget mir wahre Demut und großes Vertrauen auf Gottes Barmherzigkeit.\n\n1 Vater unser..., 3 Ave Maria",
-   "Image": "michael9"
+   "Image": "michael9",
+   "ImageDark": "michael9dark"
  },
  {
    "Number": 13,
@@ -347,7 +360,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Lieber JESUS! Diesen Rosenkranz übergebe ich Deinem göttlichen Herzen, vervollkommne Du ihn zur größeren Freude Deiner heiligen Engel. Sie mögen mich in ihrem Schutz erhalten, besonders in meiner Sterbestunde, wozu ich sie jetzt schon von Herzen einlade, damit ich, durch ihre Gegenwart gestärkt, den Tod mit Freuden erwarte und vor den höllischen Nachstellungen beschützt werde. Ich bitte euch auch inständig, ihr lieben heiligen Engel, besucht die Armen Seelen, vor allem meine Eltern, Freunde und Wohltäter. Helft ihnen zur baldigen Erlösung und bittet um Erbarmen auch für mich nach meinem Tode. Dies bitte ich euch herzinniglich durch die heiligsten Herzen Jesu und Mariä. Amen",
-   "Image": "michael10"
+   "Image": "michael10",
+   "ImageDark": "michael10dark"
  },
  {
    "Number": 14,
@@ -372,7 +386,8 @@
    "AppWelcomeText": "This is how the rosary is prayed:\n\nInvocation of the Angels (Serpahim, Cherubim, etc.)\nOur Father 1x\nHail Mary 3x\nOne Our Father each in honor of the Archangels Michael, Raphael, Gabriel and the Guardian Angel\n\n",
    "ChapletStart": "Begin Rosary",
    "Chaplet": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.\nO God, come to my assistance. O Lord, make haste to help me. Glory be to the Father, to the Son, and to the Holy Spirit, as it was in the beginning, is now and will be forever, time without end. Amen.\n",
-   "Image": "michael0"
+   "Image": "michael0",
+   "ImageDark": "michael0dark"
  },
  {
    "Number": 15,
@@ -397,7 +412,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St. Michael and the celestial Choir of Seraphim may the Lord make us worthy to burn with the fire of perfect charity. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael1"
+   "Image": "michael1",
+   "ImageDark": "michael1dark"
  },
  {
    "Number": 16,
@@ -422,7 +438,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St.Michael and the celestial Choir of Cherubim may the Lord grant us the grace to leave the ways of sin and run in the paths of Christian perfection. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael2"
+   "Image": "michael2",
+   "ImageDark": "michael2dark"
  },
  {
    "Number": 17,
@@ -447,7 +464,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St.Michael and the celestial Choir of Thrones may the Lord infuse into our hearts a true and sincere spirit of humility. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael3"
+   "Image": "michael3",
+   "ImageDark": "michael3dark"
  },
  {
    "Number": 18,
@@ -472,7 +490,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St.Michael and the celestial Choir of Dominions may the Lord give us grace to govern our senses and overcome any unruly passions. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael4"
+   "Image": "michael4",
+   "ImageDark": "michael4dark"
  },
  {
    "Number": 19,
@@ -497,7 +516,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St.Michael and the celestial Choir of Powers may the Lord protect our souls against the snares and temptations of the devil. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael5"
+   "Image": "michael5",
+   "ImageDark": "michael5dark"
  },
  {
    "Number": 20,
@@ -522,7 +542,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St.Michael and the celestial Choir of Virtues may the Lord preserve us from evil and falling into temptation. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael6"
+   "Image": "michael6",
+   "ImageDark": "michael6dark"
  },
  {
    "Number": 21,
@@ -547,7 +568,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St. Michael and the celestial Choir of Principalities may God fill our souls with a true spirit of obedience. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael7"
+   "Image": "michael7",
+   "ImageDark": "michael7dark"
  },
  {
    "Number": 22,
@@ -572,7 +594,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St. Michael and the celestial Choir of Archangels may the Lord give us perseverance in faith and in all good works in order that we may attain the glory of Heaven. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael8"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  },
  {
    "Number": 23,
@@ -597,7 +620,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "By the intercession of St. Michael and the celestial Choir of Angels may the Lord grant us to be protected by them in this mortal life and conducted in the life to come to Heaven. Amen.\n\nOur Father, Three Hail Marys\n",
-   "Image": "michael9"
+   "Image": "michael9",
+   "ImageDark": "michael9dark"
  },
  {
    "Number": 24,
@@ -622,7 +646,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Four Our Fathers. One in honor of each of the following leading Angels: St.Michael, St.Gabriel, St.Raphael and our Guardian Angel.\n",
-   "Image": "michael10"
+   "Image": "michael10",
+   "ImageDark": "michael10dark"
  },
  {
    "Number": 25,
@@ -647,7 +672,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O glorious prince St. Michael, chief and commander of the heavenly hosts, guardian of souls, vanquisher of rebel spirits, servant in the house of the Divine King and our admirable conductor, you who shine with excellence and superhuman virtue deliver us from all evil, who turn to you with confidence and enable us by your gracious protection to serve God more and more faithfully every day.\n\nPray for us, O glorious St.Michael, Prince of the Church of Jesus Christ, that we may be made worthy of His promises.\nAlmighty and Everlasting God, Who, by a prodigy of goodness and a merciful desire for the salvation of all men, has appointed the most glorious Archangel St.Michael Prince of Your Church, make us worthy, we ask You, to be delivered from all our enemies, that none of them may harass us at the hour of death, but that we may be conducted by him into Your Presence. This we ask through the merits of Jesus Christ Our Lord. Amen.",
-   "Image": "michael11"
+   "Image": "michael11",
+   "ImageDark": "michael11dark"
  },
  {
    "Number": 26,
@@ -672,7 +698,8 @@
    "AppWelcomeText": "Voici comment le chapelet est prié:\n\nInvocation des anges (Serpahim, chérubins, etc.\nNotre Père 1x\nSalue Marie 3x\nUn Notre Père chacun en l'honneur des Archanges Michel, Raphaël, Gabriel et l'Ange Gardien\n",
    "ChapletStart": "Commencer le chapelet",
    "Chaplet": "Saint Michel Archange, défendez-nous dans le combat pour que nous ne périssions pas au jour du Jugement. O Dieu, venez à mon aide, Seigneur, hâtez vous de me secourir.",
-   "Image": "michael0"
+   "Image": "michael0",
+   "ImageDark": "michael0dark"
  },
  {
    "Number": 27,
@@ -697,7 +724,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur céleste des Séraphins, que le Seigneur daigne nous rendre dignes de la flamme du parfait amour.Ainsi soit - il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael1"
+   "Image": "michael1",
+   "ImageDark": "michael1dark"
  },
  {
    "Number": 28,
@@ -722,7 +750,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur céleste des Chérubins, que le Seigneur veuille nous faire la grâce d’abandonner la voie du péché et d’avancer dans celle de la perfection chrétienne.Ainsi soit - il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael2"
+   "Image": "michael2",
+   "ImageDark": "michael2dark"
  },
  {
    "Number": 29,
@@ -747,7 +776,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur très Saint des Trônes, que le Seigneur infuse dans nos cœurs l’esprit de vraie et sincère humilité. Ainsi soit-il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael3"
+   "Image": "michael3",
+   "ImageDark": "michael3dark"
  },
  {
    "Number": 30,
@@ -772,7 +802,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur céleste des Dominations, que le Seigneur nous fasse la grâce de dominer nos sens et de nous libérer de l’esclavage des passions. Ainsi soit-il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael4"
+   "Image": "michael4",
+   "ImageDark": "michael4dark"
  },
  {
    "Number": 31,
@@ -797,7 +828,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur céleste des Puissances, que le Seigneur daigne préserver nos âmes des embûches et des tentations du démon. Ainsi soit-il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael5"
+   "Image": "michael5",
+   "ImageDark": "michael5dark"
  },
  {
    "Number": 32,
@@ -822,7 +854,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur admirable des Vertus Célestes, que le Seigneur ne nous laisse pas succomber à la tentation mais qu’il nous délivre du mal. Ainsi soit-il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael6"
+   "Image": "michael6",
+   "ImageDark": "michael6dark"
  },
  {
    "Number": 33,
@@ -847,7 +880,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur céleste des Principautés, que le Seigneur emplisse nos âmes de l’esprit de vraie et sincère obéissance. Ainsi soit-il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael7"
+   "Image": "michael7",
+   "ImageDark": "michael7dark"
  },
  {
    "Number": 34,
@@ -872,7 +906,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur céleste des Archanges, que le Seigneur nous accorde le don de la persévérance dans la foi et dans les bonnes œuvres pour pouvoir gagner la gloire du paradis. Ainsi soit-il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael8"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  },
  {
    "Number": 35,
@@ -897,7 +932,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Par l’intercession de Saint Michel et du Chœur céleste de tous les Anges, que le Seigneur daigne nous faire la grâce d’être gardés par eux en cette vie mortelle pour être conduits ensuite à la gloire éternelle du ciel. Ainsi soit-il.\n\n1x Notre Père, 3x Je Vous Salue Marie",
-   "Image": "michael9"
+   "Image": "michael9",
+   "ImageDark": "michael9dark"
  },
  {
    "Number": 36,
@@ -922,7 +958,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Quatre Notre Père : le premier en l’honneur de Saint Michel Archange, le deuxième en l’honneur de Saint Gabriel Archange, le troisième en l’honneur de Saint Raphaël Archange et le quatrième en l’honneur de notre ange gardien ainsi que des cinq autres archanges.\n",
-   "Image": "michael10"
+   "Image": "michael10",
+   "ImageDark": "michael10dark"
  },
  {
    "Number": 37,
@@ -939,7 +976,7 @@
    "PromisesIndulgences": "De acordo com a tradição da Igreja Católica, a origem desta devoção está relacionada com uma aparição e revelação privada do próprio Arcanjo São Miguel a uma freira carmelita portuguesa, Antónia de Astónaco, no ano de 1750, sendo posteriormente reconhecida e aprovada pelo Papa Pio IX, a 8 de agosto de 1851, quem a enriqueceu de indulgências.\n\nO Papa Pio IX concedeu as seguintes indulgências para aqueles que rezam o chapelim: Indulgência parcial, para aqueles que rezam este Chaplet com o coração contrito. Indulgência parcial, a cada dia, a quem carrega consigo o diadema e / ou beija a medalha dos Santos Anjos que dela pende. Plena indulgência, a quantos o rezam uma vez por mês, o dia que escolherem, verdadeiramente arrependidos e confessados, rezando pelas intenções de sua Santidade. Indulgência plena, nas mesmas condições, nas festas da Aparição de São Miguel Arcanjo(8 de maio); a festa dos Arcanjos Miguel, Gabriel e Rafael(29 de setembro); e no dia dos Santos Anjos da Guarda(2 de outubro).\n\n(tradução com um programa de computador)\n",
    "TitlePrayersLitany": "Ladainha",
    "PrayersLitany": "Ladainha de São Miguel Arcanjo\n\nSenhor, tende piedade de nós.\nJesus Cristo, tende piedade de nós.\nSenhor, tende piedade de nós.\n\nJesus Cristo, ouvi - nos.\nJesus Cristo, atendei - nos.\n\nPai Celeste, que sois Deus, tende piedade de nós.\nFilho, Redentor do Mundo, que sois Deus, tende piedade de nós.\nEspírito Santo, que sois Deus, tende piedade de nós.\nTrindade Santa, que sois um único Deus, tende piedade de nós.\n\nSanta Maria, Rainha dos Anjos, rogai por nós.\n\nSão Miguel, rogai por nós.\nSão Miguel, cheio da graça de Deus, rogai por nós.\nSão Miguel, perfeito adorador do Verbo Divino, rogai por nós.\nSão Miguel, coroado de honra e de glória, rogai por nós.\nSão Miguel, poderosíssimo Príncipe dos exércitos do Senhor, rogai por nós.\nSão Miguel, porta-estandarte da Santíssima Trindade, rogai por nós.\nSão Miguel, guardião do Paraíso, rogai por nós.\nSão Miguel, guia e consolador do povo israelita, rogai por nós.\nSão Miguel, esplendor e fortaleza da Igreja militante, rogai por nós.\nSão Miguel, honra e alegria da Igreja triunfante, rogai por nós.\nSão Miguel, Luz dos Anjos, rogai por nós.\nSão Miguel, baluarte dos Cristãos, rogai por nós.\nSão Miguel, força daqueles que combatem pelo estandarte da Cruz, rogai por nós.\nSão Miguel, luz e confiança das almas no último momento da vida, rogai por nós.\nSão Miguel, socorro muito certo, rogai por nós.\nSão Miguel, nosso auxílio em todas as adversidades, rogai por nós.\nSão Miguel, arauto da sentença eterna, rogai por nós.\nSão Miguel, consolador das almas que estão no Purgatório, rogai por nós.\nSão Miguel, a quem o Senhor incumbiu de receber as almas que estão no Purgatório, rogai por nós.\nSão Miguel, nosso Príncipe, rogai por nós.\nSão Miguel, nosso Advogado, rogai por nós.\n\nCordeiro de Deus, que tirais o pecado do mundo, perdoai - nos, Senhor.\nCordeiro de Deus, que tirais o pecado do mundo, atendei - nos, Senhor.\nCordeiro de Deus, que tirais o pecado do mundo, tende piedade de nós.\n\nRogai por nós, ó glorioso São Miguel Arcanjo, Príncipe da Igreja de Cristo,para que sejamos dignos de Suas promessas.\n\nAmém.\n",
-   "TitlePrayersLeo": "..do Papa Leão XIII",
+   "TitlePrayersLeo": "…do Papa Leão XIII",
    "PrayersLeo": "São Miguel Arcanjo, defendei - nos neste combate, sede o nosso auxílio contra os embustes e as ciladas do demónio. Que Deus sobre ele impere, instante e humildemente o suplicamos. E vós, Príncipe da Milícia Celeste, com esse poder divino, precipitai no inferno a Satanás e a todos os espíritos malignos que vagueiam pelo mundo para perdição das almas. Assim seja!",
    "PrayersLeoLatin": "Sancte Míchael Archángele! Defénde nos in próelio; contra nequítiam et insídias diáboli esto praesídium. Imperet illi Deus, súpplices deprecámur, tuque, Prínceps milítiae caeléstis, Sátanam aliósque spíritus malígnos, qui ad perditiónem animárum pervagántur in mundo, divína virtúte, in inférnum detrúde.\nAmen.",
    "Language": "Português",
@@ -947,7 +984,8 @@
    "AppWelcomeText": "É assim que se reza o rosário:\n\nInvocação dos Anjos (Serpahim, Querubins, etc.)\nPai Nosso 1x\nAve Maria 3x\nUm Pai Nosso em homenagem aos Arcanjos Miguel, Rafael, Gabriel e o Anjo da Guarda\n",
    "ChapletStart": "Começar rosário",
    "Chaplet": "Deus, vinde em meu auxílio. Senhor, socorrei-me e salvai-me. Glória ao Pai, ao Filho e ao Espírito Santo, assim como era no princípio, agora e sempre.",
-   "Image": "michael0"
+   "Image": "michael0",
+   "ImageDark": "michael0dark"
  },
  {
    "Number": 38,
@@ -972,7 +1010,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "1ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste dos Serafins, o Senhor nos faça dignos do fogo da perfeita caridade.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "gabriel"
+   "Image": "gabriel",
+   "ImageDark": "gabrieldark"
  },
  {
    "Number": 39,
@@ -997,7 +1036,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "2ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste dos Querubins, o Senhor nos conceda a graça de trilharmos a estrada da perfeição cristã.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "raphael"
+   "Image": "raphael",
+   "ImageDark": "raphaeldark"
  },
  {
    "Number": 40,
@@ -1022,7 +1062,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "3ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste dos Tronos, o Senhor nos conceda o espírito da verdadeira humildade.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "michael1"
+   "Image": "michael1",
+   "ImageDark": "michael1dark"
  },
  {
    "Number": 41,
@@ -1047,7 +1088,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "4ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste das Dominações, o Senhor nos dê a graça de podermos dominar os nossos sentidos.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "michael2"
+   "Image": "michael2",
+   "ImageDark": "michael2dark"
  },
  {
    "Number": 42,
@@ -1072,7 +1114,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "5ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste das Potestades, o Senhor nos guarde das traições e tentações do demónio.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "michael3"
+   "Image": "michael3",
+   "ImageDark": "michael3dark"
  },
  {
    "Number": 43,
@@ -1097,7 +1140,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "6ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste das Virtudes, o Senhor nos conceda a graça de não sermos vencidos no combate perigoso das tentações.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "michael4"
+   "Image": "michael4",
+   "ImageDark": "michael4dark"
  },
  {
    "Number": 44,
@@ -1122,7 +1166,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "7ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste dos Principados, o Senhor nos dê o espírito da verdadeira e sincera obediência.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "michael5"
+   "Image": "michael5",
+   "ImageDark": "michael5dark"
  },
  {
    "Number": 45,
@@ -1147,7 +1192,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "8ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste dos Arcanjos, o Senhor nos conceda o dom da perseverança na fé e boas obras.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "michael6"
+   "Image": "michael6",
+   "ImageDark": "michael6dark"
  },
  {
    "Number": 46,
@@ -1172,7 +1218,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "9ª invocação: Pela intercessão de São Miguel Arcanjo e do Coro Celeste dos Anjos, o Senhor nos conceda que estes espíritos bem-aventurados nos guardem sempre, e principalmente na hora da nossa morte.\n\n(Um Pai Nosso e de três Ave Marias)",
-   "Image": "michael7"
+   "Image": "michael7",
+   "ImageDark": "michael7dark"
  },
  {
    "Number": 47,
@@ -1197,7 +1244,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Um Pai Nosso a São Miguel Arcanjo.\nUm Pai Nosso a São Gabriel Arcanjo.\nUm Pai Nosso a São Rafael Arcanjo.\nUm Pai Nosso ao nosso Anjo da Guarda.",
-   "Image": "michael8"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  },
  {
    "Number": 48,
@@ -1222,7 +1270,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Glorioso São Miguel Arcanjo, o primeiro entre todos os Anjos, defensor das almas, vencedor do Demónio, vós que estais junto da glória de Deus e, depois de Nosso Senhor Jesus Cristo, sois admirável protector nosso, dotado de sobre-humana excelência e fortaleza, dignai-vos alcançar de Deus que sejamos livres de toda a espécie de mal e ajudai-nos a ser fiéis em cada dia ao serviço do nosso Deus. Rogai por nós, ó Bem-aventurado São Miguel Arcanjo, príncipe da Igreja de Jesus Cristo, para que sejamos dignos das promessas do mesmo Senhor. Amén.\n\nOmnipotente e sempiterno Deus que, por prodígio da Vossa bondade e misericórdia, elegestes para príncipe da Vossa Igreja o gloriosíssimo Arcanjo São Miguel, com o fim da comum salvação das almas, nós Vos rogamos que nos façais dignos de sermos, por sua benéfica protecção, libertos de todos os nossos inimigos, de sorte que nenhum deles possa molestar - nos na hora da nossa morte, mas antes nos seja dado que o mesmo Arcanjo nos conduza à presença da Vossa excelsa e divina Majestade.Pelos merecimentos de Jesus Cristo, nosso Senhor. Amén.",
-   "Image": "michael9"
+   "Image": "michael9",
+   "ImageDark": "michael9dark"
  },
  {
    "Number": 49,
@@ -1247,7 +1296,8 @@
    "AppWelcomeText": "Così si recita il rosario:\n\n1. Invocazione degli angeli (Serpahim, Cherubim, ecc.)\n2. Padre Nostro 1x\n3. Ave Maria 3x\n4. Un Padre Nostro ciascuno in onore degli Arcangeli Michele, Raffaele, Gabriele e l'Angelo Custode",
    "ChapletStart": "Iniziare il rosario",
    "Chaplet": "O Dio, vieni a salvarmi.\nSignore, vieni presto in mio aiuto.\nGloria al Padre\ne al Figlio\ne allo Spirito Santo.\nCome era nel principio\ne ora e sempre,\nnei secoli dei secoli.Amen.\nSan Michele Arcangelo, difendici nella lotta, per essere salvati nell'estremo giudizio.",
-   "Image": "michael0"
+   "Image": "michael0",
+   "ImageDark": "michael0dark"
  },
  {
    "Number": 50,
@@ -1272,7 +1322,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele e del celeste coro dei Serafini, ci renda il Signore degni della fiamma di perfetta carità.\n\nPadre nostro e tre Ave Maria al 1° Coro Angelico.\n",
-   "Image": "gabriel"
+   "Image": "gabriel",
+   "ImageDark": "gabrieldark"
  },
  {
    "Number": 51,
@@ -1297,7 +1348,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele Arcangelo e del Coro celeste dei Cherubini, voglia il Signore darci la grazia di abbandonare la vita del peccato e correre in quella della cristiana perfezione.\n\nPadre nostro e tre Ave Maria al 2° Coro Angelico.",
-   "Image": "raphael"
+   "Image": "raphael",
+   "ImageDark": "raphaeldark"
  },
  {
    "Number": 52,
@@ -1322,7 +1374,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele Arcangelo e del sacro Coro dei Troni, infonda il Signore nei nostri cuori lo spirito di vera e sincera umiltà. \n\nPadre nostro e tre Ave Maria al 3° Coro Angelico.",
-   "Image": "michael1"
+   "Image": "michael1",
+   "ImageDark": "michael1dark"
  },
  {
    "Number": 53,
@@ -1347,7 +1400,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele Arcangelo e del coro celeste delle Dominazioni, ci dia grazia il Signore di dominare i nostri sensi e correggere le corrotte passioni.\n\nPadre nostro e tre Ave Maria al 4° Coro Angelico.",
-   "Image": "michael2"
+   "Image": "michael2",
+   "ImageDark": "michael2dark"
  },
  {
    "Number": 54,
@@ -1372,7 +1426,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele e del celeste Coro delle Potestà, il Signore si degni di proteggere le anime nostre dalle insidie e tentazioni del demonio.\n\nPadre nostro e tre Ave Maria al 5° Coro Angelico.",
-   "Image": "michael3"
+   "Image": "michael3",
+   "ImageDark": "michael3dark"
  },
  {
    "Number": 55,
@@ -1397,7 +1452,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele e del Coro delle ammirabili Virtù celesti, non permetta il Signore che cadiamo nelle tentazioni, ma ci liberi dal male.\n\nPadre nostro e tre Ave Maria al 6° Coro Angelico.",
-   "Image": "michael4"
+   "Image": "michael4",
+   "ImageDark": "michael4dark"
  },
  {
    "Number": 56,
@@ -1422,7 +1478,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele e del Coro celeste dei Principati, riempia Dio le anime nostre dello spirito di vera e sincera obbedienza.\n\nPadre nostro e tre Ave Maria al 7° Coro Angelico.",
-   "Image": "michael5"
+   "Image": "michael5",
+   "ImageDark": "michael5dark"
  },
  {
    "Number": 57,
@@ -1447,7 +1504,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele e del Coro celeste degli Arcangeli, ci conceda il Signore il dono della perseveranza nella fede e nelle opere buone.\n\nPadre nostro e tre Ave Maria all'8° Coro Angelico.",
-   "Image": "michael6"
+   "Image": "michael6",
+   "ImageDark": "michael6dark"
  },
  {
    "Number": 58,
@@ -1472,7 +1530,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Per intercessione di san Michele e del Coro celeste di tutti gli Angeli, si degni il Signore di concederci di essere da essi custoditi nella vita presente e poi introdotti nella gloria dei cieli.\n\nPadre nostro e tre Ave Maria al 9° Coro Angelico.",
-   "Image": "michael7"
+   "Image": "michael7",
+   "ImageDark": "michael7dark"
  },
  {
    "Number": 59,
@@ -1497,7 +1556,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Un Padre nostro in onore di San Michele.\nUn Padre nostro in onore di San Gabriele.\nUn Padre nostro in onore di San Raffaele.\nUn Padre nostro in onore dell'Angelo custode.",
-   "Image": "michael8"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  },
  {
    "Number": 60,
@@ -1522,7 +1582,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Prega per noi, arcangelo san Michele, Gesù Cristo Signore nostro.\nE saremo resi degni delle Sue promesse. Dio onnipotente ed eterno, che con prodigio di bontà e misericordia,per la salvezza degli uomini hai eletto a Principe della tua Chiesa il glorioso san Michele, concedici, mediante la sua benefica protezione, di essere liberati da tutti i nostri spirituali nemici.Nell'ora della nostra morte non ci molesti l'antico avversario, ma sia il tuo arcangelo Michele a condurci alla presenza della tua divina Maestà. Amen.",
-   "Image": "michael9"
+   "Image": "michael9",
+   "ImageDark": "michael9dark"
  },
  {
    "Number": 61,
@@ -1547,7 +1608,8 @@
    "AppWelcomeText": "Así se reza el rosario:\n\nInvocación de los Ángeles (Serpahim, Querubines, etc.)\nPadre Nuestro 1x\nAvemaría 3x\nUn Padre Nuestro, cada uno en honor de los Arcángeles Miguel, Rafael, Gabriel y el Ángel de la Guarda",
    "ChapletStart": "Comenzar rosario",
    "Chaplet": "En el nombre del Padre, del Hijo y del Espíritu Santo.\nDios mío, ven en mi auxilio.Señor, date prisa en socorrerme.\nGloria al Padre, al Hijo y al Espíritu santo. Amén",
-   "Image": "michael0"
+   "Image": "michael0",
+   "ImageDark": "michael0dark"
  },
  {
    "Number": 62,
@@ -1572,7 +1634,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de los Serafines, que Dios Nuestro Señor prepare nuestras almas para así recibir dignamente en nuestros corazones, el fuego de la Caridad Perfecta. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "gabriel"
+   "Image": "gabriel",
+   "ImageDark": "gabrieldark"
  },
  {
    "Number": 63,
@@ -1597,7 +1660,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de los Querubines, que Dios Nuestro Señor nos conceda la gracia de abandonar los caminos del pecado y seguir el camino de la Perfección Cristiana. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "raphael"
+   "Image": "raphael",
+   "ImageDark": "raphaeldark"
  },
  {
    "Number": 64,
@@ -1622,7 +1686,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de los Tronos, que Dios Nuestro Señor derrame en nuestros corazones, el verdadero y sincero espíritu de humildad. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "michael1"
+   "Image": "michael1",
+   "ImageDark": "michael1dark"
  },
  {
    "Number": 65,
@@ -1647,7 +1712,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de Potestades, que Dios Nuestro señor nos conceda la gracia de controlar nuestros sentidos y así dominar nuestras pasiones. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "michael2"
+   "Image": "michael2",
+   "ImageDark": "michael2dark"
  },
  {
    "Number": 66,
@@ -1672,7 +1738,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de Dominaciones, que Dios Nuestro Señor proteja nuestras almas contra las asechanzas del demonio. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "michael3"
+   "Image": "michael3",
+   "ImageDark": "michael3dark"
  },
  {
    "Number": 67,
@@ -1697,7 +1764,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de las Virtudes, que Dios nuestro señor nos conserve de todo mal y no nos deje caer en la tentación. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "michael4"
+   "Image": "michael4",
+   "ImageDark": "michael4dark"
  },
  {
    "Number": 68,
@@ -1722,7 +1790,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de los Principados, que Dios nuestro señor se digne llenar nuestras almas con el verdadero espíritu de obediencia. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "michael5"
+   "Image": "michael5",
+   "ImageDark": "michael5dark"
  },
  {
    "Number": 69,
@@ -1747,7 +1816,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de los Arcángeles, que Dios nuestro señor nos conceda la gracia de la perseverancia final en la fe, y en las buenas obras, y así nos lleve a la Gloria del Paraíso. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "michael6"
+   "Image": "michael6",
+   "ImageDark": "michael6dark"
  },
  {
    "Number": 70,
@@ -1772,7 +1842,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Por la intercesión de San Miguel y el Coro Celestial de los Ángeles, que Dios Nuestro Señor nos conceda la gracia de ser protegidos por ellos durante esta vida mortal, y nos guíen a la Gloria Eterna. Amén.\n\nUn Padre Nuestro y tres Avemaría.",
-   "Image": "michael7"
+   "Image": "michael7",
+   "ImageDark": "michael7dark"
  },
  {
    "Number": 71,
@@ -1797,7 +1868,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Un Padre Nuestro a San Miguel.\nUn Padre Nuestro a San Gabriel.\nUn Padre Nuestro a San Rafael.\nUn Padre Nuestro al Ángel de la Guarda.",
-   "Image": "michael8"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  },
  {
    "Number": 72,
@@ -1822,6 +1894,7 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Glorioso Príncipe San Miguel, Jefe Principal de la Milicia Celestial, Guardián fidelísimo de las almas, Vencedor eficaz de los espíritus rebeldes, fiel Servidor en el Palacio del Rey Divino.\nEres nuestro admirable guía y conductor.\nTú brillas con excelente resplandor y con virtud sobrehumana, libradnos de todo mal. Con plena confianza recurrimos a ti.\nAsístenos con tu afable protección para que seamos más y más fieles al servicio de Dios todos los días de nuestra vida.\nRuega por nosotros, Glorioso San Miguel, Príncipe de la Iglesia de Jesucristo.\nPara que seamos dignos de alcanzar las promesas de Nuestro Señor.\nOmnipotente y Eterno Dios, los adoramos y bendecimos.\nEn vuestra maravillosa bondad, y con el misericordioso deseo de salvar las almas del género humano, habéis escogido al Glorioso Arcángel, San Miguel, como Príncipe de Vuestra Iglesia.\nHumildemente les suplicamos, Padre Celestial, que nos libres de nuestros enemigos.En la hora de la muerte, no permitas que ningún espíritu maligno se nos acerque, para perjudicar nuestras almas.\nOh Dios y Señor Nuestro, guiadnos por medio de este mismo Arcángel.\nEnvíale a que nos conduzca a la Presencia de tu Excelsa y divina Majestad.\nTe lo pedimos por los méritos de Jesucristo, Nuestro Señor. Amén.",
-   "Image": "michael9"
+   "Image": "michael9",
+   "ImageDark": "michael9dark"
  }
 ]

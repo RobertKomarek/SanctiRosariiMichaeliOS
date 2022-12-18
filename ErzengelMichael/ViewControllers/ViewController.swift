@@ -5,7 +5,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     var appDetails = AppDetails()
     var darkModeIsEnabled:Bool = false
-    
     //Welcome Screen
     @IBOutlet weak var textViewInstruction: UITextView!
     @IBOutlet weak var labelWelcome: UILabel!
@@ -44,7 +43,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 slides = createSlides(darkLightMode: darkModeIsEnabled)
                 setupSlideScrollView(slides: slides)
                 pageControl.numberOfPages = slides.count
-                pageControl.currentPage = 0
+                pageControl.currentPage = Int(pageIndex)
                 pageControl.layer.cornerRadius = 15
                 pageControl.clipsToBounds = true
                 view.bringSubviewToFront(pageControl)
@@ -60,13 +59,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         } else {
             darkModeIsEnabled = true
             buttonDarkmode.setImage(UIImage(systemName:"sun.max.fill"), for: UIControl.State.normal)
+            pageControl.currentPage = Int(pageIndex)
             //Implement ScrollView
             if scrollView != nil {
                 scrollView.delegate = self
                 slides = createSlides(darkLightMode: darkModeIsEnabled)
                 setupSlideScrollView(slides: slides)
                 pageControl.numberOfPages = slides.count
-                pageControl.currentPage = 0
+                pageControl.currentPage = Int(pageIndex)
                 pageControl.layer.cornerRadius = 15
                 pageControl.clipsToBounds = true
                 view.bringSubviewToFront(pageControl)
@@ -145,6 +145,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         buttonHideWelcome.layer.cornerRadius = 7
+       
 }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -214,7 +215,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             if darkModeIsEnabled {
                 slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
                 slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-                slides[i].imageView.image = UIImage(named: "splashscreen")
+                slides[i].imageView.image = UIImage(named: arrayAppDetails[i].ImageDark ?? "michael0dark")
                 slides[i].textView.text = arrayAppDetails[i].Chaplet
                 
             } else {
