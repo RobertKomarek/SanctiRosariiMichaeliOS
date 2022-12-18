@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var buttonBack: UIButton!
     @IBOutlet weak var buttonForward: UIButton!
     @IBOutlet weak var imageFrench: UIImageView!
+    @IBOutlet weak var shareIcon: UIImageView!
     //Controls Settings Scene (Languages)
     //Carousel
     @IBOutlet weak var pageControl: UIPageControl!
@@ -145,8 +146,20 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         buttonHideWelcome.layer.cornerRadius = 7
+        shareIcon.layer.cornerRadius = 7
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.shareIconTapped))
+        shareIcon.addGestureRecognizer(tapGestureRecognizer)
+        shareIcon.isUserInteractionEnabled = true
        
 }
+    @objc func shareIconTapped (sender: UITapGestureRecognizer) {
+        let url:Any = "https://apps.apple.com/de/app/sancti-rosarii-michael/id1577365794"
+        let urlToShare = [url]
+        let activity = UIActivityViewController(activityItems: urlToShare, applicationActivities: nil)
+        //activity.popoverPresentationController?.sourceView = self.view
+        self.present(activity, animated: true, completion: nil)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         
