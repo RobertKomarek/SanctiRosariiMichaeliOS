@@ -646,8 +646,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Four Our Fathers. One in honor of each of the following leading Angels: St.Michael, St.Gabriel, St.Raphael and our Guardian Angel.\n",
-   "Image": "michael10",
-   "ImageDark": "michael10dark"
+   "Image": "guarding",
+   "ImageDark": "guardingdark"
  },
  {
    "Number": 25,
@@ -672,8 +672,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "O glorious prince St. Michael, chief and commander of the heavenly hosts, guardian of souls, vanquisher of rebel spirits, servant in the house of the Divine King and our admirable conductor, you who shine with excellence and superhuman virtue deliver us from all evil, who turn to you with confidence and enable us by your gracious protection to serve God more and more faithfully every day.\n\nPray for us, O glorious St.Michael, Prince of the Church of Jesus Christ, that we may be made worthy of His promises.\nAlmighty and Everlasting God, Who, by a prodigy of goodness and a merciful desire for the salvation of all men, has appointed the most glorious Archangel St.Michael Prince of Your Church, make us worthy, we ask You, to be delivered from all our enemies, that none of them may harass us at the hour of death, but that we may be conducted by him into Your Presence. This we ask through the merits of Jesus Christ Our Lord. Amen.",
-   "Image": "michael11",
-   "ImageDark": "michael11dark"
+   "Image": "michael10",
+   "ImageDark": "michael10dark"
  },
  {
    "Number": 26,
@@ -958,8 +958,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Quatre Notre Père : le premier en l’honneur de Saint Michel Archange, le deuxième en l’honneur de Saint Gabriel Archange, le troisième en l’honneur de Saint Raphaël Archange et le quatrième en l’honneur de notre ange gardien ainsi que des cinq autres archanges.\n",
-   "Image": "michael10",
-   "ImageDark": "michael10dark"
+   "Image": "guarding",
+   "ImageDark": "guardingdark"
  },
  {
    "Number": 37,
@@ -1244,8 +1244,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Um Pai Nosso a São Miguel Arcanjo.\nUm Pai Nosso a São Gabriel Arcanjo.\nUm Pai Nosso a São Rafael Arcanjo.\nUm Pai Nosso ao nosso Anjo da Guarda.",
-   "Image": "michael8",
-   "ImageDark": "michael8dark"
+   "Image": "guarding",
+   "ImageDark": "guardingdark"
  },
  {
    "Number": 48,
@@ -1270,8 +1270,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Glorioso São Miguel Arcanjo, o primeiro entre todos os Anjos, defensor das almas, vencedor do Demónio, vós que estais junto da glória de Deus e, depois de Nosso Senhor Jesus Cristo, sois admirável protector nosso, dotado de sobre-humana excelência e fortaleza, dignai-vos alcançar de Deus que sejamos livres de toda a espécie de mal e ajudai-nos a ser fiéis em cada dia ao serviço do nosso Deus. Rogai por nós, ó Bem-aventurado São Miguel Arcanjo, príncipe da Igreja de Jesus Cristo, para que sejamos dignos das promessas do mesmo Senhor. Amén.\n\nOmnipotente e sempiterno Deus que, por prodígio da Vossa bondade e misericórdia, elegestes para príncipe da Vossa Igreja o gloriosíssimo Arcanjo São Miguel, com o fim da comum salvação das almas, nós Vos rogamos que nos façais dignos de sermos, por sua benéfica protecção, libertos de todos os nossos inimigos, de sorte que nenhum deles possa molestar - nos na hora da nossa morte, mas antes nos seja dado que o mesmo Arcanjo nos conduza à presença da Vossa excelsa e divina Majestade.Pelos merecimentos de Jesus Cristo, nosso Senhor. Amén.",
-   "Image": "michael9",
-   "ImageDark": "michael9dark"
+   "Image": "Michael8",
+   "ImageDark": "Michael8dark"
  },
  {
    "Number": 49,
@@ -1556,8 +1556,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Un Padre nostro in onore di San Michele.\nUn Padre nostro in onore di San Gabriele.\nUn Padre nostro in onore di San Raffaele.\nUn Padre nostro in onore dell'Angelo custode.",
-   "Image": "michael8",
-   "ImageDark": "michael8dark"
+   "Image": "guarding",
+   "ImageDark": "guardingdark"
  },
  {
    "Number": 60,
@@ -1582,8 +1582,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Prega per noi, arcangelo san Michele, Gesù Cristo Signore nostro.\nE saremo resi degni delle Sue promesse. Dio onnipotente ed eterno, che con prodigio di bontà e misericordia,per la salvezza degli uomini hai eletto a Principe della tua Chiesa il glorioso san Michele, concedici, mediante la sua benefica protezione, di essere liberati da tutti i nostri spirituali nemici.Nell'ora della nostra morte non ci molesti l'antico avversario, ma sia il tuo arcangelo Michele a condurci alla presenza della tua divina Maestà. Amen.",
-   "Image": "michael9",
-   "ImageDark": "michael9dark"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  },
  {
    "Number": 61,
@@ -1868,8 +1868,8 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Un Padre Nuestro a San Miguel.\nUn Padre Nuestro a San Gabriel.\nUn Padre Nuestro a San Rafael.\nUn Padre Nuestro al Ángel de la Guarda.",
-   "Image": "michael8",
-   "ImageDark": "michael8dark"
+   "Image": "guarding",
+   "ImageDark": "guardingdark"
  },
  {
    "Number": 72,
@@ -1894,7 +1894,7 @@
    "AppWelcomeText": "n/a",
    "ChapletStart": "",
    "Chaplet": "Glorioso Príncipe San Miguel, Jefe Principal de la Milicia Celestial, Guardián fidelísimo de las almas, Vencedor eficaz de los espíritus rebeldes, fiel Servidor en el Palacio del Rey Divino.\nEres nuestro admirable guía y conductor.\nTú brillas con excelente resplandor y con virtud sobrehumana, libradnos de todo mal. Con plena confianza recurrimos a ti.\nAsístenos con tu afable protección para que seamos más y más fieles al servicio de Dios todos los días de nuestra vida.\nRuega por nosotros, Glorioso San Miguel, Príncipe de la Iglesia de Jesucristo.\nPara que seamos dignos de alcanzar las promesas de Nuestro Señor.\nOmnipotente y Eterno Dios, los adoramos y bendecimos.\nEn vuestra maravillosa bondad, y con el misericordioso deseo de salvar las almas del género humano, habéis escogido al Glorioso Arcángel, San Miguel, como Príncipe de Vuestra Iglesia.\nHumildemente les suplicamos, Padre Celestial, que nos libres de nuestros enemigos.En la hora de la muerte, no permitas que ningún espíritu maligno se nos acerque, para perjudicar nuestras almas.\nOh Dios y Señor Nuestro, guiadnos por medio de este mismo Arcángel.\nEnvíale a que nos conduzca a la Presencia de tu Excelsa y divina Majestad.\nTe lo pedimos por los méritos de Jesucristo, Nuestro Señor. Amén.",
-   "Image": "michael9",
-   "ImageDark": "michael9dark"
+   "Image": "michael8",
+   "ImageDark": "michael8dark"
  }
 ]
