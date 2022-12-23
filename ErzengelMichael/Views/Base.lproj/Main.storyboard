@@ -581,12 +581,14 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZS-aI-RHe" userLabel="robert.komarek98@gmail.com">
-                                                        <rect key="frame" x="0.0" y="30" width="345" height="20"/>
+                                                        <rect key="frame" x="0.0" y="30" width="345" height="20.5"/>
+                                                        <color key="tintColor" systemColor="linkColor"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="robert.komarek98@gmail.com">
                                                                 <attributes>
                                                                     <color key="NSColor" systemColor="labelColor"/>
-                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     <integer key="NSUnderline" value="1"/>
                                                                 </attributes>
@@ -594,16 +596,32 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Images in this App are in Public Domain / Creative Commons Licensed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhf-vv-HAJ">
-                                                        <rect key="frame" x="0.0" y="60" width="345" height="40"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Images in this App are in Public Domain /" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhf-vv-HAJ">
+                                                        <rect key="frame" x="0.0" y="60.5" width="345" height="20"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB5-ii-NNT">
+                                                        <rect key="frame" x="0.0" y="90.5" width="345" height="20.5"/>
+                                                        <color key="tintColor" systemColor="linkColor"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Creative Commons Licensed">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <integer key="NSUnderline" value="1"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fL2-88-Qzq" userLabel="Stack View PD CC">
-                                                        <rect key="frame" x="0.0" y="110" width="345" height="140"/>
+                                                        <rect key="frame" x="0.0" y="121" width="345" height="129"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="publicDomain" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-Rl-v1y" userLabel="Public Domain">
-                                                                <rect key="frame" x="0.0" y="45" width="109.5" height="50"/>
+                                                                <rect key="frame" x="0.0" y="39.5" width="109.5" height="50"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="iOg-ov-5mf"/>
@@ -611,7 +629,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zeroLicense" translatesAutoresizingMaskIntoConstraints="NO" id="7Y5-Ju-jYP" userLabel="Zero License">
-                                                                <rect key="frame" x="117.5" y="45" width="110" height="50"/>
+                                                                <rect key="frame" x="117.5" y="39.5" width="110" height="50"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ymK-e3-zSP"/>
@@ -619,7 +637,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creativeCommons" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-Ip-dIz" userLabel="Creative Commons">
-                                                                <rect key="frame" x="235.5" y="45" width="109.5" height="50"/>
+                                                                <rect key="frame" x="235.5" y="39.5" width="109.5" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="ODi-Gm-TUO"/>
                                                                     <constraint firstAttribute="width" constant="50" id="XGi-ts-MIX"/>
@@ -696,6 +714,8 @@
                     <size key="freeformSize" width="375" height="1100"/>
                     <connections>
                         <outlet property="buttonLanguageConfirmed" destination="hjR-eB-yed" id="wVI-kO-S0S"/>
+                        <outlet property="labelCreativeCommonsLicensed" destination="fB5-ii-NNT" id="RzJ-mU-JAx"/>
+                        <outlet property="labelMailAddresse" destination="RZS-aI-RHe" id="MO9-Wf-org"/>
                         <outlet property="labelPickedLanguage" destination="72u-MQ-2iP" id="L0U-uT-2rj"/>
                         <outlet property="pickerViewLanguages" destination="yFQ-3z-GNF" id="iVa-Fy-vDd"/>
                     </connections>
@@ -736,6 +756,9 @@
         <image name="zeroLicense" width="150" height="150"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

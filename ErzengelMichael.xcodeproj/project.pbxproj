@@ -21,6 +21,7 @@
 		8429331528B2DC4E0093DE24 /* ErzengelMichaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331428B2DC4E0093DE24 /* ErzengelMichaelTests.swift */; };
 		8429331F28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */; };
 		8429332128B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */; };
+		842BECB22955C22F005D3E86 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 842BECB12955C22E005D3E86 /* SanctiRosariiMichael.json */; };
 		8444CCAF28C39408002C819B /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444CCAE28C39408002C819B /* AppDetails.swift */; };
 		844F532028BA58A200034D24 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F531F28BA58A200034D24 /* Slide.xib */; };
 		84582CA42932A4D300D7CE11 /* PopeLeoPrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */; };
@@ -29,7 +30,6 @@
 		846C0AD92909C61C001456F3 /* PromisesMichaelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */; };
 		8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487C61529243ADF00458D86 /* WelcomeViewController.swift */; };
 		8487C6222924459B00458D86 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6212924459B00458D86 /* Welcome.storyboard */; };
-		849762F129548778008F9E6F /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 849762F029548778008F9E6F /* SanctiRosariiMichael.json */; };
 		84FA1C292928F6870016ED26 /* IndulgencesPiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */; };
 		95087AFB9B80348CE7E660B0 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +74,7 @@
 		8429331A28B2DC4E0093DE24 /* ErzengelMichaelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErzengelMichaelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITests.swift; sourceTree = "<group>"; };
 		8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		842BECB12955C22E005D3E86 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		8444CCAE28C39408002C819B /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
 		844F531F28BA58A200034D24 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopeLeoPrayerViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesMichaelViewController.swift; sourceTree = "<group>"; };
 		8487C61529243ADF00458D86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8487C6212924459B00458D86 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
-		849762F029548778008F9E6F /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndulgencesPiusViewController.swift; sourceTree = "<group>"; };
 		C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichael.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E5E848E6BF5C1F20B4E471 /* Pods-ErzengelMichael.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael.debug.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael/Pods-ErzengelMichael.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		8422734B292004FE00FD475D /* Jsonfiles */ = {
 			isa = PBXGroup;
 			children = (
-				849762F029548778008F9E6F /* SanctiRosariiMichael.json */,
+				842BECB12955C22E005D3E86 /* SanctiRosariiMichael.json */,
 			);
 			path = Jsonfiles;
 			sourceTree = "<group>";
@@ -359,11 +359,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8429330A28B2DC4E0093DE24 /* LaunchScreen.storyboard in Resources */,
-				849762F129548778008F9E6F /* SanctiRosariiMichael.json in Resources */,
 				8429330728B2DC4E0093DE24 /* Assets.xcassets in Resources */,
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
 				8487C6222924459B00458D86 /* Welcome.storyboard in Resources */,
+				842BECB22955C22F005D3E86 /* SanctiRosariiMichael.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +684,7 @@
 				DEVELOPMENT_TEAM = JML7X85FG3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ErzengelMichael/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sancti Rosarii Michael";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -716,6 +717,7 @@
 				DEVELOPMENT_TEAM = JML7X85FG3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ErzengelMichael/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sancti Rosarii Michael";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

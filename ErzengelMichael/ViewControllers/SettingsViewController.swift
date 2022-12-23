@@ -15,7 +15,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var buttonLanguageConfirmed: UIButton!
     @IBOutlet weak var labelPickedLanguage: UILabel!
     @IBOutlet weak var pickerViewLanguages: UIPickerView!
-    
+    @IBOutlet weak var labelMailAddresse: UILabel!
+    @IBOutlet weak var labelCreativeCommonsLicensed: UILabel!
     var flagsTag:Int = 0
     
     var arrayFlags:[UIImage]=[UIImage(named: "langEnglish")!, UIImage(named: "langFrench")!, UIImage(named: "langGerman")!, UIImage(named: "langSpanish")!, UIImage(named: "langPortugese")!, UIImage(named: "langItalian")!]
@@ -44,11 +45,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
         	
         //Update to respective language
-        let alert = UIAlertController(title: "Button klicked", message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert
-        )
-        
+        let alert = UIAlertController(title: "Button klicked", message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
         self.present(alert, animated: true, completion: nil)
         
     }
@@ -58,11 +56,59 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         pickerViewLanguages.delegate = self
         pickerViewLanguages.dataSource = self
-     
+        
+        let tabGestureRecognizerMail = UITapGestureRecognizer(target: self, action: #selector(self.labelMailAdresseTapped))
+        labelMailAddresse.addGestureRecognizer(tabGestureRecognizerMail)
+        labelMailAddresse.isUserInteractionEnabled = true
+        
+        let tabGestureRecognizerCreativeCommons = UITapGestureRecognizer(target: self, action: #selector(self.labelCreativeCommonsLicensedTapped))
+        labelCreativeCommonsLicensed.addGestureRecognizer(tabGestureRecognizerCreativeCommons)
+        labelCreativeCommonsLicensed.isUserInteractionEnabled = true
         /*stackViewHeader.layer.cornerRadius = 15
         stackViewHeader.layoutMargins = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         stackViewHeader.isLayoutMarginsRelativeArrangement = true*/
         
+    }
+    
+    @objc func labelCreativeCommonsLicensedTapped (sender: UITapGestureRecognizer) {
+        let creativeCommonsAdresse = "https://creativecommons.org/licenses/"
+        if let url = URL(string: creativeCommonsAdresse) {
+            UIApplication.shared.open(url)
+                /*let alert = UIAlertController(title: "Please install Mail App on your device!", message: "Mail App required\(language ?? "No language chosen") confirmed", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)*/
+        }
+    }
+    
+    @objc func labelMailAdresseTapped(sender: UITapGestureRecognizer) {
+        /*let mailClass: AnyClass? = (NSClassFromString("MFMailComposeViewController"))
+        if (mailClass != nil)
+        {
+            if ([mailClass canSendMail])
+            {
+                [self displayComposerSheet];
+            }
+            else
+            {
+                [self launchMailAppOnDevice];
+            }
+        }
+        else
+        {
+            [self launchMailAppOnDevice];
+        }*/
+        
+        let emailAdresse = "robert.komarek98@gmail.com"
+        if let url = URL(string: "mailto:\(emailAdresse)") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+                /*let alert = UIAlertController(title: "Please install Mail App on your device!", message: "Mail App required\(language ?? "No language chosen") confirmed", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)*/
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
