@@ -43,10 +43,46 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
             tabBarItem3.title = arrayAppDetails[0].TabBarSettings
         }
+        
+        var myTitle:String
+        var myMessage:String
+        var myActionTitle:String
         	
         //Update to respective language
-        let alert = UIAlertController(title: "Button klicked", message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        switch language {
+        case "English":
+            myTitle = "Language Changed"
+            myMessage = "Language changed to English!"
+            myActionTitle = "OK"
+        case "Français":
+            myTitle = "La langue a changé"
+            myMessage = "Langue changée en français!"
+            myActionTitle = "D'ACCORD"
+        case "Deutsch":
+            myTitle = "Sprache geändert"
+            myMessage = "Sprache auf Deutsch geändert!"
+            myActionTitle = "OK"
+        case "Italiano":
+            myTitle = "Lingua cambiata"
+            myMessage = "Lingua cambiata in italiano!"
+            myActionTitle = "OK"
+        case "Português":
+            myTitle = "Idioma alterado"
+            myMessage = "Idioma alterado para português!"
+            myActionTitle = "OK"
+        case "Español":
+            myTitle = "Idioma cambiado"
+            myMessage = "Idioma cambiado a español!"
+            myActionTitle = "DE ACUERDO"
+        default:
+            myTitle = "Language Changed"
+            myMessage = "Language changed to English!"
+            myActionTitle = "OK"
+        }
+        
+        /*let alert = UIAlertController(title: myTitle, message: "Language \(language ?? "No language chosen") confirmed", preferredStyle: .alert)*/
+        let alert = UIAlertController(title: myTitle, message: myMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: myActionTitle, style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
     }
