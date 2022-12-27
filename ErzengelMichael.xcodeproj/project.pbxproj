@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124EFC1ABED732864A396E58 /* Pods_ErzengelMichaelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161E388F79C2605CF56DDB84 /* Pods_ErzengelMichaelTests.framework */; };
-		5A13021ABB406160E61049A3 /* Pods_ErzengelMichael.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */; };
 		841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */; };
 		8420BA1328FB309D000575A5 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420BA1228FB309D000575A5 /* Slide.swift */; };
 		842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FA28B2DC4C0093DE24 /* AppDelegate.swift */; };
@@ -21,7 +19,6 @@
 		8429331528B2DC4E0093DE24 /* ErzengelMichaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331428B2DC4E0093DE24 /* ErzengelMichaelTests.swift */; };
 		8429331F28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */; };
 		8429332128B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */; };
-		842BECB22955C22F005D3E86 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 842BECB12955C22E005D3E86 /* SanctiRosariiMichael.json */; };
 		8444CCAF28C39408002C819B /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444CCAE28C39408002C819B /* AppDetails.swift */; };
 		844F532028BA58A200034D24 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F531F28BA58A200034D24 /* Slide.xib */; };
 		84582CA42932A4D300D7CE11 /* PopeLeoPrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */; };
@@ -30,8 +27,8 @@
 		846C0AD92909C61C001456F3 /* PromisesMichaelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */; };
 		8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487C61529243ADF00458D86 /* WelcomeViewController.swift */; };
 		8487C6222924459B00458D86 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6212924459B00458D86 /* Welcome.storyboard */; };
+		84BA9399295B595700429925 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9398295B595700429925 /* SanctiRosariiMichael.json */; };
 		84FA1C292928F6870016ED26 /* IndulgencesPiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */; };
-		95087AFB9B80348CE7E660B0 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		161E388F79C2605CF56DDB84 /* Pods_ErzengelMichaelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichaelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C9EF654B1C55FF9F185F4F5 /* Pods-ErzengelMichael.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael.release.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael/Pods-ErzengelMichael.release.xcconfig"; sourceTree = "<group>"; };
-		36470884D113569CA8B7A3C9 /* Pods-ErzengelMichaelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichaelTests.debug.xcconfig"; path = "Target Support Files/Pods-ErzengelMichaelTests/Pods-ErzengelMichaelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5879DC3C74C12E67D0FF0BA4 /* Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig"; sourceTree = "<group>"; };
-		716A4DE30730AB1D452133D0 /* Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichael_ErzengelMichaelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyCenteredTextView.swift; sourceTree = "<group>"; };
 		8420BA1228FB309D000575A5 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		842932F728B2DC4C0093DE24 /* ErzengelMichael.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErzengelMichael.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +65,6 @@
 		8429331A28B2DC4E0093DE24 /* ErzengelMichaelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErzengelMichaelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITests.swift; sourceTree = "<group>"; };
 		8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		842BECB12955C22E005D3E86 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		8444CCAE28C39408002C819B /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
 		844F531F28BA58A200034D24 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopeLeoPrayerViewController.swift; sourceTree = "<group>"; };
@@ -83,10 +73,8 @@
 		846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesMichaelViewController.swift; sourceTree = "<group>"; };
 		8487C61529243ADF00458D86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8487C6212924459B00458D86 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		84BA9398295B595700429925 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndulgencesPiusViewController.swift; sourceTree = "<group>"; };
-		C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErzengelMichael.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2E5E848E6BF5C1F20B4E471 /* Pods-ErzengelMichael.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichael.debug.xcconfig"; path = "Target Support Files/Pods-ErzengelMichael/Pods-ErzengelMichael.debug.xcconfig"; sourceTree = "<group>"; };
-		EBB79301B550D1BABEFF78CE /* Pods-ErzengelMichaelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErzengelMichaelTests.release.xcconfig"; path = "Target Support Files/Pods-ErzengelMichaelTests/Pods-ErzengelMichaelTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A13021ABB406160E61049A3 /* Pods_ErzengelMichael.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124EFC1ABED732864A396E58 /* Pods_ErzengelMichaelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95087AFB9B80348CE7E660B0 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +146,7 @@
 		8422734B292004FE00FD475D /* Jsonfiles */ = {
 			isa = PBXGroup;
 			children = (
-				842BECB12955C22E005D3E86 /* SanctiRosariiMichael.json */,
+				84BA9398295B595700429925 /* SanctiRosariiMichael.json */,
 			);
 			path = Jsonfiles;
 			sourceTree = "<group>";
@@ -174,7 +159,6 @@
 				8429331D28B2DC4E0093DE24 /* ErzengelMichaelUITests */,
 				842932F828B2DC4C0093DE24 /* Products */,
 				A75EB2F802B2BD74681A1D60 /* Pods */,
-				8ED8897A7F64F21059234C66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,25 +207,9 @@
 			path = ErzengelMichaelUITests;
 			sourceTree = "<group>";
 		};
-		8ED8897A7F64F21059234C66 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C97E8174501E3FE0BB08A84B /* Pods_ErzengelMichael.framework */,
-				7A911FFDC46B719B73FA9AC7 /* Pods_ErzengelMichael_ErzengelMichaelUITests.framework */,
-				161E388F79C2605CF56DDB84 /* Pods_ErzengelMichaelTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A75EB2F802B2BD74681A1D60 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E2E5E848E6BF5C1F20B4E471 /* Pods-ErzengelMichael.debug.xcconfig */,
-				1C9EF654B1C55FF9F185F4F5 /* Pods-ErzengelMichael.release.xcconfig */,
-				716A4DE30730AB1D452133D0 /* Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig */,
-				5879DC3C74C12E67D0FF0BA4 /* Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig */,
-				36470884D113569CA8B7A3C9 /* Pods-ErzengelMichaelTests.debug.xcconfig */,
-				EBB79301B550D1BABEFF78CE /* Pods-ErzengelMichaelTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -253,11 +221,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8429332428B2DC4E0093DE24 /* Build configuration list for PBXNativeTarget "ErzengelMichael" */;
 			buildPhases = (
-				E72BA46EC441A1A7CC24B5A2 /* [CP] Check Pods Manifest.lock */,
 				842932F328B2DC4C0093DE24 /* Sources */,
 				842932F428B2DC4C0093DE24 /* Frameworks */,
 				842932F528B2DC4C0093DE24 /* Resources */,
-				6E14DC3C4E505B39B42A4989 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,7 +238,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8429332728B2DC4E0093DE24 /* Build configuration list for PBXNativeTarget "ErzengelMichaelTests" */;
 			buildPhases = (
-				566D42F11E2E639A0A2C40A6 /* [CP] Check Pods Manifest.lock */,
 				8429330C28B2DC4E0093DE24 /* Sources */,
 				8429330D28B2DC4E0093DE24 /* Frameworks */,
 				8429330E28B2DC4E0093DE24 /* Resources */,
@@ -291,11 +256,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8429332A28B2DC4E0093DE24 /* Build configuration list for PBXNativeTarget "ErzengelMichaelUITests" */;
 			buildPhases = (
-				B5771AA5D921F9EF7F3BCEFF /* [CP] Check Pods Manifest.lock */,
 				8429331628B2DC4E0093DE24 /* Sources */,
 				8429331728B2DC4E0093DE24 /* Frameworks */,
 				8429331828B2DC4E0093DE24 /* Resources */,
-				0C9420C5C759DFA29F4A25A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,8 +325,8 @@
 				8429330728B2DC4E0093DE24 /* Assets.xcassets in Resources */,
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
+				84BA9399295B595700429925 /* SanctiRosariiMichael.json in Resources */,
 				8487C6222924459B00458D86 /* Welcome.storyboard in Resources */,
-				842BECB22955C22F005D3E86 /* SanctiRosariiMichael.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,109 +345,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0C9420C5C759DFA29F4A25A6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ErzengelMichael-ErzengelMichaelUITests/Pods-ErzengelMichael-ErzengelMichaelUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		566D42F11E2E639A0A2C40A6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ErzengelMichaelTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6E14DC3C4E505B39B42A4989 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ErzengelMichael/Pods-ErzengelMichael-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ErzengelMichael/Pods-ErzengelMichael-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ErzengelMichael/Pods-ErzengelMichael-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B5771AA5D921F9EF7F3BCEFF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ErzengelMichael-ErzengelMichaelUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E72BA46EC441A1A7CC24B5A2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ErzengelMichael-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		842932F328B2DC4C0093DE24 /* Sources */ = {
@@ -675,7 +535,6 @@
 		};
 		8429332528B2DC4E0093DE24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2E5E848E6BF5C1F20B4E471 /* Pods-ErzengelMichael.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -710,7 +569,6 @@
 		};
 		8429332628B2DC4E0093DE24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C9EF654B1C55FF9F185F4F5 /* Pods-ErzengelMichael.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -745,7 +603,6 @@
 		};
 		8429332828B2DC4E0093DE24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36470884D113569CA8B7A3C9 /* Pods-ErzengelMichaelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -766,7 +623,6 @@
 		};
 		8429332928B2DC4E0093DE24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB79301B550D1BABEFF78CE /* Pods-ErzengelMichaelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -787,7 +643,6 @@
 		};
 		8429332B28B2DC4E0093DE24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 716A4DE30730AB1D452133D0 /* Pods-ErzengelMichael-ErzengelMichaelUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -806,7 +661,6 @@
 		};
 		8429332C28B2DC4E0093DE24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5879DC3C74C12E67D0FF0BA4 /* Pods-ErzengelMichael-ErzengelMichaelUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

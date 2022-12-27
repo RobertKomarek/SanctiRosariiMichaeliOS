@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var labelCreativeCommonsLicensed: UILabel!
     var flagsTag:Int = 0
     
-    var arrayFlags:[UIImage]=[UIImage(named: "langEnglish")!, UIImage(named: "langFrench")!, UIImage(named: "langGerman")!, UIImage(named: "langSpanish")!, UIImage(named: "langPortugese")!, UIImage(named: "langItalian")!]
+    var arrayFlags:[UIImage]=[UIImage(named: "langEnglish")!, UIImage(named: "langFrench")!, UIImage(named: "langGerman")!, UIImage(named: "langSpanish")!, UIImage(named: "langPortugese")!, UIImage(named: "langItalian")!, UIImage(named: "langChinese")!]
     
     @IBAction func languageConfirmed(_ sender: UIButton, forEvent event: UIEvent) {
         //Ausgewählte Sprache speichern und anschl. in viewDidLoad von Main/ViewController abfragen und die entsprechende Sprache laden
@@ -74,6 +74,10 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             myTitle = "Idioma cambiado"
             myMessage = "Idioma cambiado a español!"
             myActionTitle = "DE ACUERDO"
+        case "Chinese":
+            myTitle = "I语言已更改"
+            myMessage = "语言已更改为中文"
+            myActionTitle = "同意"
         default:
             myTitle = "Language Changed"
             myMessage = "Language changed to English!"
@@ -174,6 +178,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             labelPickedLanguage.text = "Português"
         case 5:
             labelPickedLanguage.text = "Italiano"
+        case 6:
+            labelPickedLanguage.text = "中文"
         default:
             labelPickedLanguage.text = "Tap on Flag!"
         }

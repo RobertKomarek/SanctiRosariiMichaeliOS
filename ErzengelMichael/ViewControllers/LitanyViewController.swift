@@ -56,6 +56,11 @@ class LitanyViewController: UIViewController {
             backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        case "Chinese":
+            let backButton = UIBarButtonItem()
+            backButton.title = passedArray[0].TitlePrayersLeo
+            backButton.tintColor = .white
+            self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         default:
             let backButton = UIBarButtonItem()
             backButton.title = passedArray[0].TitlePrayersLeo

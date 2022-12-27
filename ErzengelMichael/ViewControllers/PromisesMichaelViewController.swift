@@ -22,7 +22,7 @@ class PromisesMichaelViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
+        //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français, Chinese
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
         

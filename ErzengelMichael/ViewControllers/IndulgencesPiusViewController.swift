@@ -52,6 +52,11 @@ class IndulgencesPiusViewController: UIViewController {
             backButton.title = "Promesses"
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        case "中文":
+            let backButton = UIBarButtonItem()
+            backButton.title = "承诺"
+            backButton.tintColor = .white
+            self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         default:
             let backButton = UIBarButtonItem()
             backButton.title = "Promises"
