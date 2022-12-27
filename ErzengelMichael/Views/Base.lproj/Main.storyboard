@@ -95,7 +95,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5J-XF-QQK" userLabel="Button Share">
-                                <rect key="frame" x="310" y="13" width="48" height="34"/>
+                                <rect key="frame" x="310" y="3" width="48" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
                                 <connections>
@@ -157,7 +157,7 @@
                             <constraint firstItem="4At-tB-e0i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aGk-h9-YPP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f5J-XF-QQK" secondAttribute="trailing" constant="17" id="l9L-IZ-Qzk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CTt-y5-Mz5" secondAttribute="bottom" id="mc3-wc-s1O"/>
-                            <constraint firstItem="f5J-XF-QQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="stb-kv-znO"/>
+                            <constraint firstItem="f5J-XF-QQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="stb-kv-znO"/>
                             <constraint firstItem="CTt-y5-Mz5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tel-2l-DOJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4At-tB-e0i" secondAttribute="bottom" constant="35" id="uq3-LU-HTt"/>
                         </constraints>
@@ -531,17 +531,24 @@
                                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-WP-NqT" userLabel="Stack View Sancti Rosarii Michael">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michael the Archangel Chaplet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-zZ-0IJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="113.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-zZ-0IJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
                                                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.25724782375310429" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="Michael the Archangel Chaplet">
+                                                                        <attributes>
+                                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
                                                                 <nil key="highlightedColor"/>
                                                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <size key="shadowOffset" width="0.0" height="-15"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sancti Rosarii Michael" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meu-ZA-fQL">
-                                                                <rect key="frame" x="0.0" y="128.5" width="375" height="46.5"/>
+                                                                <rect key="frame" x="0.0" y="125.5" width="375" height="49.5"/>
                                                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="30"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
