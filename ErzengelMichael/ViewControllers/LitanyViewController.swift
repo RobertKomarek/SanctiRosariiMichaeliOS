@@ -20,11 +20,15 @@ class LitanyViewController: UIViewController {
         /*imageViewLitany.layer.cornerRadius = 10
         imageViewLitany.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]*/
     
+//
+//        let defaults = UserDefaults.standard
+//        let language = defaults.string(forKey: "Language")
         
-        let defaults = UserDefaults.standard
-        let language = defaults.string(forKey: "Language")
-        
-        switch language {
+        let backButton = UIBarButtonItem()
+        backButton.title = passedArray[0].TitlePrayersLeo
+        backButton.tintColor = .white
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        /*switch language {
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         case "Deutsch":
             let backButton = UIBarButtonItem()
@@ -66,7 +70,7 @@ class LitanyViewController: UIViewController {
             backButton.title = passedArray[0].TitlePrayersLeo
             backButton.tintColor = .white
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
-        }
+        }*/
 
     }
     

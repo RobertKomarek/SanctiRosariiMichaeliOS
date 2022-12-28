@@ -183,7 +183,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         } else {
             arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
         }
-        
        
         
         //Update TabItems Title according to language
@@ -212,7 +211,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             slides = createSlides(darkLightMode: darkModeIsEnabled)
             setupSlideScrollView(slides: slides)
             pageControl.numberOfPages = slides.count
-            pageControl.currentPage = 0
+            pageControl.currentPage = Int(round(scrollView.contentOffset.x/view.frame.width))
             pageControl.layer.cornerRadius = 15
             pageControl.clipsToBounds = true
             view.bringSubviewToFront(pageControl)

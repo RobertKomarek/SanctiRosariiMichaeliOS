@@ -544,7 +544,7 @@
 				DEVELOPMENT_TEAM = JML7X85FG3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ErzengelMichael/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Sancti Rosarii Michael";
+				INFOPLIST_KEY_CFBundleDisplayName = "St.Michael Chaplet";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -578,7 +578,7 @@
 				DEVELOPMENT_TEAM = JML7X85FG3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ErzengelMichael/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Sancti Rosarii Michael";
+				INFOPLIST_KEY_CFBundleDisplayName = "St.Michael Chaplet";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
