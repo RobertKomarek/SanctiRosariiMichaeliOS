@@ -27,21 +27,25 @@ class AppDetails : Decodable {
     var Image: String?
     var ImageDark: String?
     
+    //Seque "Promises" or "Litany"
     func getAppDetails(jsonName:String, language:String) -> [AppDetails] {
-        
         var jsonResult:[AppDetails] = []
         
         if let path = Bundle.main.path(forResource: jsonName, ofType: "json") {
             do {
-                  let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                  jsonResult = try! JSONDecoder().decode([AppDetails].self, from: data)
-              } catch {
-                   // handle error
-              }
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                jsonResult = try! JSONDecoder().decode([AppDetails].self, from: data)
+            } catch {
+                // handle error
+            }
         }
         
         var rosaryChosenLanguage:[AppDetails] = []
-      
+        
+        //        for (index, element) in jsonResult.enumerated() {
+        //            print("Index: \(index), Element: \(element)")
+        //        }
+        
         for rosary in jsonResult {
             if rosary.Language == language {
                 rosaryChosenLanguage.append(rosary)

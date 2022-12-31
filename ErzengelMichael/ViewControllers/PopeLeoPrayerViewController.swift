@@ -30,7 +30,7 @@ class PopeLeoPrayerViewController: UIViewController {
         switchLatinNativeLanguage.clipsToBounds = true
      }
    
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool)  {
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")

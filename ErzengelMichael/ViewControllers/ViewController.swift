@@ -155,24 +155,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         buttonHideWelcome.layer.cornerRadius = 7
-        //shareIcon.layer.cornerRadius = 7
-        
-        /*let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.shareIconTapped))
-        shareIcon.addGestureRecognizer(tapGestureRecognizer)
-        shareIcon.isUserInteractionEnabled = true*/
-       
-}
-    
-    /*@objc func shareIconTapped (sender: UITapGestureRecognizer) {
-        
-        let url:Any = "https://apps.apple.com/de/app/sancti-rosarii-michael/id1577365794"
-        let urlToShare = [url]
-        let activity = UIActivityViewController(activityItems: urlToShare, applicationActivities: nil)
-        activity.popoverPresentationController?.sourceView = self.view
-        self.present(activity, animated: true, completion: nil)
-    }*/
-    
-    override func viewDidAppear(_ animated: Bool) {
         
         //Check chosen language Deutsch, English, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
@@ -224,15 +206,45 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 }
             }
         }
+    }
+   
+    
+    override func viewDidAppear(_ animated: Bool) {
         
-        /*	let defaults = UserDefaults.standard
+        //Check chosen language Deutsch, English, Español, Italiano, Português, Français
+        let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
-        
-        let alert = UIAlertController(title: "Chosen language", message: "Language \(language ?? "No language chosen") chosen", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        self.present(alert, animated: true, completion: nil)*/
+        if language != nil {
+            //Load Json file with app details
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
+        } else {
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
+        }
+
+        //Welcome View
+        labelWelcome.text = arrayAppDetails[0].AppWelcomeTitle
+        textViewInstruction.text = arrayAppDetails[0].AppWelcomeText
+        buttonHideWelcome.setTitle(arrayAppDetails[0].ChapletStart, for: .normal)
+
+        //Implement ScrollView
+        if scrollView != nil {
+            scrollView.delegate = self
+            slides = createSlides(darkLightMode: darkModeIsEnabled)
+            setupSlideScrollView(slides: slides)
+            pageControl.numberOfPages = slides.count
+            pageControl.currentPage = Int(round(scrollView.contentOffset.x/view.frame.width))
+            pageControl.layer.cornerRadius = 15
+            pageControl.clipsToBounds = true
+            view.bringSubviewToFront(pageControl)
+
+            //Check if iPad or iPhone and adjust font size and content mode
+            for slide in slides {
+                if UIDevice.current.userInterfaceIdiom == .pad {
+                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
+                    slide.textView.font = UIFont.systemFont(ofSize: 32)
+                }
+            }
+        }
     }
     
     func createSlides(darkLightMode:Bool) -> [Slide] {

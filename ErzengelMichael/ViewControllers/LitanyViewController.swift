@@ -17,6 +17,9 @@ class LitanyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = passedArray[0].TitlePrayersLitany
+        textViewLitany.text = passedArray[0].PrayersLitany
+        
         /*imageViewLitany.layer.cornerRadius = 10
         imageViewLitany.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]*/
     
@@ -76,11 +79,8 @@ class LitanyViewController: UIViewController {
     
 
     override func viewDidAppear(_ animated: Bool) {
-        
-        self.navigationItem.title = passedArray[0].TitlePrayersLitany
-        textViewLitany.text = passedArray[0].PrayersLitany
-        //textViewIndulgences.text = passedArray[0].PromisesIndulgences
     }
+    
     /*
     // MARK: - Navigation
 

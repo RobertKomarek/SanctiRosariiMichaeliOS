@@ -24,10 +24,10 @@
 		84582CA42932A4D300D7CE11 /* PopeLeoPrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */; };
 		84582CA62932A4E000D7CE11 /* LitanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA52932A4E000D7CE11 /* LitanyViewController.swift */; };
 		846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846851CA28FC821200942E2A /* SettingsViewController.swift */; };
+		8468BFC6295F249800FEEDD3 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 8468BFC5295F249700FEEDD3 /* SanctiRosariiMichael.json */; };
 		846C0AD92909C61C001456F3 /* PromisesMichaelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */; };
 		8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487C61529243ADF00458D86 /* WelcomeViewController.swift */; };
 		8487C6222924459B00458D86 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6212924459B00458D86 /* Welcome.storyboard */; };
-		84BA9399295B595700429925 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 84BA9398295B595700429925 /* SanctiRosariiMichael.json */; };
 		84FA1C292928F6870016ED26 /* IndulgencesPiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,10 +70,10 @@
 		84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopeLeoPrayerViewController.swift; sourceTree = "<group>"; };
 		84582CA52932A4E000D7CE11 /* LitanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitanyViewController.swift; sourceTree = "<group>"; };
 		846851CA28FC821200942E2A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8468BFC5295F249700FEEDD3 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesMichaelViewController.swift; sourceTree = "<group>"; };
 		8487C61529243ADF00458D86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8487C6212924459B00458D86 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
-		84BA9398295B595700429925 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndulgencesPiusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 		8422734B292004FE00FD475D /* Jsonfiles */ = {
 			isa = PBXGroup;
 			children = (
-				84BA9398295B595700429925 /* SanctiRosariiMichael.json */,
+				8468BFC5295F249700FEEDD3 /* SanctiRosariiMichael.json */,
 			);
 			path = Jsonfiles;
 			sourceTree = "<group>";
@@ -325,7 +325,7 @@
 				8429330728B2DC4E0093DE24 /* Assets.xcassets in Resources */,
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
-				84BA9399295B595700429925 /* SanctiRosariiMichael.json in Resources */,
+				8468BFC6295F249800FEEDD3 /* SanctiRosariiMichael.json in Resources */,
 				8487C6222924459B00458D86 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

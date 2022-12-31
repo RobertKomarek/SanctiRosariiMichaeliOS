@@ -9,7 +9,7 @@ import UIKit
 
 class IndulgencesPiusViewController: UIViewController {
     
-    var passedArray:[AppDetails]!
+    var passedArray:[AppDetails] = []
 
     @IBOutlet weak var textViewIndulgences: UITextView!
     
@@ -64,17 +64,12 @@ class IndulgencesPiusViewController: UIViewController {
             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         }
         
+        self.navigationItem.title = passedArray[0].TitlePromisesIndulgences
+        textViewIndulgences.text = passedArray[0].PromisesIndulgences
         
         // Do any additional setup after loading the view.
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        
-        self.navigationItem.title = passedArray[0].TitlePromisesIndulgences
-        textViewIndulgences.text = passedArray[0].PromisesIndulgences
-        //self.navigationItem.backButtonTitle = "Go BAck"
-        /*self.navigationItem.backButtonTitle = "Go Back"
-        self.navigationItem.backBarButtonItem?.title = "Go Back"*/
-        //self.navigationItem.backButtonTitle = " "
     }
 }
