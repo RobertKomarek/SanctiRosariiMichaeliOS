@@ -36,7 +36,7 @@ class PopeLeoPrayerViewController: UIViewController {
         let language = defaults.string(forKey: "Language")
         
         //Load Json file with app details
-        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
+        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language ?? "English")
                 
         //Set Navigation Bar Title, Button, TextView and Label
         self.navigationItem.title = arrayAppDetails[0].TitlePrayersLeo

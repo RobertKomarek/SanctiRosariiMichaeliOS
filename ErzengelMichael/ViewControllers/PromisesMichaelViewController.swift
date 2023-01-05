@@ -19,21 +19,22 @@ class PromisesMichaelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
     }
     
     override func viewDidAppear(_ animated: Bool) {
         //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français, Chinese
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
-        
+
         //Load Json file with app details
-        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
-                
+        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language ?? "English")
+
         //Set Navigation Bar Title
         //self.navigationItem.backBarButtonItem?.title = "Go Back"
         self.navigationItem.title = arrayAppDetails[0].TabBarPromises
         //self.navigationItem.backButtonTitle = "Go BAck"
-        
+
         textViewPromisesMichael.text = arrayAppDetails[0].PromisesMichael
         buttonGoToIndulgences.setTitle(arrayAppDetails[0].TitlePromisesIndulgences, for: .normal)
     }

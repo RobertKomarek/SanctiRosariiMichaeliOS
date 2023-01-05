@@ -74,7 +74,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             myTitle = "Idioma cambiado"
             myMessage = "Idioma cambiado a español!"
             myActionTitle = "DE ACUERDO"
-        case "Chinese":
+        case "中文":
             myTitle = "I语言已更改"
             myMessage = "语言已更改为中文"
             myActionTitle = "同意"
@@ -89,6 +89,22 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         alert.addAction(UIAlertAction(title: myActionTitle, style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func shareAppstore() {
+        let url:Any = "https://apps.apple.com/de/app/sancti-rosarii-michael/id1577365794"
+        let urlToShare = [url]
+        let activity = UIActivityViewController(activityItems: urlToShare, applicationActivities: nil)
+        activity.popoverPresentationController?.sourceView = self.view
+        self.present(activity, animated: true, completion: nil)
+    }
+    
+    @IBAction func sharePlaystore() {
+        let url:Any = "http://play.google.com/store/apps/details?id=com.robertkomarek.sanctirosariimichael"
+        let urlToShare = [url]
+        let activity = UIActivityViewController(activityItems: urlToShare, applicationActivities: nil)
+        activity.popoverPresentationController?.sourceView = self.view
+        self.present(activity, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,48 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-150" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-xL-vfz">
-                                <rect key="frame" x="0.0" y="47" width="375" height="765"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfd-lv-NKp">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="LfB-V8-ltj"/>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Sancti Rosarii Michael">
-                                                <attributes>
-                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="30" name="AcademyEngravedLetPlain"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="gUd-CM-qjW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="765"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfd-lv-NKp">
+                                <rect key="frame" x="44.666666666666657" y="388.66666666666669" width="286" height="35"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="rRP-AO-EeF"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Sancti Rosarii Michael">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="30" name="AcademyEngravedLetPlain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="wOd-xL-vfz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CCQ-Xc-wss"/>
-                            <constraint firstAttribute="bottom" secondItem="wOd-xL-vfz" secondAttribute="bottom" id="QoQ-nL-3XD"/>
-                            <constraint firstItem="wOd-xL-vfz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iag-RT-8SA"/>
-                            <constraint firstAttribute="trailing" secondItem="wOd-xL-vfz" secondAttribute="trailing" id="wDN-fH-Vsu"/>
+                            <constraint firstItem="vfd-lv-NKp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="C4u-mO-RAk"/>
+                            <constraint firstItem="vfd-lv-NKp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jpg-fy-lYM"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
-        <image name="splashscreen" width="1500" height="800"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
