@@ -143,14 +143,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    @IBAction func buttonShareTapped(_ sender:UIButton) {
-        let url:Any = "https://apps.apple.com/de/app/sancti-rosarii-michael/id1577365794"
-        let urlToShare = [url]
-        let activity = UIActivityViewController(activityItems: urlToShare, applicationActivities: nil)
-        activity.popoverPresentationController?.sourceView = self.view
-        self.present(activity, animated: true, completion: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

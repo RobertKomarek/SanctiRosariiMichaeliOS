@@ -94,14 +94,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5J-XF-QQK" userLabel="Button Share">
-                                <rect key="frame" x="310" y="3" width="48" height="34"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
-                                <connections>
-                                    <action selector="buttonShareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hiU-8E-Djv"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTt-y5-Mz5" userLabel="Welcome View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <subviews>
@@ -154,9 +146,7 @@
                             <constraint firstAttribute="trailing" secondItem="CTt-y5-Mz5" secondAttribute="trailing" id="CQ9-3Y-JKg"/>
                             <constraint firstItem="CTt-y5-Mz5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VUZ-ZY-3J2"/>
                             <constraint firstItem="4At-tB-e0i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aGk-h9-YPP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f5J-XF-QQK" secondAttribute="trailing" constant="17" id="l9L-IZ-Qzk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CTt-y5-Mz5" secondAttribute="bottom" id="mc3-wc-s1O"/>
-                            <constraint firstItem="f5J-XF-QQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="stb-kv-znO"/>
                             <constraint firstItem="CTt-y5-Mz5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tel-2l-DOJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4At-tB-e0i" secondAttribute="bottom" constant="35" id="uq3-LU-HTt"/>
                         </constraints>
