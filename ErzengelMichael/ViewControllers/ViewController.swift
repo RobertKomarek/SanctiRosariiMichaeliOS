@@ -201,7 +201,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
    
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         //Check chosen language Deutsch, English, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard

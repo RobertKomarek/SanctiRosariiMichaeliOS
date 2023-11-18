@@ -19,12 +19,12 @@
 		8429331528B2DC4E0093DE24 /* ErzengelMichaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331428B2DC4E0093DE24 /* ErzengelMichaelTests.swift */; };
 		8429331F28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */; };
 		8429332128B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */; };
+		842FD4A529678F6900520545 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 842FD4A429678F6900520545 /* SanctiRosariiMichael.json */; };
 		8444CCAF28C39408002C819B /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8444CCAE28C39408002C819B /* AppDetails.swift */; };
 		844F532028BA58A200034D24 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844F531F28BA58A200034D24 /* Slide.xib */; };
 		84582CA42932A4D300D7CE11 /* PopeLeoPrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */; };
 		84582CA62932A4E000D7CE11 /* LitanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84582CA52932A4E000D7CE11 /* LitanyViewController.swift */; };
 		846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846851CA28FC821200942E2A /* SettingsViewController.swift */; };
-		8468BFC6295F249800FEEDD3 /* SanctiRosariiMichael.json in Resources */ = {isa = PBXBuildFile; fileRef = 8468BFC5295F249700FEEDD3 /* SanctiRosariiMichael.json */; };
 		846C0AD92909C61C001456F3 /* PromisesMichaelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */; };
 		8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487C61529243ADF00458D86 /* WelcomeViewController.swift */; };
 		8487C6222924459B00458D86 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6212924459B00458D86 /* Welcome.storyboard */; };
@@ -65,12 +65,12 @@
 		8429331A28B2DC4E0093DE24 /* ErzengelMichaelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErzengelMichaelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8429331E28B2DC4E0093DE24 /* ErzengelMichaelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITests.swift; sourceTree = "<group>"; };
 		8429332028B2DC4E0093DE24 /* ErzengelMichaelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErzengelMichaelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		842FD4A429678F6900520545 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		8444CCAE28C39408002C819B /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
 		844F531F28BA58A200034D24 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		84582CA32932A4D300D7CE11 /* PopeLeoPrayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopeLeoPrayerViewController.swift; sourceTree = "<group>"; };
 		84582CA52932A4E000D7CE11 /* LitanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitanyViewController.swift; sourceTree = "<group>"; };
 		846851CA28FC821200942E2A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		8468BFC5295F249700FEEDD3 /* SanctiRosariiMichael.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SanctiRosariiMichael.json; sourceTree = "<group>"; };
 		846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesMichaelViewController.swift; sourceTree = "<group>"; };
 		8487C61529243ADF00458D86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8487C6212924459B00458D86 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		8422734B292004FE00FD475D /* Jsonfiles */ = {
 			isa = PBXGroup;
 			children = (
-				8468BFC5295F249700FEEDD3 /* SanctiRosariiMichael.json */,
+				842FD4A429678F6900520545 /* SanctiRosariiMichael.json */,
 			);
 			path = Jsonfiles;
 			sourceTree = "<group>";
@@ -324,8 +324,8 @@
 				8429330A28B2DC4E0093DE24 /* LaunchScreen.storyboard in Resources */,
 				8429330728B2DC4E0093DE24 /* Assets.xcassets in Resources */,
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
+				842FD4A529678F6900520545 /* SanctiRosariiMichael.json in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
-				8468BFC6295F249800FEEDD3 /* SanctiRosariiMichael.json in Resources */,
 				8487C6222924459B00458D86 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,15 +549,17 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertkomarek.ErzengelMichael;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marinakomarek.sanctirosariimichael;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
@@ -584,15 +586,17 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertkomarek.ErzengelMichael;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marinakomarek.sanctirosariimichael;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;

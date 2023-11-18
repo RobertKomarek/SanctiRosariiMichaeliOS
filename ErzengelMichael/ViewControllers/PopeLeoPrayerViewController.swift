@@ -28,10 +28,25 @@ class PopeLeoPrayerViewController: UIViewController {
         switchLatinNativeLanguage.backgroundColor = .yellow
         switchLatinNativeLanguage.layer.cornerRadius = 15
         switchLatinNativeLanguage.clipsToBounds = true
+        
      }
    
-    override func viewDidAppear(_ animated: Bool)  {
-        //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français
+    override func viewWillAppear(_ animated: Bool) {
+        updateText()
+    }
+    
+    @IBAction func switchToggled(_ sender: UISwitch) {
+        let mySwitch = sender
+        if mySwitch.isOn {
+            labelLatinNativeLanguage.text = arrayAppDetails[0].Language
+            textViewPrayerLeo.text = arrayAppDetails[0].PrayersLeo
+        } else {
+            labelLatinNativeLanguage.text = "Latinus"
+            textViewPrayerLeo.text = arrayAppDetails[0].PrayersLeoLatin
+        }
+    }
+    
+    private func updateText() {
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
         
@@ -51,26 +66,14 @@ class PopeLeoPrayerViewController: UIViewController {
             labelLatinNativeLanguage.text = "Latinus"
             textViewPrayerLeo.text = arrayAppDetails[0].PrayersLeoLatin
         }
-        
-    }
-    
-    @IBAction func switchToggled(_ sender: UISwitch) {
-        let mySwitch = sender
-        if mySwitch.isOn {
-            labelLatinNativeLanguage.text = arrayAppDetails[0].Language
-            textViewPrayerLeo.text = arrayAppDetails[0].PrayersLeo
-        } else {
-            labelLatinNativeLanguage.text = "Latinus"
-            textViewPrayerLeo.text = arrayAppDetails[0].PrayersLeoLatin
-        }
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showLitany" {
-            litanyViewController = segue.destination as! LitanyViewController
-            //passeArray created in destination ViewController IndulgencesPiusViewController
-            litanyViewController.passedArray = arrayAppDetails
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showLitany" {
+//            litanyViewController = segue.destination as! LitanyViewController
+//            //passeArray created in destination ViewController IndulgencesPiusViewController
+//            litanyViewController.passedArray = arrayAppDetails
+//        }
+//    }
 
 }

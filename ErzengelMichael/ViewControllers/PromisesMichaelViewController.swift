@@ -19,11 +19,13 @@ class PromisesMichaelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        //Check chosen language Deutsch, Englisch, Español, Italiano, Português, Français, Chinese
+    override func viewWillAppear(_ animated: Bool) {
+        updateText()
+    }
+    
+    private func updateText() {
         let defaults = UserDefaults.standard
         let language = defaults.string(forKey: "Language")
 
@@ -37,16 +39,17 @@ class PromisesMichaelViewController: UIViewController {
 
         textViewPromisesMichael.text = arrayAppDetails[0].PromisesMichael
         buttonGoToIndulgences.setTitle(arrayAppDetails[0].TitlePromisesIndulgences, for: .normal)
+        
     }
     
     //Passing data to Indulgences Pius XI Navigation Item
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showIndulgences" {
-            indulgencesPiusViewController = segue.destination as! IndulgencesPiusViewController
-            //passeArray created in destination ViewController IndulgencesPiusViewController
-            indulgencesPiusViewController.passedArray = arrayAppDetails
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showIndulgences" {
+//            indulgencesPiusViewController = segue.destination as! IndulgencesPiusViewController
+//            //passeArray created in destination ViewController IndulgencesPiusViewController
+//            indulgencesPiusViewController.passedArray = arrayAppDetails
+//        }
+//    }
 }
 
 
