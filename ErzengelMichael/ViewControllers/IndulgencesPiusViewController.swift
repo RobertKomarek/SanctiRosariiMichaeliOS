@@ -33,8 +33,6 @@ class IndulgencesPiusViewController: UIViewController {
         backButton.tintColor = .white
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
- 
-        
         self.navigationItem.title = arrayAppDetails[0].TitlePromisesIndulgences
         textViewIndulgences.text = arrayAppDetails[0].PromisesIndulgences
         
