@@ -10,25 +10,20 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var labelWelcome: UILabel!
     @IBOutlet weak var welcomeView: UIView!
     @IBOutlet weak var buttonHideWelcome: UIButton!
-    //Controls Rosary Scene
+    
     @IBOutlet weak var tabBarRosary: UITabBarItem!
     @IBOutlet weak var buttonDarkmode: UIButton!
     @IBOutlet weak var buttonBackBack: UIButton!
     @IBOutlet weak var buttonBack: UIButton!
     @IBOutlet weak var buttonForward: UIButton!
     @IBOutlet weak var buttonShare: UIButton!
-    //@IBOutlet weak var imageFrench: UIImageView!
-    //@IBOutlet weak var shareIcon: UIImageView!
-    //Controls Settings Scene (Languages)
-    //Carousel
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet var scrollView: UIScrollView!
-    //Variables
-    var slides:[Slide] = [];
+    
+    var slides: [Slide] = [];
     var pageIndex:CGFloat = 0
-    //var screenWidth:CGFloat = 0
-    var arrayAppDetails:[AppDetails] = []
-    var rosaryChosenLanguage:[AppDetails] = []
+    var arrayAppDetails: [AppDetails] = []
+    var rosaryChosenLanguage: [AppDetails] = []
     
     @IBAction func hideWelcomeView(_ sender: Any) {
         welcomeView.isHidden = true
@@ -172,12 +167,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
             tabBarItem3.title = arrayAppDetails[0].TabBarSettings
         }
-        
-        
-        //Welcome View
-        labelWelcome.text = arrayAppDetails[0].AppWelcomeTitle
-        textViewInstruction.text = arrayAppDetails[0].AppWelcomeText
-        buttonHideWelcome.setTitle(arrayAppDetails[0].ChapletStart, for: .normal)
+
         
         //Implement ScrollView
         if scrollView != nil {
@@ -191,12 +181,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             view.bringSubviewToFront(pageControl)
             
             //Check if iPad or iPhone and adjust font size and content mode
-            for slide in slides {
-                if UIDevice.current.userInterfaceIdiom == .pad {
-                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
-                    slide.textView.font = UIFont.systemFont(ofSize: 32)
-                }
-            }
+//            for slide in slides {
+//                if UIDevice.current.userInterfaceIdiom == .pad {
+//                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
+//                    slide.textView.font = UIFont.systemFont(ofSize: 32)
+//                }
+//            }
         }
     }
    
@@ -212,6 +202,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         } else {
             arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
         }
+        
+        //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
+        if let fontSize = UserDefaults.standard.value(forKey: "fontSize") as? CGFloat {
+            labelWelcome.font = UIFont.systemFont(ofSize: fontSize)
+            textViewInstruction.font = UIFont.systemFont(ofSize: fontSize)
+        }
 
         //Welcome View
         labelWelcome.text = arrayAppDetails[0].AppWelcomeTitle
@@ -230,16 +226,19 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             view.bringSubviewToFront(pageControl)
 
             //Check if iPad or iPhone and adjust font size and content mode
-            for slide in slides {
-                if UIDevice.current.userInterfaceIdiom == .pad {
-                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
-                    slide.textView.font = UIFont.systemFont(ofSize: 32)
-                }
-            }
+//            for slide in slides {
+//                if UIDevice.current.userInterfaceIdiom == .pad {
+//                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
+//                    slide.textView.font = UIFont.systemFont(ofSize: 32)
+//                }
+//            }
         }
     }
     
     func createSlides(darkLightMode:Bool) -> [Slide] {
+        
+        //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
+        let fontSize = UserDefaults.standard.value(forKey: "fontSize") as? CGFloat
         
         var slides:[Slide] = []
         
@@ -249,15 +248,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
                 slides[i].imageView.image = UIImage(named: arrayAppDetails[i].ImageDark ?? "michael0dark")
                 slides[i].textView.text = arrayAppDetails[i].Chaplet
+                slides[i].textView.font = UIFont.systemFont(ofSize: fontSize ?? 20.0)
                 
             } else {
                 slides.append(Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide)
                 slides[i] = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
                 slides[i].imageView.image = UIImage(named: arrayAppDetails[i].Image ?? "michael0")
                 slides[i].textView.text = arrayAppDetails[i].Chaplet
+                slides[i].textView.font = UIFont.systemFont(ofSize: fontSize ?? 20.0)
             }
         }
-        
+        print("my fontsize: \(String(describing: fontSize))")
         return slides
 
         /*let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide

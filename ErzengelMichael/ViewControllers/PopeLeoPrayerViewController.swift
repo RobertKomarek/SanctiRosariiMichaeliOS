@@ -33,6 +33,21 @@ class PopeLeoPrayerViewController: UIViewController {
    
     override func viewWillAppear(_ animated: Bool) {
         updateText()
+        
+        //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
+        if let fontSize = UserDefaults.standard.value(forKey: "fontSize") as? CGFloat {
+            // Get the current font of the UITextView
+               if let currentFont = labelLatinNativeLanguage.font {
+                   // Set the new font size while keeping the existing font family and style
+                   let newFontSize: CGFloat = fontSize
+                   let newFont = UIFont(name: currentFont.fontName, size: newFontSize)
+
+                   // Set the new font to the UITextView
+                   labelLatinNativeLanguage.font = newFont
+               }
+            //labelLatinNativeLanguage.font = UIFont.systemFont(ofSize: fontSize)
+            textViewPrayerLeo.font = UIFont.systemFont(ofSize: fontSize)
+        }
     }
     
     @IBAction func switchToggled(_ sender: UISwitch) {

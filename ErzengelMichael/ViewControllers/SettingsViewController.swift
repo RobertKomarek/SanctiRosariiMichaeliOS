@@ -129,6 +129,16 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         arrayLabels = [labelSanctiRosariiMichael, labelMailAddresse, labelDevBy, labelPublicDomain, labelCreativeCommonsLicensed, labelPickedLanguage]
         
+        //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
+        if let fontSize = UserDefaults.standard.value(forKey: "fontSize") as? CGFloat {
+            sliderTextSize.value = Float(fontSize)
+            
+            for label in arrayLabels {
+                let currentFont = label.font
+                label.font = currentFont?.withSize(fontSize)
+            }
+        }
+        
         pickerViewLanguages.delegate = self
         pickerViewLanguages.dataSource = self
         

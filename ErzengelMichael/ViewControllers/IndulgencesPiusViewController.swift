@@ -14,7 +14,13 @@ class IndulgencesPiusViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         updateText()
+        
+        //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
+        if let fontSize = UserDefaults.standard.value(forKey: "fontSize") as? CGFloat {
+            textViewIndulgences.font = UIFont.systemFont(ofSize: fontSize)
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
