@@ -659,22 +659,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="msO-as-Rtd" userLabel="Stack View Appstore">
-                                                <rect key="frame" x="62.5" y="469" width="35" height="79"/>
+                                                <rect key="frame" x="3.5" y="468.5" width="94" height="79.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appStore" translatesAutoresizingMaskIntoConstraints="NO" id="ZyF-dl-4Xw" userLabel="Image Appstore">
-                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="4Hu-KX-hWb"/>
                                                             <constraint firstAttribute="width" constant="35" id="eAN-U6-Kzs"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnC-oV-WEZ" userLabel="Button Appstore">
-                                                        <rect key="frame" x="0.0" y="45" width="35" height="34"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="35" id="klw-2n-3sa"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="45" width="94" height="34.5"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" image="square.and.arrow.up" catalog="system"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Appstore"/>
                                                         <connections>
                                                             <action selector="shareAppstore" destination="XVA-qk-tMC" eventType="touchUpInside" id="3Lk-0G-j7a"/>
                                                         </connections>
@@ -682,22 +679,21 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gXa-v6-PaH" userLabel="Stack View Playstore">
-                                                <rect key="frame" x="277.5" y="469" width="35" height="79"/>
+                                                <rect key="frame" x="277.5" y="468.5" width="94.5" height="79.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playStore" translatesAutoresizingMaskIntoConstraints="NO" id="t64-mc-Uhe" userLabel="Image Appstore">
-                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <rect key="frame" x="30" y="0.0" width="35" height="35"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="6bU-Px-PPS"/>
                                                             <constraint firstAttribute="width" constant="35" id="ASJ-PL-Ag8"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="YHh-RM-snG"/>
                                                             <constraint firstAttribute="height" constant="35" id="wf7-Qv-9Le"/>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnd-s6-2sL" userLabel="Button Appstore">
-                                                        <rect key="frame" x="0.0" y="45" width="35" height="34"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="35" id="N9R-yq-Pu5"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="0.0" y="45" width="94.5" height="34.5"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" image="square.and.arrow.up" catalog="system"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Playstore"/>
                                                         <connections>
                                                             <action selector="sharePlaystore" destination="XVA-qk-tMC" eventType="touchUpInside" id="Zfp-9V-11F"/>
                                                         </connections>
@@ -809,7 +805,6 @@
         <image name="publicDomain" width="150" height="150"/>
         <image name="sparkles" catalog="system" width="115" height="128"/>
         <image name="splashscreen" width="1500" height="800"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="zeroLicense" width="150" height="150"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

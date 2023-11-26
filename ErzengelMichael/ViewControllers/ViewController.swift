@@ -44,14 +44,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 pageControl.layer.cornerRadius = 15
                 pageControl.clipsToBounds = true
                 view.bringSubviewToFront(pageControl)
-                
-                //Check if iPad or iPhone and adjust font size and content mode
-                for slide in slides {
-                    if UIDevice.current.userInterfaceIdiom == .pad {
-                        slide.textView.contentMode = UITextView.ContentMode.scaleToFill
-                        slide.textView.font = UIFont.systemFont(ofSize: 32)
-                    }
-                }
+               
             }
         } else {
             darkModeIsEnabled = true
@@ -67,14 +60,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 pageControl.layer.cornerRadius = 15
                 pageControl.clipsToBounds = true
                 view.bringSubviewToFront(pageControl)
-                
-                //Check if iPad or iPhone and adjust font size and content mode
-                for slide in slides {
-                    if UIDevice.current.userInterfaceIdiom == .pad {
-                        slide.textView.contentMode = UITextView.ContentMode.scaleToFill
-                        slide.textView.font = UIFont.systemFont(ofSize: 32)
-                    }
-                }
             }
         }
     
@@ -224,14 +209,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             pageControl.layer.cornerRadius = 15
             pageControl.clipsToBounds = true
             view.bringSubviewToFront(pageControl)
-
-            //Check if iPad or iPhone and adjust font size and content mode
-//            for slide in slides {
-//                if UIDevice.current.userInterfaceIdiom == .pad {
-//                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
-//                    slide.textView.font = UIFont.systemFont(ofSize: 32)
-//                }
-//            }
         }
     }
     
