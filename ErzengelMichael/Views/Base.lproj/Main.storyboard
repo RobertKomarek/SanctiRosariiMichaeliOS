@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -112,7 +113,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LG2-eS-xSX">
                                                 <rect key="frame" x="0.0" y="312" width="375" height="156"/>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -510,30 +511,27 @@
                                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-WP-NqT" userLabel="Stack View Sancti Rosarii Michael">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-zZ-0IJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="15" maxValue="35" translatesAutoresizingMaskIntoConstraints="NO" id="nAG-qo-W0Q">
+                                                                <rect key="frame" x="-2" y="0.0" width="379" height="64"/>
+                                                                <color key="minimumTrackTintColor" name="colorPurple"/>
+                                                                <color key="maximumTrackTintColor" name="colorButtonTint"/>
+                                                                <color key="thumbTintColor" name="AccentColor"/>
+                                                                <connections>
+                                                                    <action selector="sliderValueChanged:" destination="XVA-qk-tMC" eventType="valueChanged" id="0tD-4s-FCf"/>
+                                                                </connections>
+                                                            </slider>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sancti Rosarii Michael" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMg-zZ-0IJ">
+                                                                <rect key="frame" x="0.0" y="78" width="375" height="97"/>
                                                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.25724782375310429" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <attributedString key="attributedText">
-                                                                    <fragment content="Michael the Archangel Chaplet">
-                                                                        <attributes>
-                                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
-                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                        </attributes>
-                                                                    </fragment>
-                                                                </attributedString>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <size key="shadowOffset" width="0.0" height="-15"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sancti Rosarii Michael" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meu-ZA-fQL">
-                                                                <rect key="frame" x="0.0" y="125.5" width="375" height="49.5"/>
-                                                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="30"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                         </subviews>
                                                         <constraints>
+                                                            <constraint firstItem="nAG-qo-W0Q" firstAttribute="top" secondItem="YuM-WP-NqT" secondAttribute="top" constant="5" id="AFS-9m-T3V"/>
                                                             <constraint firstAttribute="height" constant="175" id="kZR-oG-V0M"/>
                                                         </constraints>
                                                     </stackView>
@@ -575,7 +573,7 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZS-aI-RHe" userLabel="robert.komarek98@gmail.com">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZS-aI-RHe" userLabel="robert.komarek98@gmail.com">
                                                         <rect key="frame" x="0.0" y="30" width="345" height="20.5"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <attributedString key="attributedText">
@@ -769,9 +767,13 @@
                     <connections>
                         <outlet property="buttonLanguageConfirmed" destination="hjR-eB-yed" id="wVI-kO-S0S"/>
                         <outlet property="labelCreativeCommonsLicensed" destination="fB5-ii-NNT" id="RzJ-mU-JAx"/>
+                        <outlet property="labelDevBy" destination="oU0-8L-ZvA" id="9av-06-vvL"/>
                         <outlet property="labelMailAddresse" destination="RZS-aI-RHe" id="MO9-Wf-org"/>
                         <outlet property="labelPickedLanguage" destination="72u-MQ-2iP" id="L0U-uT-2rj"/>
+                        <outlet property="labelPublicDomain" destination="fhf-vv-HAJ" id="yJB-BR-zt3"/>
+                        <outlet property="labelSanctiRosariiMichael" destination="nMg-zZ-0IJ" id="Puj-ud-eb3"/>
                         <outlet property="pickerViewLanguages" destination="yFQ-3z-GNF" id="iVa-Fy-vDd"/>
+                        <outlet property="sliderTextSize" destination="nAG-qo-W0Q" id="61K-tx-Dy8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kD5-FO-uIO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -809,6 +811,15 @@
         <image name="splashscreen" width="1500" height="800"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="zeroLicense" width="150" height="150"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorButtonTint">
+            <color red="0.69803921568627447" green="0.59607843137254901" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorPurple">
+            <color red="0.22352941176470589" green="0.047058823529411764" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

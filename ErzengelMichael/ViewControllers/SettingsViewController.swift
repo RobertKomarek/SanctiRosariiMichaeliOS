@@ -9,17 +9,34 @@ import UIKit
 
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var appDetails = AppDetails()
-    var arrayAppDetails:[AppDetails] = []
-    //@IBOutlet weak var stackViewHeader: UIStackView!
+    @IBOutlet weak var sliderTextSize: UISlider!
     @IBOutlet weak var buttonLanguageConfirmed: UIButton!
-    @IBOutlet weak var labelPickedLanguage: UILabel!
     @IBOutlet weak var pickerViewLanguages: UIPickerView!
+    @IBOutlet weak var labelSanctiRosariiMichael: UILabel!
+    @IBOutlet weak var labelPickedLanguage: UILabel!
     @IBOutlet weak var labelMailAddresse: UILabel!
     @IBOutlet weak var labelCreativeCommonsLicensed: UILabel!
-    var flagsTag:Int = 0
+    @IBOutlet weak var labelPublicDomain: UILabel!
+    @IBOutlet weak var labelDevBy: UILabel!
     
-    var arrayFlags:[UIImage]=[UIImage(named: "langEnglish")!, UIImage(named: "langFrench")!, UIImage(named: "langGerman")!, UIImage(named: "langSpanish")!, UIImage(named: "langPortugese")!, UIImage(named: "langItalian")!, UIImage(named: "langChinese")!]
+    var appDetails = AppDetails()
+    var arrayAppDetails: [AppDetails] = []
+    var arrayLabels: [UILabel] = []
+    var flagsTag:Int = 0
+    var arrayFlags: [UIImage]=[UIImage(named: "langEnglish")!, UIImage(named: "langFrench")!, UIImage(named: "langGerman")!, UIImage(named: "langSpanish")!, UIImage(named: "langPortugese")!, UIImage(named: "langItalian")!, UIImage(named: "langChinese")!]
+    
+    
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        let fontSize = sender.value
+        for label in arrayLabels {
+            let currentFont = label.font
+            label.font = currentFont?.withSize(CGFloat(fontSize))
+        }
+//        let currentFont = labelSanctiRosariiMichael.font
+//        labelSanctiRosariiMichael.font = currentFont?.withSize(CGFloat(fontSize))
+        //Save fontsize to UserDefaults
+        UserDefaults.standard.set(fontSize, forKey: "fontSize")
+    }
     
     @IBAction func languageConfirmed(_ sender: UIButton, forEvent event: UIEvent) {
         //Ausgewählte Sprache speichern und anschl. in viewDidLoad von Main/ViewController abfragen und die entsprechende Sprache laden
@@ -109,6 +126,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        arrayLabels = [labelSanctiRosariiMichael, labelMailAddresse, labelDevBy, labelPublicDomain, labelCreativeCommonsLicensed, labelPickedLanguage]
         
         pickerViewLanguages.delegate = self
         pickerViewLanguages.dataSource = self
