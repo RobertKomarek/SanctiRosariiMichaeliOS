@@ -63,10 +63,13 @@ class PopeLeoPrayerViewController: UIViewController {
     
     private func updateText() {
         let defaults = UserDefaults.standard
-        let language = defaults.string(forKey: "Language")
-        
-        //Load Json file with app details
-        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language ?? "English")
+        if let language = defaults.string(forKey: "Language") {
+            //Load Json file with app details if preferred Language of Device has been changed and saved to UserDefauls
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language)
+        } else {
+            //otherwise load the preferred Language according to Device
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: UsedDevice.languageCode())
+        }
                 
         //Set Navigation Bar Title, Button, TextView and Label
         self.navigationItem.title = arrayAppDetails[0].TitlePrayersLeo

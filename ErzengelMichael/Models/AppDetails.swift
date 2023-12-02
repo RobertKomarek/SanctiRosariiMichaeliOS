@@ -1,7 +1,7 @@
 import UIKit
 
 class AppDetails : Decodable {
-
+    
     var Number : Int?
     var AppName: String?
     var TabBarRosary: String?
@@ -28,8 +28,8 @@ class AppDetails : Decodable {
     var ImageDark: String?
     
     //Seque "Promises" or "Litany"
-    func getAppDetails(jsonName:String, language:String) -> [AppDetails] {
-        var jsonResult:[AppDetails] = []
+    func getAppDetails(jsonName: String, language: String) -> [AppDetails] {
+        var jsonResult: [AppDetails] = []
         
         if let path = Bundle.main.path(forResource: jsonName, ofType: "json") {
             do {
@@ -55,3 +55,30 @@ class AppDetails : Decodable {
     }
     
 }
+            
+        // Returns the language code
+        //print("Language Code:  \(String(describing: languageCode))") // Returns the language code
+        //print ("Current Locale: \(currentLocale.language.languageCode?.identifier)")
+//        switch languageCode {
+//        case "en":
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
+//        case "de":
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "Deutsch")
+//        case "es":
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "Español")
+//        case "it":
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "Italiano")
+//        case "pt":
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "Português")
+//        case "fr":
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "Français")
+//        case "zh":
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "中文")
+//        default:
+//            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
+//        }
+    
+    
+    
+    
+

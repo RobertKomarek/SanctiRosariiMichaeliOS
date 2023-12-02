@@ -32,15 +32,15 @@ class PromisesMichaelViewController: UIViewController {
     
     private func updateText() {
         let defaults = UserDefaults.standard
-        let language = defaults.string(forKey: "Language")
-
-        //Load Json file with app details
-        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language ?? "English")
-
-        //Set Navigation Bar Title
-        //self.navigationItem.backBarButtonItem?.title = "Go Back"
+        if let language = defaults.string(forKey: "Language") {
+            //Load Json file with app details if preferred Language of Device has been changed and saved to UserDefauls
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language)
+        } else {
+            //otherwise load the preferred Language according to Device
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: UsedDevice.languageCode())
+        }
+        
         self.navigationItem.title = arrayAppDetails[0].TabBarPromises
-        //self.navigationItem.backButtonTitle = "Go BAck"
 
         textViewPromisesMichael.text = arrayAppDetails[0].PromisesMichael
         buttonGoToIndulgences.setTitle(arrayAppDetails[0].TitlePromisesIndulgences, for: .normal)

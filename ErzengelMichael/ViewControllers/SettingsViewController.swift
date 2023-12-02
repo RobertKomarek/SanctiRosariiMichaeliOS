@@ -32,9 +32,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             let currentFont = label.font
             label.font = currentFont?.withSize(CGFloat(fontSize))
         }
-//        let currentFont = labelSanctiRosariiMichael.font
-//        labelSanctiRosariiMichael.font = currentFont?.withSize(CGFloat(fontSize))
-        //Save fontsize to UserDefaults
         UserDefaults.standard.set(fontSize, forKey: "fontSize")
     }
     
@@ -149,10 +146,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let tabGestureRecognizerCreativeCommons = UITapGestureRecognizer(target: self, action: #selector(self.labelCreativeCommonsLicensedTapped))
         labelCreativeCommonsLicensed.addGestureRecognizer(tabGestureRecognizerCreativeCommons)
         labelCreativeCommonsLicensed.isUserInteractionEnabled = true
-        /*stackViewHeader.layer.cornerRadius = 15
-        stackViewHeader.layoutMargins = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-        stackViewHeader.isLayoutMarginsRelativeArrangement = true*/
-        
     }
     
     @objc func labelCreativeCommonsLicensedTapped (sender: UITapGestureRecognizer) {

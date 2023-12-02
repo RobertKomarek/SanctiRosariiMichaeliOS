@@ -1,9 +1,11 @@
 import UIKit
 import SwiftUI
+import Foundation
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     
     var appDetails = AppDetails()
+    //var usedDevice = UsedDevice()
     var darkModeIsEnabled:Bool = false
     //Welcome Screen
     @IBOutlet weak var textViewInstruction: UITextView!
@@ -21,6 +23,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var scrollView: UIScrollView!
     
     var slides: [Slide] = [];
+    //let languageCodes = ["en", "de", "it", "fr", "es", "pt", "zh"]
     var pageIndex:CGFloat = 0
     var arrayAppDetails: [AppDetails] = []
     var rosaryChosenLanguage: [AppDetails] = []
@@ -128,16 +131,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         buttonHideWelcome.layer.cornerRadius = 7
         
-        //Check chosen language Deutsch, English, Español, Italiano, Português, Français
         let defaults = UserDefaults.standard
-        let language = defaults.string(forKey: "Language")
-        if language != nil {
-            //Load Json file with app details
-            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
+        if let language = defaults.string(forKey: "Language") {
+            //Load Json file with app details if preferred Language of Device has been changed and saved to UserDefauls
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language)
         } else {
-            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
+            //otherwise load the preferred Language according to Device
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: UsedDevice.languageCode())
         }
-       
         
         //Update TabItems Title according to language
         if let tabBarItem0 = self.tabBarController?.tabBar.items?[0] {
@@ -152,7 +153,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         if let tabBarItem3 = self.tabBarController?.tabBar.items?[3] {
             tabBarItem3.title = arrayAppDetails[0].TabBarSettings
         }
-
         
         //Implement ScrollView
         if scrollView != nil {
@@ -164,53 +164,43 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             pageControl.layer.cornerRadius = 15
             pageControl.clipsToBounds = true
             view.bringSubviewToFront(pageControl)
-            
-            //Check if iPad or iPhone and adjust font size and content mode
-//            for slide in slides {
-//                if UIDevice.current.userInterfaceIdiom == .pad {
-//                    slide.textView.contentMode = UITextView.ContentMode.scaleToFill
-//                    slide.textView.font = UIFont.systemFont(ofSize: 32)
-//                }
-//            }
         }
     }
    
-    
     override func viewWillAppear(_ animated: Bool) {
-        
-        //Check chosen language Deutsch, English, Español, Italiano, Português, Français
-        let defaults = UserDefaults.standard
-        let language = defaults.string(forKey: "Language")
-        if language != nil {
-            //Load Json file with app details
-            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language!)
-        } else {
-            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: "English")
-        }
-        
-        //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
-        if let fontSize = UserDefaults.standard.value(forKey: "fontSize") as? CGFloat {
-            labelWelcome.font = UIFont.systemFont(ofSize: fontSize)
-            textViewInstruction.font = UIFont.systemFont(ofSize: fontSize)
-        }
-
-        //Welcome View
-        labelWelcome.text = arrayAppDetails[0].AppWelcomeTitle
-        textViewInstruction.text = arrayAppDetails[0].AppWelcomeText
-        buttonHideWelcome.setTitle(arrayAppDetails[0].ChapletStart, for: .normal)
-
-        //Implement ScrollView
-        if scrollView != nil {
-            scrollView.delegate = self
-            slides = createSlides(darkLightMode: darkModeIsEnabled)
-            setupSlideScrollView(slides: slides)
-            pageControl.numberOfPages = slides.count
-            pageControl.currentPage = Int(round(scrollView.contentOffset.x/view.frame.width))
-            pageControl.layer.cornerRadius = 15
-            pageControl.clipsToBounds = true
-            view.bringSubviewToFront(pageControl)
-        }
+    
+    let defaults = UserDefaults.standard
+    if let language = defaults.string(forKey: "Language") {
+        //Load Json file with app details if preferred Language of Device has been changed and saved to UserDefauls
+        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language)
+    } else {
+        //otherwise load the preferred Language according to Device
+        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: UsedDevice.languageCode())
     }
+    
+    //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
+    if let fontSize = UserDefaults.standard.value(forKey: "fontSize") as? CGFloat {
+        labelWelcome.font = UIFont.systemFont(ofSize: fontSize)
+        textViewInstruction.font = UIFont.systemFont(ofSize: fontSize)
+    }
+
+    //Welcome View
+    labelWelcome.text = arrayAppDetails[0].AppWelcomeTitle
+    textViewInstruction.text = arrayAppDetails[0].AppWelcomeText
+    buttonHideWelcome.setTitle(arrayAppDetails[0].ChapletStart, for: .normal)
+
+    //Implement ScrollView
+    if scrollView != nil {
+        scrollView.delegate = self
+        slides = createSlides(darkLightMode: darkModeIsEnabled)
+        setupSlideScrollView(slides: slides)
+        pageControl.numberOfPages = slides.count
+        pageControl.currentPage = Int(round(scrollView.contentOffset.x/view.frame.width))
+        pageControl.layer.cornerRadius = 15
+        pageControl.clipsToBounds = true
+        view.bringSubviewToFront(pageControl)
+    }
+}
     
     func createSlides(darkLightMode:Bool) -> [Slide] {
         
@@ -235,7 +225,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 slides[i].textView.font = UIFont.systemFont(ofSize: fontSize ?? 20.0)
             }
         }
-        print("my fontsize: \(String(describing: fontSize))")
+        //print("my fontsize: \(String(describing: fontSize))")
         return slides
 
         /*let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841338072B1BC443003F3C0E /* UsedDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841338062B1BC443003F3C0E /* UsedDevice.swift */; };
 		841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */; };
 		8420BA1328FB309D000575A5 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8420BA1228FB309D000575A5 /* Slide.swift */; };
 		842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842932FA28B2DC4C0093DE24 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841338062B1BC443003F3C0E /* UsedDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDevice.swift; sourceTree = "<group>"; };
 		841A7AEE29142AE000CC946F /* VerticallyCenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyCenteredTextView.swift; sourceTree = "<group>"; };
 		8420BA1228FB309D000575A5 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		842932F728B2DC4C0093DE24 /* ErzengelMichael.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErzengelMichael.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8444CCAE28C39408002C819B /* AppDetails.swift */,
+				841338062B1BC443003F3C0E /* UsedDevice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */,
 				842932FF28B2DC4C0093DE24 /* ViewController.swift in Sources */,
 				842932FB28B2DC4C0093DE24 /* AppDelegate.swift in Sources */,
+				841338072B1BC443003F3C0E /* UsedDevice.swift in Sources */,
 				841A7AEF29142AE000CC946F /* VerticallyCenteredTextView.swift in Sources */,
 				84582CA42932A4D300D7CE11 /* PopeLeoPrayerViewController.swift in Sources */,
 				846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */,

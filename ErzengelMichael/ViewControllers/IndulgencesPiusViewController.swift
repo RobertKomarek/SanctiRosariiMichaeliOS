@@ -14,7 +14,6 @@ class IndulgencesPiusViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         updateText()
         
         //Bei Neustart der App checken ob die FontSize geändert wurde und entsprechend den Labels im Array zuweisen
@@ -29,10 +28,13 @@ class IndulgencesPiusViewController: UIViewController {
     
     private func updateText() {
         let defaults = UserDefaults.standard
-        let language = defaults.string(forKey: "Language")
-        
-        //Load Json file with app details
-        arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language ?? "English")
+        if let language = defaults.string(forKey: "Language") {
+            //Load Json file with app details if preferred Language of Device has been changed and saved to UserDefauls
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language)
+        } else {
+            //otherwise load the preferred Language according to Device
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: UsedDevice.languageCode())
+        }
         
         let backButton = UIBarButtonItem()
         backButton.title = arrayAppDetails[0].TabBarPromises

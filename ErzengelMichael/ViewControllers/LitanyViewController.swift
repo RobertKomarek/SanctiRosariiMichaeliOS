@@ -12,7 +12,8 @@ class LitanyViewController: UIViewController {
     @IBOutlet weak var textViewLitany: UITextView!
     @IBOutlet weak var imageViewLitany: UIImageView!
     
-    var passedArray:[AppDetails] = []
+    //var passedArray: [AppDetails] = []
+    var arrayAppDetails: [AppDetails] = []
     let appDetails = AppDetails()
 
     override func viewDidLoad() {
@@ -32,14 +33,19 @@ class LitanyViewController: UIViewController {
     
     private func updateText() {
         let defaults = UserDefaults.standard
-        let language = defaults.string(forKey: "Language")
-        passedArray = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language ?? "English")
+        if let language = defaults.string(forKey: "Language") {
+            //Load Json file with app details if preferred Language of Device has been changed and saved to UserDefauls
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: language)
+        } else {
+            //otherwise load the preferred Language according to Device
+            arrayAppDetails = appDetails.getAppDetails(jsonName: "SanctiRosariiMichael", language: UsedDevice.languageCode())
+        }
         
-        self.navigationItem.title = passedArray[0].TitlePrayersLitany
-        textViewLitany.text = passedArray[0].PrayersLitany
+        self.navigationItem.title = arrayAppDetails[0].TitlePrayersLitany
+        textViewLitany.text = arrayAppDetails[0].PrayersLitany
         
         let backButton = UIBarButtonItem()
-        backButton.title = passedArray[0].TitlePrayersLeo
+        backButton.title = arrayAppDetails[0].TitlePrayersLeo
         backButton.tintColor = .white
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
