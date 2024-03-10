@@ -28,7 +28,6 @@
 		846851CB28FC821200942E2A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846851CA28FC821200942E2A /* SettingsViewController.swift */; };
 		846C0AD92909C61C001456F3 /* PromisesMichaelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */; };
 		8487C61629243ADF00458D86 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487C61529243ADF00458D86 /* WelcomeViewController.swift */; };
-		8487C6222924459B00458D86 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6212924459B00458D86 /* Welcome.storyboard */; };
 		84FA1C292928F6870016ED26 /* IndulgencesPiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,7 @@
 		846851CA28FC821200942E2A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		846C0AD82909C61C001456F3 /* PromisesMichaelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisesMichaelViewController.swift; sourceTree = "<group>"; };
 		8487C61529243ADF00458D86 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		8487C6212924459B00458D86 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		849CA9A32B1D2BF70002520C /* ErzengelMichael.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ErzengelMichael.entitlements; sourceTree = "<group>"; };
 		84FA1C282928F6870016ED26 /* IndulgencesPiusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndulgencesPiusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +140,6 @@
 			children = (
 				8429330028B2DC4C0093DE24 /* Main.storyboard */,
 				844F531F28BA58A200034D24 /* Slide.xib */,
-				8487C6212924459B00458D86 /* Welcome.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +176,7 @@
 		842932F928B2DC4C0093DE24 /* ErzengelMichael */ = {
 			isa = PBXGroup;
 			children = (
+				849CA9A32B1D2BF70002520C /* ErzengelMichael.entitlements */,
 				8422734B292004FE00FD475D /* Jsonfiles */,
 				841A7AED29142AAC00CC946F /* Custom Controls */,
 				8420BA0E28FB2A60000575A5 /* Models */,
@@ -329,7 +328,6 @@
 				8429330228B2DC4C0093DE24 /* Main.storyboard in Resources */,
 				842FD4A529678F6900520545 /* SanctiRosariiMichael.json in Resources */,
 				844F532028BA58A200034D24 /* Slide.xib in Resources */,
-				8487C6222924459B00458D86 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +541,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ErzengelMichael/ErzengelMichael.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JML7X85FG3;
@@ -562,10 +562,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marinakomarek.sanctirosariimichael;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -580,6 +580,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ErzengelMichael/ErzengelMichael.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JML7X85FG3;
@@ -599,10 +601,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marinakomarek.sanctirosariimichael;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
